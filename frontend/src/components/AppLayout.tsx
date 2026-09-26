@@ -20,6 +20,18 @@ export default function AppLayout() {
             <Logo />
           </Link>
           <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              `flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium transition-colors hover:bg-accent-soft/60 dark:hover:bg-accent/20 ${
+                isActive ? 'bg-accent-soft/60 text-accent-strong dark:bg-accent/20 dark:text-teal-300' : ''
+              }`
+            }
+          >
+            <span aria-hidden>🐾</span>
+            Veterinary
+          </NavLink>
+          <NavLink
             to="/profile"
             className={({ isActive }) =>
               `flex items-center gap-2 rounded-full py-1 pr-3 pl-1 text-sm font-medium transition-colors hover:bg-accent-soft/60 dark:hover:bg-accent/20 ${

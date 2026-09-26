@@ -18,7 +18,9 @@ create or edit tables in the Supabase dashboard; add a new `V<n>__description.sq
 - After sign-up, onboarding asks **vet or pet guardian?**
   - **Pet guardian:** phone, pet name, species, breed, sex (plus spayed/neutered), age, weight, health history, vaccination history, allergies.
   - **Vet:** hospital/clinic name, address, email.
-- Home page shows a summary of the profile.
+- Home page with Awareness, Health alert, Appointment and Affordability tiles; a Profile page from the navbar.
+- **Affordability:** search vet clinics by service, price range and location (demo clinics in Madison, Milwaukee, Chicago and Minneapolis).
+  Click a clinic to pick services (Consult, X-ray, MRI, …) and get a price estimate.
 
 ## Running it locally
 
@@ -156,5 +158,7 @@ All endpoints need `Authorization: Bearer <Supabase access token>`.
 |---|---|---|
 | `GET` | `/api/me` | The signed-in user's profile, or `404` if they haven't onboarded yet |
 | `POST` | `/api/onboarding` | Creates the profile. Body has `"role": "GUARDIAN"` (with `phone`, `pet`) or `"role": "VET"` (with `clinicName`, `address`, `email`). `409` if already onboarded |
+| `GET` | `/api/clinics?service=EXAM&minCost=&maxCost=&location=` | Clinics offering `service` (`EXAM`, `CONSULT`, `VACCINATION`, `BLOOD_WORK`, `XRAY`, `ULTRASOUND`, `CT_SCAN`, `MRI`, `DENTAL`, `SPAY_NEUTER`, `EMERGENCY`) priced within the cost range, near `location` (ZIP, city, or `City, ST`), cheapest first. The demo clinics come from migrations `V3` and `V4` |
+| `GET` | `/api/clinics/{id}` | One clinic with every service it offers and its price, or `404` |
 
 The old static landing page is at `frontend/public/landing.html`.

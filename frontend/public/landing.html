@@ -41,6 +41,10 @@
     .nav-links { display: flex; gap: 24px; list-style: none; }
     .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
     .nav-links a:hover { color: var(--accent); }
+    .nav-links .veterinary-tab {
+      display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px;
+      border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 600;
+    }
 
     .hero { padding: 88px 0 72px; text-align: center; }
     .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; margin-bottom: 16px; }
@@ -72,7 +76,9 @@
     footer { padding: 32px 0; text-align: center; color: var(--muted); font-size: 0.9rem; }
 
     @media (max-width: 600px) {
-      .nav-links { gap: 16px; }
+      nav { height: auto; flex-wrap: wrap; gap: 12px; padding-top: 12px; padding-bottom: 12px; }
+      .nav-links { width: 100%; justify-content: space-between; gap: 8px; }
+      .nav-links a { font-size: 0.85rem; }
       .hero { padding: 64px 0 48px; }
     }
   </style>
@@ -82,6 +88,7 @@
     <nav class="container">
       <a href="#" class="logo">&#x1F9ED; Vigilant Health Compass</a>
       <ul class="nav-links">
+        <li><a href="/" class="veterinary-tab"><span aria-hidden="true">&#x1F43E;</span> Veterinary</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#about">About</a></li>
       </ul>
