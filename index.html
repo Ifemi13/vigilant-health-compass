@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vigilant Health Compass</title>
+  <meta name="description" content="Vigilant Health Compass — find your way to better health.">
+  <style>
+    :root {
+      --bg: #f7faf9;
+      --surface: #ffffff;
+      --text: #1c2b28;
+      --muted: #5b6b67;
+      --accent: #0f766e;
+      --accent-soft: #ccebe7;
+      --border: #e2e8e6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1716;
+        --surface: #172220;
+        --text: #e6efed;
+        --muted: #9fb1ad;
+        --accent: #2dd4bf;
+        --accent-soft: #134e48;
+        --border: #24332f;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+    header { border-bottom: 1px solid var(--border); background: var(--surface); }
+    nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-weight: 700; font-size: 1.1rem; color: var(--accent); text-decoration: none; }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+    .nav-links a:hover { color: var(--accent); }
+
+    .hero { padding: 88px 0 72px; text-align: center; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; margin-bottom: 16px; }
+    .hero p { color: var(--muted); font-size: 1.15rem; max-width: 600px; margin: 0 auto 32px; }
+    .btn {
+      display: inline-block; padding: 12px 28px; border-radius: 8px;
+      background: var(--accent); color: var(--bg); font-weight: 600; text-decoration: none;
+    }
+    .btn:hover { opacity: 0.9; }
+
+    .features { padding: 24px 0 88px; }
+    .features h2 { text-align: center; font-size: 1.8rem; margin-bottom: 40px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; padding: 28px;
+    }
+    .icon {
+      width: 44px; height: 44px; border-radius: 10px; background: var(--accent-soft);
+      display: grid; place-items: center; font-size: 1.3rem; margin-bottom: 16px;
+    }
+    .card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+
+    .about { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 72px 0; text-align: center; }
+    .about h2 { font-size: 1.8rem; margin-bottom: 16px; }
+    .about p { color: var(--muted); max-width: 640px; margin: 0 auto; }
+
+    footer { padding: 32px 0; text-align: center; color: var(--muted); font-size: 0.9rem; }
+
+    @media (max-width: 600px) {
+      .nav-links { gap: 16px; }
+      .hero { padding: 64px 0 48px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="#" class="logo">&#x1F9ED; Vigilant Health Compass</a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Find your way to better health</h1>
+      <p>Stay informed, track what matters, and make confident decisions about your well-being — all in one place.</p>
+      <a href="#features" class="btn">Get Started</a>
+    </section>
+
+    <section id="features" class="features container">
+      <h2>What we offer</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">&#x1F4CA;</div>
+          <h3>Track Your Health</h3>
+          <p>Keep an eye on key health indicators and spot trends over time.</p>
+        </div>
+        <div class="card">
+          <div class="icon">&#x1F514;</div>
+          <h3>Stay Alert</h3>
+          <p>Get timely reminders for check-ups, medications, and healthy habits.</p>
+        </div>
+        <div class="card">
+          <div class="icon">&#x1F4DA;</div>
+          <h3>Learn &amp; Understand</h3>
+          <p>Access clear, reliable health information to guide your choices.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Vigilant Health Compass helps people stay proactive about their health. Our goal is to make health awareness simple, accessible, and part of everyday life.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">&copy; <span id="year"></span> Vigilant Health Compass. All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
