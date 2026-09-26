@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+/* Teal palette carried over from the original landing page. */
+@theme {
+  --color-accent: #0f766e;
+  --color-accent-strong: #115e59;
+  --color-accent-soft: #ccebe7;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f7faf9] text-[#1c2b28] antialiased dark:bg-[#0f1716] dark:text-[#e6efed];
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  }
+}
