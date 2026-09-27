@@ -21,3 +21,25 @@ export const SECTIONS: Feature[] = [
     icon: '🐾',
   },
 ]
+
+/** The panels inside the General section. */
+export const GENERAL_PANELS: Feature[] = [
+  {
+    path: '/general/awareness',
+    title: 'Awareness',
+    description: 'Short guides to common health topics, from heart health to medication safety.',
+    icon: '📚',
+  },
+  {
+    path: '/general/calendar',
+    title: 'Preventive health calendar',
+    description: 'Keep track of the checkups, screenings and vaccines you are due for.',
+    icon: '🗓️',
+  },
+  {
+    path: '/general/near-me',
+    title: 'Healthcare near me',
+    description: 'Find clinics, pharmacies and other care close to you.',
+    icon: '📍',
+  },
+]

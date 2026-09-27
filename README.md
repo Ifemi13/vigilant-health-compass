@@ -162,6 +162,11 @@ All endpoints need `Authorization: Bearer <Supabase access token>`.
 | `GET` | `/api/procedures` | Every standard procedure (dog and cat) with its average prices and how many clinics price it |
 | `GET` | `/api/clinics?procedure=dog-rabies-1-year&minCost=&maxCost=&location=` | Clinics posting a price for `procedure` within the cost range, near `location` (ZIP, city, or `City, WI`), cheapest first. Each result includes only the matching prices |
 | `GET` | `/api/clinics/{id}` | One clinic with every price it posted (both species), or `404` |
+| `GET` | `/api/topics/{topicId}/hospitals` | Specialty hospitals for a General → Awareness topic (e.g. `diabetes`). Demo data from migration `V8` (fictional) |
+| `GET` | `/api/hospitals/{id}` | One specialty hospital, or `404` |
+| `GET` | `/api/hospitals/{id}/comments` | The hospital's community posts, newest first. Authors appear only as an anonymous nickname and role; `mine` marks your own |
+| `POST` | `/api/hospitals/{id}/comments` | Post `{"body": "..."}` (1–2000 characters) as your nickname, with role `PATIENT` |
+| `GET` | `/api/community/me` | Your forum nickname and role |
 
 The old static landing page is at `frontend/public/landing.html`.
 
