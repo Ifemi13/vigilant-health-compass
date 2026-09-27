@@ -1,6 +1,6 @@
 import { useQueryClient } from '@tanstack/react-query'
 import type { ReactNode } from 'react'
-import { useNavigate } from 'react-router'
+import { useLocation, useNavigate } from 'react-router'
 import { Button } from '../components/ui'
 import { useMe, type Pet } from '../lib/profile'
 import { supabase } from '../lib/supabase'
@@ -8,7 +8,11 @@ import { supabase } from '../lib/supabase'
 export default function Profile() {
   const { data: me } = useMe()
   const navigate = useNavigate()
+  const location = useLocation()
   const queryClient = useQueryClient()
+
+  // Profile opens from both the Pets and General navbars, so go back to wherever the user came from.
+  const goBack = () => (location.key === 'default' ? navigate('/', { replace: true }) : navigate(-1))
 
   const signOut = async () => {
     await supabase.auth.signOut()
@@ -20,7 +24,10 @@ export default function Profile() {
 
   return (
     <>
-      <div className="flex flex-wrap items-center justify-between gap-4">
+      <button type="button" onClick={goBack} className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
+        ← Back
+      </button>
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
         <div>
           <h1 className="text-3xl font-semibold">Your profile</h1>
           <p className="mt-1 text-slate-600 dark:text-slate-400">{me.role === 'VET' ? 'Veterinarian' : 'Pet guardian'}</p>
