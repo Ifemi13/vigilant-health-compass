@@ -162,11 +162,15 @@ All endpoints need `Authorization: Bearer <Supabase access token>`.
 | `GET` | `/api/procedures` | Every standard procedure (dog and cat) with its average prices and how many clinics price it |
 | `GET` | `/api/clinics?procedure=dog-rabies-1-year&minCost=&maxCost=&location=` | Clinics posting a price for `procedure` within the cost range, near `location` (ZIP, city, or `City, WI`), cheapest first. Each result includes only the matching prices |
 | `GET` | `/api/clinics/{id}` | One clinic with every price it posted (both species), or `404` |
-| `GET` | `/api/topics/{topicId}/hospitals` | Specialty hospitals for a General → Awareness topic (e.g. `diabetes`). Demo data from migration `V8` (fictional) |
-| `GET` | `/api/hospitals/{id}` | One specialty hospital, or `404` |
-| `GET` | `/api/hospitals/{id}/comments` | The hospital's community posts, newest first. Authors appear only as an anonymous nickname and role; `mine` marks your own |
-| `POST` | `/api/hospitals/{id}/comments` | Post `{"body": "..."}` (1–2000 characters) as your nickname, with role `PATIENT` |
+| `GET` | `/api/topics/{topicId}/hospitals?location=` | Wisconsin hospitals (CMS data) for a General → Awareness topic (e.g. `diabetes`), near `location` (ZIP, city, or `City, WI`), highest CMS star rating first. Mental wellness lists psychiatric hospitals first |
+| `GET` | `/api/hospitals/{id}` | One hospital, or `404` |
+| `GET` | `/api/topics/{topicId}/hospitals/{id}/comments` | The hospital's forum for that topic, newest first. Authors appear only as an anonymous nickname and role, plus age and sex from their Health Profile if they have one; `mine` marks your own |
+| `POST` | `/api/topics/{topicId}/hospitals/{id}/comments` | Post `{"body": "..."}` (1–2000 characters) as your nickname, with role `PATIENT` |
+| `PUT` | `/api/topics/{topicId}/hospitals/{id}/comments/{commentId}` | Edit your own post; sets `editedAt`. `403` if it isn't yours, `404` if it doesn't exist |
+| `DELETE` | `/api/topics/{topicId}/hospitals/{id}/comments/{commentId}` | Delete your own post (`204`). `403` if it isn't yours, `404` if it doesn't exist |
 | `GET` | `/api/community/me` | Your forum nickname and role |
+| `GET` | `/api/health-profile` | Your General → Health Profile (age, sex, current conditions, vaccination and family history), or `404` if you haven't saved one |
+| `PUT` | `/api/health-profile` | Create or replace it. `age`, `sex` (`FEMALE`, `MALE`, `INTERSEX`, `PREFER_NOT_TO_SAY`) and `currentConditions` are required. Age and sex are shown on your forum posts; the rest is private |
 
 The old static landing page is at `frontend/public/landing.html`.
 
@@ -182,3 +186,17 @@ python3 scripts/wi_vet_costs_to_sql.py wi_vet_costs.json backend/src/main/resour
 Flyway never re-runs a migration that has already been applied, so when the JSON is updated, generate a **new**
 migration (e.g. `V7__reload_wi_vet_costs.sql`) that first deletes the old rows
 (`delete from clinic_prices; delete from clinics; delete from procedures;`) instead of editing V6.
+
+## Hospital data
+
+The hospitals listed on General → Awareness topics are the 140 Wisconsin hospitals in the CMS
+[Hospital General Information](https://data.cms.gov/provider-data/dataset/xubh-q36u) dataset, snapshotted in
+[`data/wi_hospitals_cms.json`](data/wi_hospitals_cms.json). Migration `V11__load_cms_wi_hospitals.sql` is generated
+from it:
+
+```sh
+python3 scripts/cms_hospitals_to_sql.py data/wi_hospitals_cms.json backend/src/main/resources/db/migration/V11__load_cms_wi_hospitals.sql
+```
+
+CMS has no specialty information, so every topic lists the same hospitals (each with its own forum per topic). To
+refresh the data, write a new migration that upserts by `cms_facility_id`, so existing forum posts stay attached.

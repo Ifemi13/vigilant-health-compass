@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
  * What the user typed in the location box, parsed into a ZIP code, or a city prefix with an optional state
  * (e.g. {@code "Madison, WI"}). All fields are null when the box was left blank.
  */
-record LocationFilter(String postalCode, String city, String state) {
+public record LocationFilter(String postalCode, String city, String state) {
 
 	private static final Pattern ZIP = Pattern.compile("\\d{5}");
 
@@ -14,7 +14,7 @@ record LocationFilter(String postalCode, String city, String state) {
 
 	static final LocationFilter ANY = new LocationFilter(null, null, null);
 
-	static LocationFilter parse(String input) {
+	public static LocationFilter parse(String input) {
 		if (input == null || input.isBlank()) {
 			return ANY;
 		}

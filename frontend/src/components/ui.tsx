@@ -50,11 +50,14 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaHTMLAttributes<H
   <textarea ref={ref} rows={3} {...props} className={`${control} ${props.className ?? ''}`} />
 ))
 
-export function Button({ variant = 'primary', className, ...props }: ButtonHTMLAttributes<HTMLButtonElement> & { variant?: 'primary' | 'secondary' }) {
-  const styles =
-    variant === 'primary'
-      ? 'bg-accent text-white hover:bg-accent-strong disabled:opacity-60'
-      : 'border border-slate-300 bg-white hover:bg-slate-50 dark:border-slate-700 dark:bg-transparent dark:hover:bg-slate-800'
+const BUTTON_STYLES = {
+  primary: 'bg-accent text-white hover:bg-accent-strong disabled:opacity-60',
+  secondary: 'border border-slate-300 bg-white hover:bg-slate-50 dark:border-slate-700 dark:bg-transparent dark:hover:bg-slate-800',
+  danger: 'bg-red-600 text-white hover:bg-red-700 disabled:opacity-60',
+}
+
+export function Button({ variant = 'primary', className, ...props }: ButtonHTMLAttributes<HTMLButtonElement> & { variant?: keyof typeof BUTTON_STYLES }) {
+  const styles = BUTTON_STYLES[variant]
   return <button {...props} className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors disabled:cursor-not-allowed ${styles} ${className ?? ''}`} />
 }
 

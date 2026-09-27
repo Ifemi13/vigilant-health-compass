@@ -1,9 +1,11 @@
+import { useState, type FormEvent } from 'react'
 import { Link, Navigate, useParams } from 'react-router'
-import { ErrorBanner } from '../../components/ui'
+import StarRating from '../../components/StarRating'
+import { Button, ErrorBanner, Input } from '../../components/ui'
 import { AWARENESS_TOPICS, type AwarenessTopic as Topic } from '../../content/awarenessTopics'
 import { errorMessage } from '../../lib/api'
 import { sourceHost } from '../../lib/clinics'
-import { useTopicHospitals } from '../../lib/community'
+import { hospitalTypeLabel, useTopicHospitals } from '../../lib/community'
 
 export default function AwarenessTopic() {
   const { topicId } = useParams()
@@ -32,7 +34,7 @@ export default function AwarenessTopic() {
 
       <SpecialtyHospitals topic={topic} />
 
-      <h2 className="mt-10 text-xl font-semibold">About {topic.title.toLowerCase()}</h2>
+      <h2 className="mt-10 text-xl font-semibold">About {topic.title}</h2>
       <p className="mt-3 text-slate-700 dark:text-slate-300">{topic.overview}</p>
 
       {topic.sections.map((section) => (
@@ -67,15 +69,55 @@ export default function AwarenessTopic() {
   )
 }
 
+const INITIAL_COUNT = 12
+
 function SpecialtyHospitals({ topic }: { topic: Topic }) {
-  const hospitals = useTopicHospitals(topic.id)
+  const [draft, setDraft] = useState('')
+  const [location, setLocation] = useState('')
+  const [showAll, setShowAll] = useState(false)
+  const hospitals = useTopicHospitals(topic.id, location)
+
+  const search = (event: FormEvent) => {
+    event.preventDefault()
+    setLocation(draft.trim())
+    setShowAll(false)
+  }
+
+  const shown = showAll ? hospitals.data : hospitals.data?.slice(0, INITIAL_COUNT)
 
   return (
     <section className="mt-8">
-      <h2 className="text-xl font-semibold">Specialty hospitals</h2>
+      <h2 className="text-xl font-semibold">Hospitals In Wisconsin</h2>
       <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
-        Open a hospital to join its community and share suggestions with others.
+        Open a hospital to join its {topic.title.toLowerCase()} community and share suggestions with others.
       </p>
+
+      <form onSubmit={search} className="mt-4 flex gap-2" role="search">
+        <label htmlFor="hospital-location" className="sr-only">
+          City or ZIP code
+        </label>
+        <Input
+          id="hospital-location"
+          value={draft}
+          onChange={(e) => setDraft(e.target.value)}
+          placeholder="City or ZIP code, e.g. Madison or 53703"
+          maxLength={100}
+        />
+        <Button type="submit">Search</Button>
+        {location && (
+          <Button
+            type="button"
+            variant="secondary"
+            onClick={() => {
+              setDraft('')
+              setLocation('')
+            }}
+          >
+            Clear
+          </Button>
+        )}
+      </form>
+
       {hospitals.isPending ? (
         <div className="mt-4 flex justify-center" aria-label="Loading">
           <div className="h-6 w-6 animate-spin rounded-full border-4 border-accent-soft border-t-accent" />
@@ -85,24 +127,40 @@ function SpecialtyHospitals({ topic }: { topic: Topic }) {
           <ErrorBanner message={errorMessage(hospitals.error)} />
         </div>
       ) : hospitals.data.length === 0 ? (
-        <p className="mt-4 text-sm text-slate-500 dark:text-slate-400">No hospitals listed for this topic yet.</p>
+        <p className="mt-4 text-sm text-slate-500 dark:text-slate-400">No hospitals found{location && ` near ${location}`}.</p>
       ) : (
-        <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-          {hospitals.data.map((hospital) => (
-            <li key={hospital.id}>
-              <Link
-                to={`/general/awareness/${topic.id}/hospitals/${hospital.id}`}
-                className="group block h-full rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-accent hover:shadow-md focus:ring-2 focus:ring-accent/30 focus:outline-none dark:border-slate-800 dark:bg-[#172220]"
-              >
-                <span className="block font-semibold group-hover:text-accent dark:group-hover:text-teal-300">{hospital.name}</span>
-                <span className="mt-0.5 block text-sm text-slate-500 dark:text-slate-400">
-                  {hospital.specialty} · {hospital.city}, {hospital.state}
-                </span>
-                <span className="mt-3 block text-sm font-medium text-accent dark:text-teal-300">Join the community →</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <>
+          <p className="mt-4 text-sm text-slate-500 dark:text-slate-400">
+            {hospitals.data.length} hospital{hospitals.data.length === 1 ? '' : 's'}
+            {location && ` near ${location}`}, highest rated first
+          </p>
+          <ul className={`mt-2 grid gap-3 transition-opacity sm:grid-cols-2 ${hospitals.isFetching ? 'opacity-60' : ''}`}>
+            {shown!.map((hospital) => (
+              <li key={hospital.id}>
+                <Link
+                  to={`/general/awareness/${topic.id}/hospitals/${hospital.id}`}
+                  className="group block h-full rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-accent hover:shadow-md focus:ring-2 focus:ring-accent/30 focus:outline-none dark:border-slate-800 dark:bg-[#172220]"
+                >
+                  <span className="block font-semibold group-hover:text-accent dark:group-hover:text-teal-300">{hospital.name}</span>
+                  <span className="mt-0.5 block text-sm text-slate-500 dark:text-slate-400">
+                    {hospitalTypeLabel(hospital.hospitalType)} · {hospital.city}
+                  </span>
+                  <span className="mt-2 flex items-center justify-between gap-2">
+                    <StarRating rating={hospital.starRating} />
+                    <span className="text-sm font-medium text-accent dark:text-teal-300">Join the community →</span>
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          {!showAll && hospitals.data.length > INITIAL_COUNT && (
+            <div className="mt-4 text-center">
+              <Button type="button" variant="secondary" onClick={() => setShowAll(true)}>
+                Show all {hospitals.data.length} hospitals
+              </Button>
+            </div>
+          )}
+        </>
       )}
     </section>
   )

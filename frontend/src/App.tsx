@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 import { Navigate, Route, Routes } from 'react-router'
 import { RedirectIfSignedIn, RequireAuth } from './auth/AuthProvider'
 import AppLayout from './components/AppLayout'
+import GeneralLayout from './components/GeneralLayout'
 import PlainLayout from './components/PlainLayout'
 import { FEATURES } from './features'
 import Awareness from './pages/Awareness'
@@ -11,6 +12,7 @@ import ComingSoon from './pages/ComingSoon'
 import AwarenessTopic from './pages/general/AwarenessTopic'
 import AwarenessTopics from './pages/general/AwarenessTopics'
 import GeneralHome from './pages/general/GeneralHome'
+import HealthProfile from './pages/general/HealthProfile'
 import HospitalForum from './pages/general/HospitalForum'
 import HealthAlerts from './pages/HealthAlerts'
 import Onboarding from './pages/Onboarding'
@@ -28,28 +30,35 @@ const FEATURE_PAGES: Record<string, ReactNode> = {
   '/health-alerts': <HealthAlerts />,
 }
 
+/** General panels with their own pages (routed explicitly below); the rest show "coming soon". */
+const BUILT_GENERAL_PANELS = ['/general/awareness', '/general/health-profile']
+
 export default function App() {
   return (
     <Routes>
       <Route path="/signin" element={<RedirectIfSignedIn><SignIn /></RedirectIfSignedIn>} />
       <Route path="/signup" element={<RedirectIfSignedIn><SignUp /></RedirectIfSignedIn>} />
       <Route path="/onboarding" element={<RequireAuth><Onboarding /></RequireAuth>} />
-      {/* The home screen, General and Women: no navbar, no pet onboarding. */}
+      {/* The home screen and Women: no navbar, no pet onboarding. */}
       <Route path="/" element={<RequireAuth><SectionsHome /></RequireAuth>} />
       <Route element={<RequireAuth><PlainLayout /></RequireAuth>}>
+        {SECTIONS.filter((section) => section.path === '/women').map((section) => (
+          <Route key={section.path} path={section.path} element={<ComingSoon feature={section} backTo="/" backLabel="Back" />} />
+        ))}
+      </Route>
+      {/* General: navbar, no pet onboarding. */}
+      <Route element={<RequireAuth><GeneralLayout /></RequireAuth>}>
         <Route path="/general" element={<GeneralHome />} />
         <Route path="/general/awareness" element={<AwarenessTopics />} />
         <Route path="/general/awareness/:topicId" element={<AwarenessTopic />} />
         <Route path="/general/awareness/:topicId/hospitals/:hospitalId" element={<HospitalForum />} />
-        {GENERAL_PANELS.filter((panel) => panel.path !== '/general/awareness').map((panel) => (
+        <Route path="/general/health-profile" element={<HealthProfile />} />
+        {GENERAL_PANELS.filter((panel) => !BUILT_GENERAL_PANELS.includes(panel.path)).map((panel) => (
           <Route
             key={panel.path}
             path={panel.path}
             element={<ComingSoon feature={panel} backTo="/general" backLabel="Back to General" />}
           />
-        ))}
-        {SECTIONS.filter((section) => section.path === '/women').map((section) => (
-          <Route key={section.path} path={section.path} element={<ComingSoon feature={section} backTo="/" backLabel="Back" />} />
         ))}
       </Route>
       {/* Pets: navbar, and AppLayout sends people who haven't onboarded to /onboarding. */}

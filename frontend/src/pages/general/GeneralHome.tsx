@@ -7,7 +7,7 @@ export default function GeneralHome() {
       <Link to="/" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
         ← Back
       </Link>
-      <h1 className="mt-4 text-3xl font-semibold">General health</h1>
+      <h1 className="mt-4 text-3xl font-semibold">General Health</h1>
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
         {GENERAL_PANELS.map((panel) => (
           <Link
