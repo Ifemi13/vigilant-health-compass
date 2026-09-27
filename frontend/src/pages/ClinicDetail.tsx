@@ -1,3 +1,4 @@
+import { InformationFilled } from '@mingcute/react/core-filled'
 import { useState, type FormEvent } from 'react'
 import { Link, useLocation, useParams, useSearchParams } from 'react-router'
 import SpeciesToggle from '../components/SpeciesToggle'
@@ -73,7 +74,12 @@ export default function ClinicDetail() {
         </div>
         {c.organization !== c.name && <p className="mt-1 text-sm">{c.organization}</p>}
         <p className="mt-1 text-slate-500 dark:text-slate-400">{c.address ?? `${c.city}, ${c.state}`}</p>
-        {c.eligibility && <p className="mt-3 text-sm text-slate-600 dark:text-slate-300">ℹ️ {c.eligibility}</p>}
+        {c.eligibility && (
+          <p className="mt-3 flex items-start gap-1.5 text-sm text-slate-600 dark:text-slate-300">
+            <InformationFilled size={16} className="mt-0.5 shrink-0" />
+            {c.eligibility}
+          </p>
+        )}
         {c.sourceUrl && (
           <a
             href={c.sourceUrl}

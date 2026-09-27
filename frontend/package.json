@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",
+    "@mingcute/react": "^3.0.2",
     "@supabase/supabase-js": "^2.109.0",
     "@tanstack/react-query": "^5.104.0",
     "react": "^19.2.8",

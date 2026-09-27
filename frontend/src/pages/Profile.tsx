@@ -1,3 +1,4 @@
+import { PawFilled } from '@mingcute/react/core-filled'
 import { useQueryClient } from '@tanstack/react-query'
 import type { ReactNode } from 'react'
 import { useLocation, useNavigate } from 'react-router'
@@ -60,7 +61,14 @@ export default function Profile() {
 function PetCard({ pet }: { pet: Pet }) {
   const sex = { MALE: 'Male', FEMALE: 'Female', UNKNOWN: 'Unknown' }[pet.sex]
   return (
-    <Card title={`🐾 ${pet.name}`}>
+    <Card
+      title={
+        <span className="inline-flex items-center gap-2">
+          <PawFilled size={20} className="text-accent dark:text-teal-300" />
+          {pet.name}
+        </span>
+      }
+    >
       <Row label="Species" value={[pet.species, pet.breed].filter(Boolean).join(' · ')} />
       <Row label="Sex" value={`${sex}${pet.neutered ? ' (spayed/neutered)' : ''}`} />
       <Row label="Age" value={pet.birthDate ? formatAge(pet.birthDate) : null} />
@@ -72,7 +80,7 @@ function PetCard({ pet }: { pet: Pet }) {
   )
 }
 
-function Card({ title, children }: { title: string; children: ReactNode }) {
+function Card({ title, children }: { title: ReactNode; children: ReactNode }) {
   return (
     <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#172220]">
       <h2 className="mb-4 text-lg font-semibold">{title}</h2>

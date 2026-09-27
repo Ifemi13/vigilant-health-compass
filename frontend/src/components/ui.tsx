@@ -1,8 +1,14 @@
+import { CompassFilled } from '@mingcute/react/core-filled'
 import type { ButtonHTMLAttributes, InputHTMLAttributes, ReactNode, SelectHTMLAttributes, TextareaHTMLAttributes } from 'react'
 import { forwardRef } from 'react'
 
 export function Logo() {
-  return <span className="text-lg font-bold text-accent dark:text-teal-300">🧭 Vigilant Health Compass</span>
+  return (
+    <span className="inline-flex items-center gap-1.5 text-lg font-bold text-accent dark:text-teal-300">
+      <CompassFilled size={22} />
+      Vigilant Health Compass
+    </span>
+  )
 }
 
 /** Centered card used by the sign-in, sign-up and onboarding screens. */

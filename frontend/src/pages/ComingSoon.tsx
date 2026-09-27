@@ -17,8 +17,8 @@ export default function ComingSoon({
         ← {backLabel}
       </Link>
       <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-10 text-center dark:border-slate-800 dark:bg-[#172220]">
-        <span className="text-5xl" aria-hidden>
-          {feature.icon}
+        <span className="inline-flex text-accent dark:text-teal-300" aria-hidden>
+          <feature.icon size={48} />
         </span>
         <h1 className="mt-4 text-2xl font-semibold">{feature.title}</h1>
         <p className="mt-2 text-slate-500 dark:text-slate-400">{feature.description}</p>

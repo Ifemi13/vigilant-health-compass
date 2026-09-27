@@ -1,3 +1,4 @@
+import { Book2Filled } from '@mingcute/react/core-filled'
 import { Link } from 'react-router'
 import { AWARENESS_TOPICS } from '../../content/awarenessTopics'
 
@@ -7,7 +8,10 @@ export default function AwarenessTopics() {
       <Link to="/general" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
         ← Back to General
       </Link>
-      <h1 className="mt-4 text-3xl font-semibold">📚 Awareness</h1>
+      <h1 className="mt-4 flex items-center gap-3 text-3xl font-semibold">
+        <Book2Filled size={32} className="shrink-0 text-accent dark:text-teal-300" />
+        Awareness
+      </h1>
       <p className="mt-2 text-slate-600 dark:text-slate-400">Short, trusted guides to common health topics.</p>
       <ul className="mt-8 grid gap-3 sm:grid-cols-2">
         {AWARENESS_TOPICS.map((topic) => (
@@ -16,8 +20,8 @@ export default function AwarenessTopics() {
               to={`/general/awareness/${topic.id}`}
               className="group flex h-full gap-4 rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-accent hover:shadow-md focus:ring-2 focus:ring-accent/30 focus:outline-none dark:border-slate-800 dark:bg-[#172220]"
             >
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-2xl dark:bg-accent/20" aria-hidden>
-                {topic.icon}
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-accent dark:text-teal-300 dark:bg-accent/20" aria-hidden>
+                <topic.icon size={24} />
               </span>
               <span>
                 <span className="block font-semibold group-hover:text-accent dark:group-hover:text-teal-300">{topic.title}</span>

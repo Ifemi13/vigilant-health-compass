@@ -1,3 +1,4 @@
+import { MapPinFilled } from '@mingcute/react/core-filled'
 import { useState, type FormEvent } from 'react'
 import { Link, useSearchParams } from 'react-router'
 import StarRating from '../../components/StarRating'
@@ -84,7 +85,10 @@ export default function HealthcareNearMe() {
       <Link to="/general" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
         ← Back to General
       </Link>
-      <h1 className="mt-4 text-3xl font-semibold">📍 Healthcare Near Me</h1>
+      <h1 className="mt-4 flex items-center gap-3 text-3xl font-semibold">
+        <MapPinFilled size={32} className="shrink-0 text-accent dark:text-teal-300" />
+        Healthcare Near Me
+      </h1>
       <p className="mt-2 text-slate-600 dark:text-slate-400">Find hospitals and community health clinics in Wisconsin.</p>
 
       <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-[#172220]">
@@ -102,7 +106,13 @@ export default function HealthcareNearMe() {
           />
           <Button type="submit">Search</Button>
           <Button type="button" variant="secondary" onClick={useMyLocation} disabled={locating}>
-            {locating ? 'Locating…' : '📍 Use my location'}
+            {locating ? (
+              'Locating…'
+            ) : (
+              <span className="inline-flex items-center gap-1.5">
+                <MapPinFilled size={16} /> Use my location
+              </span>
+            )}
           </Button>
         </form>
         <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-3">

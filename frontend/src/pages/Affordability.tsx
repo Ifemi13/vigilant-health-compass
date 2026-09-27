@@ -1,3 +1,4 @@
+import { InformationFilled, PigMoneyFilled } from '@mingcute/react/core-filled'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm, useWatch } from 'react-hook-form'
 import { Link, useLocation, useSearchParams } from 'react-router'
@@ -73,7 +74,10 @@ export default function Affordability() {
       <Link to="/pets" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
         ← Back to Pets
       </Link>
-      <h1 className="mt-4 text-3xl font-semibold">💰 Affordability</h1>
+      <h1 className="mt-4 flex items-center gap-3 text-3xl font-semibold">
+        <PigMoneyFilled size={32} className="shrink-0 text-accent dark:text-teal-300" />
+        Affordability
+      </h1>
       <p className="mt-2 text-slate-600 dark:text-slate-400">
         Compare prices posted by Wisconsin vet clinics, shelters and low-cost clinics.
       </p>
@@ -271,7 +275,12 @@ function ClinicCard({ clinic, species }: { clinic: Clinic; species: Species }) {
         ))}
       </ul>
 
-      {clinic.eligibility && <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">ℹ️ {clinic.eligibility}</p>}
+      {clinic.eligibility && (
+        <p className="mt-3 flex items-start gap-1.5 text-xs text-slate-500 dark:text-slate-400">
+          <InformationFilled size={14} className="mt-px shrink-0" />
+          {clinic.eligibility}
+        </p>
+      )}
 
       <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
         {clinic.sourceUrl && (

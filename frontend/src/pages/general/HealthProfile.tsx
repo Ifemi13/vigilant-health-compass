@@ -1,3 +1,4 @@
+import { ClipboardFilled } from '@mingcute/react/core-filled'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
@@ -56,7 +57,10 @@ export default function HealthProfile() {
   return (
     <>
       {backLink}
-      <h1 className="mt-4 text-3xl font-semibold">📋 Health Profile</h1>
+      <h1 className="mt-4 flex items-center gap-3 text-3xl font-semibold">
+        <ClipboardFilled size={32} className="shrink-0 text-accent dark:text-teal-300" />
+        Health Profile
+      </h1>
       <p className="mt-2 text-slate-600 dark:text-slate-400">
         Your age and sex are shown next to your posts in hospital communities. Everything else stays private to you.
       </p>

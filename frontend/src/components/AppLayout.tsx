@@ -1,3 +1,4 @@
+import { PawFilled } from '@mingcute/react/core-filled'
 import { Navigate, Outlet } from 'react-router'
 import { errorMessage } from '../lib/api'
 import { useMe } from '../lib/profile'
@@ -13,7 +14,7 @@ export default function AppLayout() {
 
   return (
     <div className="min-h-svh">
-      <Navbar section={{ to: '/pets', label: 'Veterinary', icon: '🐾' }} />
+      <Navbar section={{ to: '/pets', label: 'Veterinary', icon: PawFilled }} />
       <main className="mx-auto max-w-4xl px-4 py-10">
         {me.isError ? (
           <>

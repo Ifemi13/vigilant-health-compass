@@ -18,7 +18,7 @@ export default function AwarenessTopic() {
         ← All topics
       </Link>
       <h1 className="mt-4 flex items-center gap-3 text-3xl font-semibold">
-        <span aria-hidden>{topic.icon}</span>
+        <topic.icon size={32} className="shrink-0 text-accent dark:text-teal-300" />
         {topic.title}
       </h1>
 

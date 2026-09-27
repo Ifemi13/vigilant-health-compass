@@ -1,12 +1,13 @@
 import { Link, NavLink } from 'react-router'
 import { useAuth } from '../auth/useAuth'
+import type { IconComponent } from '../features'
 import { Logo } from './ui'
 
 /** The section a navbar belongs to, e.g. Pets or General; its link is highlighted on that section's home. */
 export interface NavSection {
   to: string
   label: string
-  icon: string
+  icon: IconComponent
 }
 
 /** Top bar shared by the Pets and General sections: logo (to the home screen), section link, Profile. */
@@ -29,7 +30,7 @@ export default function Navbar({ section }: { section: NavSection }) {
             }`
           }
         >
-          <span aria-hidden>{section.icon}</span>
+          <section.icon size={18} />
           {section.label}
         </NavLink>
         <NavLink

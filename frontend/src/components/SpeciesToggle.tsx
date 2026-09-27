@@ -1,3 +1,4 @@
+import { CatFilled, DogFilled } from '@mingcute/react/core-filled'
 import { SPECIES_LABELS, type Species } from '../lib/clinics'
 
 /** Dog / Cat segmented control. */
@@ -13,11 +14,12 @@ export default function SpeciesToggle({ value, onChange }: { value: Species; onC
             role="radio"
             aria-checked={selected}
             onClick={() => onChange(species)}
-            className={`rounded-md px-4 py-1.5 text-sm font-medium transition-colors focus:ring-2 focus:ring-accent/30 focus:outline-none ${
+            className={`inline-flex items-center gap-1.5 rounded-md px-4 py-1.5 text-sm font-medium transition-colors focus:ring-2 focus:ring-accent/30 focus:outline-none ${
               selected ? 'bg-accent text-white' : 'text-slate-600 hover:text-accent dark:text-slate-300 dark:hover:text-teal-300'
             }`}
           >
-            {species === 'dog' ? '🐶' : '🐱'} {SPECIES_LABELS[species]}
+            {species === 'dog' ? <DogFilled size={16} /> : <CatFilled size={16} />}
+            {SPECIES_LABELS[species]}
           </button>
         )
       })}

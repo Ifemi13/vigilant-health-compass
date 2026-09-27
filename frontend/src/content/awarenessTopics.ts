@@ -1,3 +1,18 @@
+import {
+  AppleFruitFilled,
+  BrainFilled,
+  CapsuleFilled,
+  DropFilled,
+  HeartFilled,
+  InjectionFilled,
+  LungsFilled,
+  SearchFilled,
+  UserHeartFilled,
+  VirusFilled,
+} from '@mingcute/react/core-filled'
+import RibbonHealthIcon from '../components/RibbonHealthIcon'
+import type { IconComponent } from '../features'
+
 /**
  * General-audience health awareness topics (General → Awareness).
  *
@@ -15,7 +30,7 @@ export interface AwarenessTopic {
   /** URL slug. */
   id: string
   title: string
-  icon: string
+  icon: IconComponent
   /** One line, shown in the topic list. */
   summary: string
   overview: string
@@ -29,7 +44,7 @@ export const AWARENESS_TOPICS: AwarenessTopic[] = [
   {
     id: 'cardiovascular-health',
     title: 'Cardiovascular Health',
-    icon: '❤️',
+    icon: HeartFilled,
     summary: 'Heart disease and stroke: know the warning signs and lower your risk.',
     overview:
       'Heart disease is the leading cause of death in the United States. Many of its risk factors, like high blood pressure, high cholesterol, smoking, diabetes and inactivity, can be managed, which lowers the chance of a heart attack or stroke.',
@@ -75,7 +90,7 @@ export const AWARENESS_TOPICS: AwarenessTopic[] = [
   {
     id: 'diabetes',
     title: 'Diabetes',
-    icon: '🩸',
+    icon: DropFilled,
     summary: 'High blood sugar: spot the signs early and prevent type 2 diabetes.',
     overview:
       "Diabetes affects how your body turns food into energy, leaving too much sugar in the blood. Type 2 is the most common kind and can often be prevented or delayed. Prediabetes usually has no symptoms, so many people don't know they have it.",
@@ -120,7 +135,7 @@ export const AWARENESS_TOPICS: AwarenessTopic[] = [
   {
     id: 'cancer-awareness',
     title: 'Cancer Awareness',
-    icon: '🎗️',
+    icon: RibbonHealthIcon,
     summary: 'Changes worth checking, and the habits and screenings that lower risk.',
     overview:
       'Cancer is a group of diseases in which abnormal cells grow out of control. Not using tobacco, protecting your skin, some vaccines and recommended screenings can lower your risk or find cancer early, when it is easier to treat.',
@@ -166,7 +181,7 @@ export const AWARENESS_TOPICS: AwarenessTopic[] = [
   {
     id: 'respiratory-health',
     title: 'Respiratory Health',
-    icon: '🫁',
+    icon: LungsFilled,
     summary: 'Asthma, COPD and lung infections: protect your lungs and breathe easier.',
     overview:
       'Your lungs can be affected by long-term conditions like asthma and COPD, and by infections such as flu, COVID-19 and pneumonia. Smoking, air pollution, radon and some workplace exposures damage the lungs over time.',
@@ -211,7 +226,7 @@ export const AWARENESS_TOPICS: AwarenessTopic[] = [
   {
     id: 'mental-wellness',
     title: 'Mental Wellness',
-    icon: '🧠',
+    icon: BrainFilled,
     summary: 'Depression, anxiety and stress are common and treatable. Help is available.',
     overview:
       'Mental health affects how we think, feel and act. Depression and anxiety are common and treatable, and reaching out for help is a sign of strength, not weakness.',
@@ -256,7 +271,7 @@ export const AWARENESS_TOPICS: AwarenessTopic[] = [
   {
     id: 'infectious-diseases',
     title: 'Infectious Diseases',
-    icon: '🦠',
+    icon: VirusFilled,
     summary: 'How germs spread, and simple steps that stop most infections.',
     overview:
       'Infectious diseases are caused by germs such as viruses, bacteria, fungi and parasites. They can spread from person to person, through food and water, or through insects and animals. Vaccines, handwashing and staying home when sick prevent many of them.',
@@ -302,7 +317,7 @@ export const AWARENESS_TOPICS: AwarenessTopic[] = [
   {
     id: 'nutrition',
     title: 'Nutrition',
-    icon: '🥗',
+    icon: AppleFruitFilled,
     summary: 'Everyday eating patterns that support energy and long-term health.',
     overview:
       'What you eat affects your energy and your risk of heart disease, type 2 diabetes and some cancers. There is no single perfect diet; your overall eating pattern over time matters most.',
@@ -347,7 +362,7 @@ export const AWARENESS_TOPICS: AwarenessTopic[] = [
   {
     id: 'preventive-screening',
     title: 'Preventive Screening',
-    icon: '🔍',
+    icon: SearchFilled,
     summary: 'Tests that find problems early, before you have symptoms.',
     overview:
       'Screening tests look for disease before you have symptoms, when it is often easier to treat. Which tests you need depends on your age, sex, family history and other risks.',
@@ -394,7 +409,7 @@ export const AWARENESS_TOPICS: AwarenessTopic[] = [
   {
     id: 'vaccinations',
     title: 'Vaccinations',
-    icon: '💉',
+    icon: InjectionFilled,
     summary: 'Adults need vaccines too. Find out which ones are right for you.',
     overview:
       'Vaccines train your immune system to fight specific infections. Adults need them too: some every year, like the flu shot, and some as boosters. Which ones you need depends on your age, health, job, travel and whether you are pregnant.',
@@ -435,7 +450,7 @@ export const AWARENESS_TOPICS: AwarenessTopic[] = [
   {
     id: 'medication-safety',
     title: 'Medication Safety',
-    icon: '💊',
+    icon: CapsuleFilled,
     summary: 'Take, store and dispose of medicines safely, and avoid mix-ups.',
     overview:
       'Medicines help when used correctly, but mistakes, interactions and taking too much send many people to the emergency room each year. A few habits make them much safer.',
@@ -483,7 +498,7 @@ export const AWARENESS_TOPICS: AwarenessTopic[] = [
   {
     id: 'aging-senior-health',
     title: 'Aging / Senior Health',
-    icon: '👵',
+    icon: UserHeartFilled,
     summary: 'Staying active, independent and safe as you get older.',
     overview:
       'Healthy habits at any age help older adults stay active, independent and connected. Regular checkups matter more with age, as the risks of falls, memory changes, and vision and hearing loss go up.',
