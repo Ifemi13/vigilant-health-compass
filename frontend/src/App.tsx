@@ -2,7 +2,9 @@ import { Navigate, Route, Routes } from 'react-router'
 import { RedirectIfSignedIn, RequireAuth } from './auth/AuthProvider'
 import AppLayout from './components/AppLayout'
 import { FEATURES } from './features'
+import Awareness from './pages/Awareness'
 import ComingSoon from './pages/ComingSoon'
+import HealthAlerts from './pages/HealthAlerts'
 import Home from './pages/Home'
 import Onboarding from './pages/Onboarding'
 import Profile from './pages/Profile'
@@ -18,7 +20,9 @@ export default function App() {
       <Route element={<RequireAuth><AppLayout /></RequireAuth>}>
         <Route index element={<Home />} />
         <Route path="/profile" element={<Profile />} />
-        {FEATURES.map((feature) => (
+        <Route path="/awareness" element={<Awareness />} />
+        <Route path="/health-alerts" element={<HealthAlerts />} />
+        {FEATURES.filter((feature) => feature.path !== '/awareness' && feature.path !== '/health-alerts').map((feature) => (
           <Route key={feature.path} path={feature.path} element={<ComingSoon feature={feature} />} />
         ))}
       </Route>

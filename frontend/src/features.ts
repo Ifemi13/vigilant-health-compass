@@ -16,7 +16,7 @@ export const FEATURES: Feature[] = [
   {
     path: '/health-alerts',
     title: 'Health alert',
-    description: 'Outbreaks, recalls and warnings that may affect your pet.',
+    description: 'Recent Madison-area notices about risks that may affect pets.',
     icon: '🚨',
   },
   {
