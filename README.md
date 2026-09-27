@@ -1,6 +1,5 @@
 # Vigilant Health Compass
-https://canvas.wisc.edu/
-A pet-health app for pet guardians and vets.
+A website for people to track their health care with transparency and affordability.
 
 | Part | Stack |
 |---|---|
