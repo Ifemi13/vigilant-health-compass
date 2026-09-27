@@ -28,8 +28,8 @@ export const FEATURES: Feature[] = [
   },
   {
     path: '/appointments',
-    title: 'Appointment',
-    description: 'Book and keep track of vet visits.',
+    title: 'Appointments',
+    description: 'Book vet visits, keep track of appointments, and get wellness reminders.',
     icon: CalendarFilled,
   },
   {

@@ -7,6 +7,7 @@ import PlainLayout from './components/PlainLayout'
 import { FEATURES } from './features'
 import Awareness from './pages/Awareness'
 import Affordability from './pages/Affordability'
+import MockAppointments from './pages/MockAppointments'
 import ClinicDetail from './pages/ClinicDetail'
 import ComingSoon from './pages/ComingSoon'
 import AwarenessTopic from './pages/general/AwarenessTopic'
@@ -27,6 +28,7 @@ import { GENERAL_PANELS, SECTIONS } from './sections'
 /** Home-page sections that have been built; the rest show a "coming soon" page. */
 const FEATURE_PAGES: Record<string, ReactNode> = {
   '/affordability': <Affordability />,
+  '/appointments': <MockAppointments />,
   '/awareness': <Awareness />,
   '/health-alerts': <HealthAlerts />,
 }
