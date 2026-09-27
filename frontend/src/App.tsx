@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import { lazy, Suspense, type ReactNode } from 'react'
 import { Navigate, Route, Routes } from 'react-router'
 import { RedirectIfSignedIn, RequireAuth } from './auth/AuthProvider'
 import AppLayout from './components/AppLayout'
@@ -23,7 +23,10 @@ import Profile from './pages/Profile'
 import SignIn from './pages/SignIn'
 import SectionsHome from './pages/SectionsHome'
 import SignUp from './pages/SignUp'
-import { GENERAL_PANELS, SECTIONS } from './sections'
+import { FullPageSpinner } from './components/ui'
+
+const WomensCare = lazy(() => import('./pages/WomensCare'))
+import { GENERAL_PANELS } from './sections'
 
 /** Home-page sections that have been built; the rest show a "coming soon" page. */
 const FEATURE_PAGES: Record<string, ReactNode> = {
@@ -45,9 +48,7 @@ export default function App() {
       {/* The home screen and Women: no navbar, no pet onboarding. */}
       <Route path="/" element={<RequireAuth><SectionsHome /></RequireAuth>} />
       <Route element={<RequireAuth><PlainLayout /></RequireAuth>}>
-        {SECTIONS.filter((section) => section.path === '/women').map((section) => (
-          <Route key={section.path} path={section.path} element={<ComingSoon feature={section} backTo="/" backLabel="Back" />} />
-        ))}
+        <Route path="/women" element={<Suspense fallback={<FullPageSpinner />}><WomensCare /></Suspense>} />
       </Route>
       {/* General: navbar, no pet onboarding. */}
       <Route element={<RequireAuth><GeneralLayout /></RequireAuth>}>
