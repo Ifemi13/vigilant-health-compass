@@ -41,7 +41,8 @@ export default function SignUp() {
       setConfirmEmailSentTo(email)
       return
     }
-    navigate('/onboarding', { replace: true })
+    // Pet onboarding happens when they first open the Pets section.
+    navigate('/', { replace: true })
   }
 
   if (confirmEmailSentTo) {

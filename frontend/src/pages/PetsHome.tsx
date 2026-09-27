@@ -2,16 +2,14 @@ import { Link } from 'react-router'
 import { FEATURES } from '../features'
 import { useMe } from '../lib/profile'
 
-export default function Home() {
+export default function PetsHome() {
   const { data: me } = useMe()
 
   return (
     <>
-      <h1 className="text-3xl font-semibold">Veterinary care</h1>
+      <h1 className="text-3xl font-semibold">Welcome 👋</h1>
       <p className="mt-2 text-slate-600 dark:text-slate-400">
-        {me?.role === 'VET'
-          ? 'Choose a section to support your patients and clients.'
-          : 'Choose a section to find information and support for your pet.'}
+        {me?.role === 'VET' ? 'What would you like to do today?' : 'How can we help you care for your pet today?'}
       </p>
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
         {FEATURES.map((feature) => (

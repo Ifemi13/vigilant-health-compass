@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Navigate } from 'react-router'
+import { Link, Navigate } from 'react-router'
 import { AuthCard, Button, ErrorBanner, FullPageSpinner } from '../components/ui'
 import { errorMessage } from '../lib/api'
 import { useMe, type Role } from '../lib/profile'
@@ -16,7 +16,7 @@ export default function Onboarding() {
   const [role, setRole] = useState<Role | null>(null)
 
   if (me.isPending) return <FullPageSpinner />
-  if (me.data) return <Navigate to="/" replace />
+  if (me.data) return <Navigate to="/pets" replace />
 
   if (me.isError) {
     return (
@@ -48,6 +48,9 @@ export default function Onboarding() {
           </button>
         ))}
       </div>
+      <Link to="/" className="mt-6 inline-block text-sm font-medium text-accent hover:underline dark:text-teal-300">
+        ← Back
+      </Link>
     </AuthCard>
   )
 }

@@ -1,12 +1,20 @@
 import { Link } from 'react-router'
 import type { Feature } from '../features'
 
-/** Placeholder for a home-page section that hasn't been built yet. */
-export default function ComingSoon({ feature }: { feature: Feature }) {
+/** Placeholder for a section or pet tile that hasn't been built yet. */
+export default function ComingSoon({
+  feature,
+  backTo = '/pets',
+  backLabel = 'Back to Pets',
+}: {
+  feature: Feature
+  backTo?: string
+  backLabel?: string
+}) {
   return (
     <>
-      <Link to="/" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
-        ← Back to home
+      <Link to={backTo} className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
+        ← {backLabel}
       </Link>
       <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-10 text-center dark:border-slate-800 dark:bg-[#172220]">
         <span className="text-5xl" aria-hidden>

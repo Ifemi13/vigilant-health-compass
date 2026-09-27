@@ -15,12 +15,12 @@ export function useSubmitOnboarding() {
     setError(null)
     try {
       await onboard.mutateAsync(body)
-      navigate('/', { replace: true })
+      navigate('/pets', { replace: true })
     } catch (e) {
       if (e instanceof ApiError && e.status === 409) {
         // Already onboarded (e.g. in another tab): just go home.
         await queryClient.invalidateQueries({ queryKey: ['me'] })
-        navigate('/', { replace: true })
+        navigate('/pets', { replace: true })
         return
       }
       setError(errorMessage(e))

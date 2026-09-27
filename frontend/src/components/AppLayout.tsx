@@ -16,11 +16,11 @@ export default function AppLayout() {
     <div className="min-h-svh">
       <header className="border-b border-slate-200 bg-white dark:border-slate-800 dark:bg-[#172220]">
         <nav className="mx-auto flex h-16 max-w-4xl items-center justify-between px-4">
-          <Link to="/" aria-label="Home">
+          <Link to="/" aria-label="Home screen">
             <Logo />
           </Link>
           <NavLink
-            to="/"
+            to="/pets"
             end
             className={({ isActive }) =>
               `flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium transition-colors hover:bg-accent-soft/60 dark:hover:bg-accent/20 ${

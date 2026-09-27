@@ -70,8 +70,8 @@ export default function Affordability() {
 
   return (
     <>
-      <Link to="/" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
-        ← Back to home
+      <Link to="/pets" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
+        ← Back to Pets
       </Link>
       <h1 className="mt-4 text-3xl font-semibold">💰 Affordability</h1>
       <p className="mt-2 text-slate-600 dark:text-slate-400">

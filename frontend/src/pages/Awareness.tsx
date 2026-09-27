@@ -27,7 +27,7 @@ const topics = [
 export default function Awareness() {
   return (
     <>
-      <Link to="/" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
+      <Link to="/pets" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
         ← Veterinary home
       </Link>
 
