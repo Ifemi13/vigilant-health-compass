@@ -193,10 +193,6 @@ function PriceEstimator({ tags, species }: { tags: PriceTag[]; species: Species 
         <span>
           <span className="mr-1 inline-block h-3 w-5 rounded-full border border-slate-400 align-middle" /> Clinic's posted price
         </span>
-        <span>
-          <span className="mr-1 inline-block h-3 w-5 rounded-full border border-dashed border-slate-400 align-middle" /> Not
-          posted by this clinic: priced at the national average
-        </span>
       </p>
 
       <div className="mt-4 space-y-4">
@@ -216,8 +212,6 @@ function PriceEstimator({ tags, species }: { tags: PriceTag[]; species: Species 
                     title={tag.source === 'average' ? `${tag.averageLabel} (not posted by this clinic)` : undefined}
                     onClick={() => toggle(tag.key)}
                     className={`rounded-full border px-3.5 py-1.5 text-sm transition-colors focus:ring-2 focus:ring-accent/30 focus:outline-none ${
-                      tag.source === 'average' ? 'border-dashed' : ''
-                    } ${
                       isSelected
                         ? 'border-accent bg-accent text-white'
                         : 'border-slate-300 bg-white hover:border-accent hover:text-accent dark:border-slate-700 dark:bg-transparent dark:hover:text-teal-300'

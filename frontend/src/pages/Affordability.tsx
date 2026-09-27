@@ -219,7 +219,7 @@ function Results({ search, procedure }: { search: ClinicSearch; procedure: Proce
           <ErrorBanner message={errorMessage(clinics.error)} />
         </div>
       ) : clinics.data.length === 0 ? (
-        <div className="mt-4 rounded-2xl border border-dashed border-slate-300 p-10 text-center text-sm text-slate-500 dark:border-slate-700 dark:text-slate-400">
+        <div className="mt-4 rounded-2xl border border-slate-300 p-10 text-center text-sm text-slate-500 dark:border-slate-700 dark:text-slate-400">
           No clinics match. Try widening the price range or clearing the location.
         </div>
       ) : (
