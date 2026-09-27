@@ -19,32 +19,43 @@ import jakarta.validation.constraints.Size;
 @RequestMapping("/api")
 public class ClinicController {
 
-	private final ClinicSearchRepository clinics;
+	private final ClinicRepository clinics;
 
-	public ClinicController(ClinicSearchRepository clinics) {
+	public ClinicController(ClinicRepository clinics) {
 		this.clinics = clinics;
 	}
 
 	/**
-	 * Clinics offering {@code service} priced between {@code minCost} and {@code maxCost} (inclusive), near
-	 * {@code location} (a ZIP code, a city, or "City, ST"), cheapest first.
+	 * Every standard procedure (both species) with reference prices and how many clinics price it.
+	 */
+	@GetMapping("/procedures")
+	public List<ProcedureView> procedures() {
+		return clinics.procedures();
+	}
+
+	/**
+	 * Clinics posting a price for {@code procedure} between {@code minCost} and {@code maxCost} (inclusive),
+	 * near {@code location} (a ZIP code, a city, or "City, ST"), cheapest first.
 	 */
 	@GetMapping("/clinics")
-	public List<ClinicResult> search(@RequestParam ServiceType service,
+	public List<ClinicView> search(@RequestParam @Size(max = 100) String procedure,
 			@RequestParam(required = false) @PositiveOrZero BigDecimal minCost,
 			@RequestParam(required = false) @PositiveOrZero BigDecimal maxCost,
 			@RequestParam(required = false) @Size(max = 100) String location) {
 		if (minCost != null && maxCost != null && minCost.compareTo(maxCost) > 0) {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "minCost must not be greater than maxCost");
 		}
-		return clinics.search(service, minCost, maxCost, LocationFilter.parse(location));
+		if (!clinics.procedureExists(procedure)) {
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Unknown procedure: " + procedure);
+		}
+		return clinics.search(procedure, minCost, maxCost, LocationFilter.parse(location));
 	}
 
 	/**
-	 * One clinic with all of its services and prices, or 404.
+	 * One clinic with every price it posted, or 404.
 	 */
 	@GetMapping("/clinics/{id}")
-	public ClinicDetail get(@PathVariable UUID id) {
+	public ClinicView get(@PathVariable UUID id) {
 		return clinics.findById(id)
 			.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Clinic not found"));
 	}

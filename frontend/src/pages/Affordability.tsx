@@ -1,18 +1,24 @@
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm } from 'react-hook-form'
+import { useForm, useWatch } from 'react-hook-form'
 import { Link, useLocation, useSearchParams } from 'react-router'
 import { z } from 'zod'
+import SpeciesToggle from '../components/SpeciesToggle'
 import { Button, ErrorBanner, Field, Input, Select } from '../components/ui'
 import { errorMessage } from '../lib/api'
 import {
-  formatPrice,
-  SERVICE_LABELS,
-  SERVICE_TYPES,
+  categoryLabel,
+  compareCategories,
+  formatPriceRange,
+  SPECIES_LABELS,
+  sourceHost,
   useClinicSearch,
-  type ClinicResult,
+  useProcedures,
+  type Clinic,
   type ClinicSearch,
-  type ServiceType,
+  type Procedure,
+  type Species,
 } from '../lib/clinics'
+import { useMe } from '../lib/profile'
 
 const MAX_COST = 100_000
 
@@ -23,7 +29,8 @@ const cost = z
 
 const schema = z
   .object({
-    service: z.enum(SERVICE_TYPES as [ServiceType, ...ServiceType[]]),
+    species: z.enum(['dog', 'cat']),
+    procedure: z.string().min(1, 'Choose a procedure'),
     minCost: cost,
     maxCost: cost,
     location: z.string().trim().max(100),
@@ -33,14 +40,13 @@ const schema = z
     message: 'Max must be at least the min',
   })
 
-const EMPTY_FILTERS: ClinicSearch = { service: 'EXAM', minCost: '', maxCost: '', location: '' }
-
 /** The search in the URL, or null before the first search. Filters live in the URL so they survive refresh. */
 function searchFromUrl(params: URLSearchParams): ClinicSearch | null {
-  const service = params.get('service')
-  if (!service) return null
+  const procedure = params.get('procedure')
+  if (!procedure) return null
   return {
-    service: SERVICE_TYPES.includes(service as ServiceType) ? (service as ServiceType) : 'EXAM',
+    species: params.get('species') === 'cat' ? 'cat' : 'dog',
+    procedure,
     minCost: params.get('minCost') ?? '',
     maxCost: params.get('maxCost') ?? '',
     location: params.get('location') ?? '',
@@ -50,6 +56,9 @@ function searchFromUrl(params: URLSearchParams): ClinicSearch | null {
 export default function Affordability() {
   const [searchParams, setSearchParams] = useSearchParams()
   const search = searchFromUrl(searchParams)
+  const procedures = useProcedures()
+  const { data: me } = useMe()
+  const petSpecies: Species = me?.pets[0]?.species.toLowerCase() === 'cat' ? 'cat' : 'dog'
 
   const onSearch = (filters: ClinicSearch) => {
     const next = new URLSearchParams()
@@ -65,27 +74,42 @@ export default function Affordability() {
         ← Back to home
       </Link>
       <h1 className="mt-4 text-3xl font-semibold">💰 Affordability</h1>
-      <p className="mt-2 text-slate-600 dark:text-slate-400">Find vet clinics that fit your budget near you.</p>
+      <p className="mt-2 text-slate-600 dark:text-slate-400">
+        Compare prices posted by Wisconsin vet clinics, shelters and low-cost clinics.
+      </p>
 
-      {/* Keyed on the URL so back/forward navigation refills the form with that search. */}
-      <FilterForm
-        key={searchParams.toString()}
-        initial={search ?? EMPTY_FILTERS}
-        onSearch={onSearch}
-        onClear={() => setSearchParams({})}
-      />
+      {procedures.isPending ? (
+        <div className="mt-10 flex justify-center" aria-label="Loading">
+          <div className="h-7 w-7 animate-spin rounded-full border-4 border-accent-soft border-t-accent" />
+        </div>
+      ) : procedures.isError ? (
+        <div className="mt-6">
+          <ErrorBanner message={errorMessage(procedures.error)} />
+        </div>
+      ) : (
+        // Keyed on the URL so back/forward navigation refills the form with that search.
+        <FilterForm
+          key={searchParams.toString()}
+          initial={search ?? { species: petSpecies, procedure: '', minCost: '', maxCost: '', location: '' }}
+          procedures={procedures.data}
+          onSearch={onSearch}
+          onClear={() => setSearchParams({})}
+        />
+      )}
 
-      {search && <Results search={search} />}
+      {search && <Results search={search} procedure={procedures.data?.find((p) => p.id === search.procedure)} />}
     </>
   )
 }
 
 function FilterForm({
   initial,
+  procedures,
   onSearch,
   onClear,
 }: {
   initial: ClinicSearch
+  procedures: Procedure[]
   onSearch: (filters: ClinicSearch) => void
   onClear: () => void
 }) {
@@ -93,11 +117,27 @@ function FilterForm({
     register,
     handleSubmit,
     reset,
+    setValue,
+    control,
     formState: { errors },
   } = useForm<ClinicSearch>({ resolver: zodResolver(schema), defaultValues: initial })
+  const species = useWatch({ control, name: 'species' })
+
+  // Only procedures some clinic has posted a price for, grouped by category.
+  const byCategory = new Map<string, Procedure[]>()
+  for (const p of procedures
+    .filter((p) => p.species === species && p.clinicCount > 0)
+    .sort((a, b) => compareCategories(a.category, b.category) || a.name.localeCompare(b.name))) {
+    byCategory.set(p.category, [...(byCategory.get(p.category) ?? []), p])
+  }
+
+  const changeSpecies = (next: Species) => {
+    setValue('species', next)
+    setValue('procedure', '') // procedures are per species
+  }
 
   const clear = () => {
-    reset(EMPTY_FILTERS)
+    reset({ species, procedure: '', minCost: '', maxCost: '', location: '' })
     onClear()
   }
 
@@ -109,12 +149,21 @@ function FilterForm({
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="sm:col-span-2">
-          <Field label="Service" error={errors.service?.message}>
-            <Select {...register('service')}>
-              {SERVICE_TYPES.map((service) => (
-                <option key={service} value={service}>
-                  {SERVICE_LABELS[service]}
-                </option>
+          <span className="mb-1 block text-sm font-medium">Pet</span>
+          <SpeciesToggle value={species} onChange={changeSpecies} />
+        </div>
+        <div className="sm:col-span-2">
+          <Field label="Procedure" error={errors.procedure?.message}>
+            <Select {...register('procedure')}>
+              <option value="">Choose…</option>
+              {[...byCategory].map(([category, list]) => (
+                <optgroup key={category} label={categoryLabel(category)}>
+                  {list.map((p) => (
+                    <option key={p.id} value={p.id}>
+                      {p.name} ({p.clinicCount} clinic{p.clinicCount === 1 ? '' : 's'})
+                    </option>
+                  ))}
+                </optgroup>
               ))}
             </Select>
           </Field>
@@ -131,8 +180,8 @@ function FilterForm({
           </div>
         </fieldset>
         <div className="sm:col-span-2">
-          <Field label="Location" error={errors.location?.message} hint='City, "City, ST" or ZIP code'>
-            <Input autoComplete="postal-code" placeholder="e.g. Madison, WI or 53703" {...register('location')} />
+          <Field label="Location" error={errors.location?.message} hint='City, "City, WI" or ZIP code'>
+            <Input autoComplete="postal-code" placeholder="e.g. Madison or 53719" {...register('location')} />
           </Field>
         </div>
       </div>
@@ -146,7 +195,7 @@ function FilterForm({
   )
 }
 
-function Results({ search }: { search: ClinicSearch }) {
+function Results({ search, procedure }: { search: ClinicSearch; procedure: Procedure | undefined }) {
   const clinics = useClinicSearch(search)
 
   return (
@@ -159,7 +208,7 @@ function Results({ search }: { search: ClinicSearch }) {
           </span>
         )}
       </h2>
-      <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{describe(search)}</p>
+      <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{describe(search, procedure)}</p>
 
       {clinics.isPending ? (
         <div className="mt-6 flex justify-center" aria-label="Loading">
@@ -176,7 +225,7 @@ function Results({ search }: { search: ClinicSearch }) {
       ) : (
         <ul className={`mt-4 space-y-3 transition-opacity ${clinics.isFetching ? 'opacity-60' : ''}`}>
           {clinics.data.map((clinic) => (
-            <ClinicCard key={clinic.id} clinic={clinic} service={search.service} />
+            <ClinicCard key={clinic.id} clinic={clinic} species={search.species} />
           ))}
         </ul>
       )}
@@ -184,18 +233,17 @@ function Results({ search }: { search: ClinicSearch }) {
   )
 }
 
-function ClinicCard({ clinic, service }: { clinic: ClinicResult; service: ServiceType }) {
+function ClinicCard({ clinic, species }: { clinic: Clinic; species: Species }) {
   const location = useLocation()
-  const otherServices = clinic.services.filter((s) => s.service !== service)
 
   return (
-    // The name link stretches over the whole card (after:inset-0); phone/website links sit above it (z-10).
+    // The name link stretches over the whole card (after:inset-0); the source link sits above it (z-10).
     <li className="relative rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-accent hover:shadow-md dark:border-slate-800 dark:bg-[#172220]">
       <div className="flex flex-wrap items-start justify-between gap-3">
-        <div>
+        <div className="min-w-0">
           <h3 className="font-semibold">
             <Link
-              to={`/affordability/clinics/${clinic.id}`}
+              to={`/affordability/clinics/${clinic.id}?species=${species}`}
               state={{ backTo: location.pathname + location.search }}
               className="after:absolute after:inset-0 after:rounded-2xl hover:text-accent focus:outline-none focus-visible:after:ring-2 focus-visible:after:ring-accent/40 dark:hover:text-teal-300"
             >
@@ -203,35 +251,37 @@ function ClinicCard({ clinic, service }: { clinic: ClinicResult; service: Servic
             </Link>
           </h3>
           <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400">
-            {clinic.addressLine}, {clinic.city}, {clinic.state} {clinic.postalCode}
+            {clinic.address ?? `${clinic.city}, ${clinic.state}`}
           </p>
         </div>
-        <p className="rounded-full bg-accent-soft px-3 py-1 text-sm whitespace-nowrap text-accent-strong dark:bg-accent/20 dark:text-teal-200">
-          {SERVICE_LABELS[service]} · <strong>{formatPrice(clinic.price)}</strong>
-        </p>
+        <span className="rounded-full border border-slate-200 px-2.5 py-0.5 text-xs text-slate-600 capitalize dark:border-slate-700 dark:text-slate-300">
+          {clinic.providerType}
+        </span>
       </div>
 
-      {otherServices.length > 0 && (
-        <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
-          Also offers:{' '}
-          {otherServices.map((s) => `${SERVICE_LABELS[s.service]} ${formatPrice(s.price)}`).join(' · ')}
-        </p>
-      )}
+      <ul className="mt-3 space-y-1">
+        {clinic.prices.map((price) => (
+          <li key={price.service} className="flex flex-wrap items-baseline justify-between gap-x-3 text-sm">
+            <span>
+              {price.service}
+              {price.note && <span className="text-xs text-slate-500 dark:text-slate-400"> · {price.note}</span>}
+            </span>
+            <span className="font-semibold text-accent-strong dark:text-teal-200">{formatPriceRange(price.price, price.priceHigh)}</span>
+          </li>
+        ))}
+      </ul>
+
+      {clinic.eligibility && <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">ℹ️ {clinic.eligibility}</p>}
 
       <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
-        {clinic.phone && (
-          <a href={`tel:${clinic.phone}`} className="relative z-10 text-accent hover:underline dark:text-teal-300">
-            {clinic.phone}
-          </a>
-        )}
-        {clinic.website && (
+        {clinic.sourceUrl && (
           <a
-            href={clinic.website}
+            href={clinic.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="relative z-10 text-accent hover:underline dark:text-teal-300"
           >
-            Website ↗
+            Source: {sourceHost(clinic.sourceUrl)} ↗
           </a>
         )}
         <span className="ml-auto font-medium text-accent dark:text-teal-300" aria-hidden>
@@ -242,11 +292,11 @@ function ClinicCard({ clinic, service }: { clinic: ClinicResult; service: Servic
   )
 }
 
-function describe({ service, minCost, maxCost, location }: ClinicSearch): string {
+function describe({ species, minCost, maxCost, location }: ClinicSearch, procedure: Procedure | undefined): string {
   let cost = 'any price'
   if (minCost && maxCost) cost = `$${minCost} – $${maxCost}`
   else if (minCost) cost = `$${minCost} and up`
   else if (maxCost) cost = `up to $${maxCost}`
-  const summary = `${SERVICE_LABELS[service]}, ${cost}`
+  const summary = `${procedure?.name ?? 'Procedure'} (${SPECIES_LABELS[species]}), ${cost}`
   return location ? `${summary} · near ${location}` : summary
 }

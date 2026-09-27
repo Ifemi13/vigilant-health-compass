@@ -19,8 +19,9 @@ create or edit tables in the Supabase dashboard; add a new `V<n>__description.sq
   - **Pet guardian:** phone, pet name, species, breed, sex (plus spayed/neutered), age, weight, health history, vaccination history, allergies.
   - **Vet:** hospital/clinic name, address, email.
 - Home page with Awareness, Health alert, Appointment and Affordability tiles; a Profile page from the navbar.
-- **Affordability:** search vet clinics by service, price range and location (demo clinics in Madison, Milwaukee, Chicago and Minneapolis).
-  Click a clinic to pick services (Consult, X-ray, MRI, …) and get a price estimate.
+- **Affordability:** search real Wisconsin clinic prices (from `wi_vet_costs.json`) by dog/cat, procedure,
+  price range and location. Click a clinic to pick services and get an estimated total; services the clinic hasn't
+  posted a price for use the national (U.S.) average and are labeled as such.
 
 ## Running it locally
 
@@ -31,7 +32,7 @@ connected to a hosted Supabase project.
 
 | Tool | Version | Check with |
 |---|---|---|
-| Java (JDK) | 17 or newer | `java -version` |
+| Java (JDK) | 17 | `java -version` |
 | Node.js | 20.19 or newer | `node -v` |
 | Docker | any recent version, running (only needed for backend tests) | `docker info` |
 | A Supabase account | free tier is fine | [supabase.com](https://supabase.com) |
@@ -158,7 +159,21 @@ All endpoints need `Authorization: Bearer <Supabase access token>`.
 |---|---|---|
 | `GET` | `/api/me` | The signed-in user's profile, or `404` if they haven't onboarded yet |
 | `POST` | `/api/onboarding` | Creates the profile. Body has `"role": "GUARDIAN"` (with `phone`, `pet`) or `"role": "VET"` (with `clinicName`, `address`, `email`). `409` if already onboarded |
-| `GET` | `/api/clinics?service=EXAM&minCost=&maxCost=&location=` | Clinics offering `service` (`EXAM`, `CONSULT`, `VACCINATION`, `BLOOD_WORK`, `XRAY`, `ULTRASOUND`, `CT_SCAN`, `MRI`, `DENTAL`, `SPAY_NEUTER`, `EMERGENCY`) priced within the cost range, near `location` (ZIP, city, or `City, ST`), cheapest first. The demo clinics come from migrations `V3` and `V4` |
-| `GET` | `/api/clinics/{id}` | One clinic with every service it offers and its price, or `404` |
+| `GET` | `/api/procedures` | Every standard procedure (dog and cat) with its average prices and how many clinics price it |
+| `GET` | `/api/clinics?procedure=dog-rabies-1-year&minCost=&maxCost=&location=` | Clinics posting a price for `procedure` within the cost range, near `location` (ZIP, city, or `City, WI`), cheapest first. Each result includes only the matching prices |
+| `GET` | `/api/clinics/{id}` | One clinic with every price it posted (both species), or `404` |
 
 The old static landing page is at `frontend/public/landing.html`.
+
+## Clinic price data
+
+Clinic prices come from [`wi_vet_costs.json`](wi_vet_costs.json) (prices posted by Wisconsin clinics, plus
+Wisconsin / U.S. averages per procedure). Migration `V6__load_wi_vet_costs.sql` is **generated** from it:
+
+```sh
+python3 scripts/wi_vet_costs_to_sql.py wi_vet_costs.json backend/src/main/resources/db/migration/V6__load_wi_vet_costs.sql
+```
+
+Flyway never re-runs a migration that has already been applied, so when the JSON is updated, generate a **new**
+migration (e.g. `V7__reload_wi_vet_costs.sql`) that first deletes the old rows
+(`delete from clinic_prices; delete from clinics; delete from procedures;`) instead of editing V6.
