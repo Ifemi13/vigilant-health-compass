@@ -117,10 +117,10 @@ export default function HealthAlerts() {
 
   return (
     <>
-      <Link to="/pets" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">← Back to Pets</Link>
+      <Link to="/pets" className="text-sm font-medium text-accent hover:underline dark:text-accent-light">← Back to Pets</Link>
 
       <header className="mt-6 border-b border-slate-200 pb-6 dark:border-slate-800">
-          <p className="text-sm font-semibold uppercase tracking-wide text-accent dark:text-teal-300">Madison · Dane County · U.S. recalls</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-accent dark:text-accent-light">Madison · Dane County · U.S. recalls</p>
         <div className="mt-2 flex flex-wrap items-end justify-between gap-4">
           <div>
             <h1 className="text-3xl font-semibold">Pet health alerts</h1>
@@ -134,7 +134,7 @@ export default function HealthAlerts() {
         </div>
       </header>
 
-      <section className="mt-5 rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-[#172220]" aria-label="Alert archive information">
+      <section className="mt-5 rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-[#1c1830]" aria-label="Alert archive information">
         <p className="text-sm font-medium">Selected advisories and recalls, not a live emergency feed</p>
         <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
           Local notices are from Madison and Dane County. Product recalls may be nationwide; check product identifiers and the FDA source before acting. This archive is selective, and entries do not imply an active local outbreak.
@@ -167,7 +167,7 @@ export default function HealthAlerts() {
           {visibleAlerts.map((alert) => <AlertCard key={alert.id} alert={alert} />)}
         </div>
       ) : (
-        <p className="mt-6 rounded-lg border border-slate-200 bg-white p-5 text-sm text-slate-600 dark:border-slate-800 dark:bg-[#172220] dark:text-slate-400" aria-live="polite">
+        <p className="mt-6 rounded-lg border border-slate-200 bg-white p-5 text-sm text-slate-600 dark:border-slate-800 dark:bg-[#1c1830] dark:text-slate-400" aria-live="polite">
           No curated notices in this category for the past year. This archive is selective, so check the official sources below for current information.
         </p>
       )}
@@ -188,9 +188,9 @@ export default function HealthAlerts() {
           These change more quickly than a curated archive. Check conditions before outdoor activities and verify recalls by product and lot.
         </p>
         <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm">
-          <a className="font-medium text-accent underline underline-offset-2 dark:text-teal-300" href="https://publichealthmdc.com/beaches" target="_blank" rel="noreferrer">Madison & Dane County beach conditions</a>
-          <a className="font-medium text-accent underline underline-offset-2 dark:text-teal-300" href="https://www.dhs.wisconsin.gov/tick/wisconsin.htm" target="_blank" rel="noreferrer">Wisconsin tick activity tracker</a>
-          <a className="font-medium text-accent underline underline-offset-2 dark:text-teal-300" href="https://www.fda.gov/animal-veterinary/safety-health/recalls-withdrawals" target="_blank" rel="noreferrer">FDA animal food and drug recalls</a>
+          <a className="font-medium text-accent underline underline-offset-2 dark:text-accent-light" href="https://publichealthmdc.com/beaches" target="_blank" rel="noreferrer">Madison & Dane County beach conditions</a>
+          <a className="font-medium text-accent underline underline-offset-2 dark:text-accent-light" href="https://www.dhs.wisconsin.gov/tick/wisconsin.htm" target="_blank" rel="noreferrer">Wisconsin tick activity tracker</a>
+          <a className="font-medium text-accent underline underline-offset-2 dark:text-accent-light" href="https://www.fda.gov/animal-veterinary/safety-health/recalls-withdrawals" target="_blank" rel="noreferrer">FDA animal food and drug recalls</a>
         </div>
       </section>
 
@@ -203,9 +203,9 @@ export default function HealthAlerts() {
 
 function AlertCard({ alert }: { alert: HealthAlert }) {
   return (
-    <article className="rounded-lg border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-[#172220]">
+    <article className="rounded-lg border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-[#1c1830]">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <span className="rounded-md bg-accent-soft px-2.5 py-1 text-xs font-semibold text-accent-strong dark:bg-accent/20 dark:text-teal-300">
+        <span className="rounded-md bg-accent-soft px-2.5 py-1 text-xs font-semibold text-accent-strong dark:bg-accent/20 dark:text-accent-light">
           {alert.label}
         </span>
         <div className="flex flex-wrap items-center gap-3">
@@ -226,11 +226,11 @@ function AlertCard({ alert }: { alert: HealthAlert }) {
         </div>
       </div>
       <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 border-t border-slate-100 pt-4 text-sm dark:border-slate-800">
-        <a href={alert.sourceUrl} target="_blank" rel="noreferrer" className="font-medium text-accent underline underline-offset-2 dark:text-teal-300">
+        <a href={alert.sourceUrl} target="_blank" rel="noreferrer" className="font-medium text-accent underline underline-offset-2 dark:text-accent-light">
           {alert.sourceLabel}
         </a>
         {alert.secondarySourceUrl && alert.secondarySourceLabel && (
-          <a href={alert.secondarySourceUrl} target="_blank" rel="noreferrer" className="font-medium text-accent underline underline-offset-2 dark:text-teal-300">
+          <a href={alert.secondarySourceUrl} target="_blank" rel="noreferrer" className="font-medium text-accent underline underline-offset-2 dark:text-accent-light">
             {alert.secondarySourceLabel}
           </a>
         )}

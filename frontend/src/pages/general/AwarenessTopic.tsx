@@ -14,11 +14,11 @@ export default function AwarenessTopic() {
 
   return (
     <article>
-      <Link to="/general/awareness" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
+      <Link to="/general/awareness" className="text-sm font-medium text-accent hover:underline dark:text-accent-light">
         ← All topics
       </Link>
       <h1 className="mt-4 flex items-center gap-3 text-3xl font-semibold">
-        <topic.icon size={32} className="shrink-0 text-accent dark:text-teal-300" />
+        <topic.icon size={32} className="shrink-0 text-accent dark:text-accent-light" />
         {topic.title}
       </h1>
 
@@ -48,12 +48,12 @@ export default function AwarenessTopic() {
         </section>
       ))}
 
-      <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-[#172220]">
+      <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-[#1c1830]">
         <h2 className="font-semibold">Sources</h2>
         <ul className="mt-2 space-y-1.5 text-sm">
           {topic.sources.map((source) => (
             <li key={source.url}>
-              <a href={source.url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline dark:text-teal-300">
+              <a href={source.url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline dark:text-accent-light">
                 {source.label} ↗
               </a>
               <span className="text-slate-500 dark:text-slate-400"> · {sourceHost(source.url)}</span>
@@ -139,15 +139,15 @@ function SpecialtyHospitals({ topic }: { topic: Topic }) {
               <li key={hospital.id}>
                 <Link
                   to={`/general/awareness/${topic.id}/hospitals/${hospital.id}`}
-                  className="group block h-full rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-accent hover:shadow-md focus:ring-2 focus:ring-accent/30 focus:outline-none dark:border-slate-800 dark:bg-[#172220]"
+                  className="group block h-full rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-accent hover:shadow-md focus:ring-2 focus:ring-accent/30 focus:outline-none dark:border-slate-800 dark:bg-[#1c1830]"
                 >
-                  <span className="block font-semibold group-hover:text-accent dark:group-hover:text-teal-300">{hospital.name}</span>
+                  <span className="block font-semibold group-hover:text-accent dark:group-hover:text-accent-light">{hospital.name}</span>
                   <span className="mt-0.5 block text-sm text-slate-500 dark:text-slate-400">
                     {hospitalTypeLabel(hospital.hospitalType)} · {hospital.city}
                   </span>
                   <span className="mt-2 flex items-center justify-between gap-2">
                     <StarRating rating={hospital.starRating} />
-                    <span className="text-sm font-medium text-accent dark:text-teal-300">Join the community →</span>
+                    <span className="text-sm font-medium text-accent dark:text-accent-light">Join the community →</span>
                   </span>
                 </Link>
               </li>

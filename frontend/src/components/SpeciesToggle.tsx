@@ -15,7 +15,7 @@ export default function SpeciesToggle({ value, onChange }: { value: Species; onC
             aria-checked={selected}
             onClick={() => onChange(species)}
             className={`inline-flex items-center gap-1.5 rounded-md px-4 py-1.5 text-sm font-medium transition-colors focus:ring-2 focus:ring-accent/30 focus:outline-none ${
-              selected ? 'bg-accent text-white' : 'text-slate-600 hover:text-accent dark:text-slate-300 dark:hover:text-teal-300'
+              selected ? 'bg-accent text-white' : 'text-slate-600 hover:text-accent dark:text-slate-300 dark:hover:text-accent-light'
             }`}
           >
             {species === 'dog' ? <DogFilled size={16} /> : <CatFilled size={16} />}

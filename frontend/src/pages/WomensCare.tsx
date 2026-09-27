@@ -106,10 +106,10 @@ export default function WomensCare() {
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-8">
-      <Link to="/" className="text-sm font-medium text-accent underline underline-offset-2 dark:text-teal-300">← All care areas</Link>
+      <Link to="/" className="text-sm font-medium text-accent underline underline-offset-2 dark:text-accent-light">← All care areas</Link>
 
       <header className="mt-5 border-b border-slate-200 pb-5 dark:border-slate-800">
-        <p className="text-sm font-semibold uppercase text-accent dark:text-teal-300">Wisconsin · Women’s care</p>
+        <p className="text-sm font-semibold uppercase text-accent dark:text-accent-light">Wisconsin · Women’s care</p>
         <h1 className="mt-2 text-3xl font-semibold">Care, research, community</h1>
         <p className="mt-2 max-w-3xl text-slate-600 dark:text-slate-400">
           Explore nearby care and registered research, connect through a participant code, and keep private reminders.
@@ -133,13 +133,13 @@ export default function WomensCare() {
                 <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">Select a county to find health and research resources nearby.</p>
               </div>
               <label className="text-sm font-medium">Selected county
-                <select value={county} onChange={(event) => setCounty(event.target.value)} className="ml-2 rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#172220]">
+                <select value={county} onChange={(event) => setCounty(event.target.value)} className="ml-2 rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#1c1830]">
                   {WISCONSIN_COUNTIES.map((name) => <option key={name} value={name}>{name} County</option>)}
                 </select>
               </label>
             </div>
 
-            <div className="mt-4 overflow-hidden rounded-lg border border-slate-200 bg-[#eef7f4] p-2 dark:border-slate-800 dark:bg-[#162521]">
+            <div className="mt-4 overflow-hidden rounded-lg border border-slate-200 bg-[#f4fffb] p-2 dark:border-slate-800 dark:bg-[#1a1628]">
               <ComposableMap width={640} height={430} projection="geoAlbers" projectionConfig={{ rotate: [89.8, 0, 0], center: [0, 44.8], parallels: [43, 46], scale: 4700 }} className="h-auto w-full" aria-label="Interactive Wisconsin county map">
                 <Geographies geography="/data/wisconsin-counties.geojson">
                   {({ geographies }) => geographies.map((geography) => {
@@ -153,10 +153,10 @@ export default function WomensCare() {
                         tabIndex={0}
                         aria-label={`Select ${countyName} County`}
                         aria-pressed={selected}
-                        fill={selected ? '#0f766e' : '#ccebe7'}
+                        fill={selected ? '#7b3fe4' : '#d5ddf5'}
                         stroke="#fff"
                         strokeWidth={1.2}
-                        className={`cursor-pointer transition-colors ${selected ? 'hover:fill-[#115e59]' : 'hover:fill-[#9bd2c9]'}`}
+                        className={`cursor-pointer transition-colors ${selected ? 'hover:fill-accent-strong' : 'hover:fill-[#aebdec]'}`}
                         onClick={() => setCounty(countyName.replace(/ County$/i, ''))}
                         onKeyDown={(event: KeyboardEvent<SVGPathElement>) => {
                           if (event.key === 'Enter' || event.key === ' ') {
@@ -194,7 +194,7 @@ export default function WomensCare() {
                 <li>Use the contact details on the official study record.</li>
                 <li>Never pay to join a study or share a password or payment card.</li>
               </ul>
-              <a href="https://clinicaltrials.gov/about-site/disclaimer" target="_blank" rel="noreferrer" className="mt-3 inline-block text-sm font-medium text-accent underline dark:text-teal-300">About ClinicalTrials.gov listings ↗</a>
+              <a href="https://clinicaltrials.gov/about-site/disclaimer" target="_blank" rel="noreferrer" className="mt-3 inline-block text-sm font-medium text-accent underline dark:text-accent-light">About ClinicalTrials.gov listings ↗</a>
             </section>
           </aside>
         </div>
@@ -217,21 +217,21 @@ export default function WomensCare() {
 
 function ParticipantCard({ participant, onChange }: { participant: ParticipantCard; onChange: (next: ParticipantCard) => void }) {
   return (
-    <section className="rounded-lg border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-[#172220]" aria-labelledby="participant-heading">
+    <section className="rounded-lg border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-[#1c1830]" aria-labelledby="participant-heading">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <p className="text-xs font-semibold uppercase text-accent dark:text-teal-300">Participant code</p>
+          <p className="text-xs font-semibold uppercase text-accent dark:text-accent-light">Participant code</p>
           <h2 id="participant-heading" className="mt-1 text-2xl font-semibold">{participant.code}</h2>
         </div>
-        <button type="button" onClick={() => onChange({ ...participant, code: makeCode() })} className="text-sm font-medium text-accent underline underline-offset-2 dark:text-teal-300">New code</button>
+        <button type="button" onClick={() => onChange({ ...participant, code: makeCode() })} className="text-sm font-medium text-accent underline underline-offset-2 dark:text-accent-light">New code</button>
       </div>
       <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Only age and gender are shown on your local discussion posts. No name or contact fields are collected here.</p>
       <form className="mt-4 grid gap-3 sm:grid-cols-2" onSubmit={(event) => event.preventDefault()}>
         <label className="text-sm font-medium">Age
-          <input type="number" min="13" max="120" value={participant.age} onChange={(event) => onChange({ ...participant, age: event.target.value })} className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#101a18]" />
+          <input type="number" min="13" max="120" value={participant.age} onChange={(event) => onChange({ ...participant, age: event.target.value })} className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#17132a]" />
         </label>
         <label className="text-sm font-medium">Gender
-          <select value={participant.gender} onChange={(event) => onChange({ ...participant, gender: event.target.value as Gender | '' })} className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#101a18]">
+          <select value={participant.gender} onChange={(event) => onChange({ ...participant, gender: event.target.value as Gender | '' })} className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#17132a]">
             <option value="">Choose…</option><option>Woman</option><option>Man</option><option>Non-binary</option><option>Prefer not to say</option>
           </select>
         </label>
@@ -246,7 +246,7 @@ function CommunityBoard({ participant, posts, onCreate }: { participant: Partici
       <div>
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div>
-            <p className="text-sm font-semibold uppercase text-accent dark:text-teal-300">Participant space</p>
+            <p className="text-sm font-semibold uppercase text-accent dark:text-accent-light">Participant space</p>
             <h2 className="mt-1 text-2xl font-semibold">Community</h2>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Explore conversation starters and keep your own notes under {participant.code}.</p>
           </div>
@@ -254,13 +254,13 @@ function CommunityBoard({ participant, posts, onCreate }: { participant: Partici
         </div>
 
         <div className="mt-5 grid gap-3 sm:grid-cols-2">
-          <article className="rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-[#172220]">
-            <p className="text-xs font-semibold uppercase text-accent dark:text-teal-300">Care access</p>
+          <article className="rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-[#1c1830]">
+            <p className="text-xs font-semibold uppercase text-accent dark:text-accent-light">Care access</p>
             <h3 className="mt-2 font-semibold">Getting to care in rural areas</h3>
             <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">What transportation, scheduling, or local support would make care easier to reach?</p>
           </article>
-          <article className="rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-[#172220]">
-            <p className="text-xs font-semibold uppercase text-accent dark:text-teal-300">Research participation</p>
+          <article className="rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-[#1c1830]">
+            <p className="text-xs font-semibold uppercase text-accent dark:text-accent-light">Research participation</p>
             <h3 className="mt-2 font-semibold">Questions before joining a study</h3>
             <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">What would you want a study team to explain before you consider participating?</p>
           </article>
@@ -270,7 +270,7 @@ function CommunityBoard({ participant, posts, onCreate }: { participant: Partici
           <h3 id="local-posts-heading" className="text-lg font-semibold">Your discussions on this device</h3>
           {posts.length === 0
             ? <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">No discussions saved here yet.</p>
-            : <div className="mt-3 divide-y divide-slate-200 border-y border-slate-200 dark:divide-slate-800 dark:border-slate-800">{posts.map((post) => <article key={post.id} className="py-4"><div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-500 dark:text-slate-400"><span className="font-semibold text-accent dark:text-teal-300">{post.code}</span>{post.age && <span>Age {post.age}</span>}{post.gender && <span>{post.gender}</span>}<span>{formatDate(post.createdAt)}</span><span>{post.topic}</span></div><p className="mt-2 whitespace-pre-wrap text-sm">{post.text}</p></article>)}</div>}
+            : <div className="mt-3 divide-y divide-slate-200 border-y border-slate-200 dark:divide-slate-800 dark:border-slate-800">{posts.map((post) => <article key={post.id} className="py-4"><div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-500 dark:text-slate-400"><span className="font-semibold text-accent dark:text-accent-light">{post.code}</span>{post.age && <span>Age {post.age}</span>}{post.gender && <span>{post.gender}</span>}<span>{formatDate(post.createdAt)}</span><span>{post.topic}</span></div><p className="mt-2 whitespace-pre-wrap text-sm">{post.text}</p></article>)}</div>}
         </section>
       </div>
 
@@ -278,10 +278,10 @@ function CommunityBoard({ participant, posts, onCreate }: { participant: Partici
         <h3 className="text-lg font-semibold">Start a discussion</h3>
         <form onSubmit={onCreate} className="mt-3 space-y-3">
           <label className="block text-sm font-medium">Topic
-            <select name="topic" className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#172220]"><option>Care access</option><option>Research participation</option><option>Wellbeing</option><option>Other</option></select>
+            <select name="topic" className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#1c1830]"><option>Care access</option><option>Research participation</option><option>Wellbeing</option><option>Other</option></select>
           </label>
           <label className="block text-sm font-medium">Your post
-            <textarea name="post" required maxLength={500} rows={5} placeholder="Share a question or resource…" className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-slate-700 dark:bg-[#172220]" />
+            <textarea name="post" required maxLength={500} rows={5} placeholder="Share a question or resource…" className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-slate-700 dark:bg-[#1c1830]" />
           </label>
           <p className="text-xs text-slate-500 dark:text-slate-400">Posts stay in this browser. Don’t include names, contact details, exact addresses, medical records, or details that could identify you.</p>
           <button type="submit" className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent-strong focus:ring-2 focus:ring-accent/40 focus:outline-none">Save post</button>
@@ -297,7 +297,7 @@ function ReminderBoard({ reminders, onCreate, onToggle }: { reminders: LocalRemi
   return (
     <section className="mt-6 grid gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
       <div>
-        <p className="text-sm font-semibold uppercase text-accent dark:text-teal-300">Private to this browser</p>
+        <p className="text-sm font-semibold uppercase text-accent dark:text-accent-light">Private to this browser</p>
         <h2 className="mt-1 text-2xl font-semibold">Study and care reminders</h2>
         <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Keep a date to contact a study team, ask a clinic a question, or follow up on a resource. No contact details are required.</p>
         <h3 className="mt-6 text-lg font-semibold">Upcoming</h3>
@@ -308,10 +308,10 @@ function ReminderBoard({ reminders, onCreate, onToggle }: { reminders: LocalRemi
         <h3 className="text-lg font-semibold">Add a reminder</h3>
         <form onSubmit={onCreate} className="mt-3 space-y-3">
           <label className="block text-sm font-medium">Reminder title
-            <input name="title" required maxLength={100} placeholder="e.g. Follow up with study team" className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#172220]" />
+            <input name="title" required maxLength={100} placeholder="e.g. Follow up with study team" className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#1c1830]" />
           </label>
           <label className="block text-sm font-medium">Date
-            <input name="date" required type="date" min={dateKey(new Date())} className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#172220]" />
+            <input name="date" required type="date" min={dateKey(new Date())} className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#1c1830]" />
           </label>
           <button type="submit" className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent-strong focus:ring-2 focus:ring-accent/40 focus:outline-none">Save reminder</button>
         </form>
@@ -321,11 +321,11 @@ function ReminderBoard({ reminders, onCreate, onToggle }: { reminders: LocalRemi
 }
 
 function ReminderRow({ reminder, onToggle }: { reminder: LocalReminder; onToggle: (id: string) => void }) {
-  return <article className="flex flex-wrap items-center justify-between gap-3 py-3"><div><h4 className={`text-sm font-medium ${reminder.done ? 'text-slate-500 line-through' : ''}`}>{reminder.title}</h4><p className="mt-1 text-xs text-slate-500 dark:text-slate-400">{formatDate(reminder.date)}</p></div><button type="button" onClick={() => onToggle(reminder.id)} className="text-sm font-medium text-accent underline dark:text-teal-300">{reminder.done ? 'Reopen' : 'Mark done'}</button></article>
+  return <article className="flex flex-wrap items-center justify-between gap-3 py-3"><div><h4 className={`text-sm font-medium ${reminder.done ? 'text-slate-500 line-through' : ''}`}>{reminder.title}</h4><p className="mt-1 text-xs text-slate-500 dark:text-slate-400">{formatDate(reminder.date)}</p></div><button type="button" onClick={() => onToggle(reminder.id)} className="text-sm font-medium text-accent underline dark:text-accent-light">{reminder.done ? 'Reopen' : 'Mark done'}</button></article>
 }
 
 function ResourceLink({ title, description, href, source }: { title: string; description: string; href: string; source: string }) {
-  return <a href={href} target="_blank" rel="noreferrer" className="flex flex-wrap items-center justify-between gap-3 py-3 hover:text-accent dark:hover:text-teal-300"><span><span className="block text-sm font-semibold">{title}</span><span className="mt-1 block text-xs text-slate-600 dark:text-slate-400">{description}</span></span><span className="shrink-0 text-xs text-slate-500 dark:text-slate-400">{source} ↗</span></a>
+  return <a href={href} target="_blank" rel="noreferrer" className="flex flex-wrap items-center justify-between gap-3 py-3 hover:text-accent dark:hover:text-accent-light"><span><span className="block text-sm font-semibold">{title}</span><span className="mt-1 block text-xs text-slate-600 dark:text-slate-400">{description}</span></span><span className="shrink-0 text-xs text-slate-500 dark:text-slate-400">{source} ↗</span></a>
 }
 
 function makeParticipantCard(): ParticipantCard {

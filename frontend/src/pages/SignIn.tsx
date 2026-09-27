@@ -38,7 +38,7 @@ export default function SignIn() {
       subtitle={
         <>
           New here?{' '}
-          <Link to="/signup" className="font-medium text-accent hover:underline dark:text-teal-300">
+          <Link to="/signup" className="font-medium text-accent hover:underline dark:text-accent-light">
             Create an account
           </Link>
         </>

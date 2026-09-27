@@ -50,7 +50,7 @@ export default function SignUp() {
       <AuthCard title="Check your email">
         <p className="text-sm">
           We sent a confirmation link to <strong>{confirmEmailSentTo}</strong>. Click it, then{' '}
-          <Link to="/signin" className="font-medium text-accent hover:underline dark:text-teal-300">
+          <Link to="/signin" className="font-medium text-accent hover:underline dark:text-accent-light">
             sign in
           </Link>{' '}
           to finish setting up your profile.
@@ -65,7 +65,7 @@ export default function SignUp() {
       subtitle={
         <>
           Already have one?{' '}
-          <Link to="/signin" className="font-medium text-accent hover:underline dark:text-teal-300">
+          <Link to="/signin" className="font-medium text-accent hover:underline dark:text-accent-light">
             Sign in
           </Link>
         </>

@@ -42,7 +42,7 @@ export default function ClinicDetail() {
   const procedures = useProcedures()
 
   const backLink = (
-    <Link to={backTo} className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
+    <Link to={backTo} className="text-sm font-medium text-accent hover:underline dark:text-accent-light">
       ← Back to results
     </Link>
   )
@@ -65,7 +65,7 @@ export default function ClinicDetail() {
   return (
     <>
       {backLink}
-      <section className="mt-4 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#172220]">
+      <section className="mt-4 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#1c1830]">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <h1 className="text-2xl font-semibold">{c.name}</h1>
           <span className="rounded-full border border-slate-200 px-2.5 py-0.5 text-xs text-slate-600 capitalize dark:border-slate-700 dark:text-slate-300">
@@ -85,14 +85,14 @@ export default function ClinicDetail() {
             href={c.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 inline-block text-sm text-accent hover:underline dark:text-teal-300"
+            className="mt-3 inline-block text-sm text-accent hover:underline dark:text-accent-light"
           >
             Prices from {sourceHost(c.sourceUrl)} ↗
           </a>
         )}
       </section>
 
-      <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#172220]">
+      <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#1c1830]">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <h2 className="text-lg font-semibold">Get a price</h2>
           <SpeciesToggle
@@ -220,7 +220,7 @@ function PriceEstimator({ tags, species }: { tags: PriceTag[]; species: Species 
                     className={`rounded-full border px-3.5 py-1.5 text-sm transition-colors focus:ring-2 focus:ring-accent/30 focus:outline-none ${
                       isSelected
                         ? 'border-accent bg-accent text-white'
-                        : 'border-slate-300 bg-white hover:border-accent hover:text-accent dark:border-slate-700 dark:bg-transparent dark:hover:text-teal-300'
+                        : 'border-slate-300 bg-white hover:border-accent hover:text-accent dark:border-slate-700 dark:bg-transparent dark:hover:text-accent-light'
                     }`}
                   >
                     {isSelected && <span aria-hidden>✓ </span>}
@@ -258,7 +258,7 @@ function PriceEstimator({ tags, species }: { tags: PriceTag[]; species: Species 
           </ul>
           <div className="mt-4 flex items-baseline justify-between gap-4 rounded-xl bg-accent-soft px-4 py-3 dark:bg-accent/20">
             <span className="font-medium">Estimated total</span>
-            <span className="text-2xl font-semibold text-accent-strong dark:text-teal-200">
+            <span className="text-2xl font-semibold text-accent-strong dark:text-accent-pale">
               {formatPriceRange(totalLow, totalHigh)}
             </span>
           </div>

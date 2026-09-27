@@ -13,16 +13,16 @@ export default function ComingSoon({
 }) {
   return (
     <>
-      <Link to={backTo} className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
+      <Link to={backTo} className="text-sm font-medium text-accent hover:underline dark:text-accent-light">
         ← {backLabel}
       </Link>
-      <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-10 text-center dark:border-slate-800 dark:bg-[#172220]">
-        <span className="inline-flex text-accent dark:text-teal-300" aria-hidden>
+      <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-10 text-center dark:border-slate-800 dark:bg-[#1c1830]">
+        <span className="inline-flex text-accent dark:text-accent-light" aria-hidden>
           <feature.icon size={48} />
         </span>
         <h1 className="mt-4 text-2xl font-semibold">{feature.title}</h1>
         <p className="mt-2 text-slate-500 dark:text-slate-400">{feature.description}</p>
-        <p className="mt-6 inline-block rounded-full bg-accent-soft px-3 py-1 text-xs font-medium text-accent-strong dark:bg-accent/20 dark:text-teal-300">
+        <p className="mt-6 inline-block rounded-full bg-accent-soft px-3 py-1 text-xs font-medium text-accent-strong dark:bg-accent/20 dark:text-accent-light">
           Coming soon
         </p>
       </div>

@@ -1,15 +1,25 @@
 @import 'tailwindcss';
 
-/* Teal palette carried over from the original landing page. */
+/* Light theme only: `dark:` styles apply under a .dark class, which nothing sets, instead of following the OS. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+}
+
+/* Purple from the VHC logo; the page background is the logo's mint so the logo blends in. */
 @theme {
-  --color-accent: #0f766e;
-  --color-accent-strong: #115e59;
-  --color-accent-soft: #ccebe7;
+  --color-accent: #7b3fe4;
+  --color-accent-strong: #5b24b8;
+  --color-accent-soft: #ede6fc;
+  /* Accent text on dark backgrounds. */
+  --color-accent-light: #c4b0fa;
+  --color-accent-pale: #ddd0fd;
 }
 
 @layer base {
   body {
-    @apply bg-[#f7faf9] text-[#1c2b28] antialiased dark:bg-[#0f1716] dark:text-[#e6efed];
+    @apply bg-[#f4fffb] text-[#1e1a2e] antialiased dark:bg-[#131020] dark:text-[#ece8f6];
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   }
 }

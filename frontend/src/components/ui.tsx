@@ -4,7 +4,7 @@ import { forwardRef } from 'react'
 
 export function Logo() {
   return (
-    <span className="inline-flex items-center gap-1.5 text-lg font-bold text-accent dark:text-teal-300">
+    <span className="inline-flex items-center gap-1.5 text-lg font-bold text-accent dark:text-accent-light">
       <CompassFilled size={22} />
       Vigilant Health Compass
     </span>
@@ -18,7 +18,7 @@ export function AuthCard({ title, subtitle, children, wide }: { title: string; s
       <div className="mb-6">
         <Logo />
       </div>
-      <div className={`w-full ${wide ? 'max-w-2xl' : 'max-w-md'} rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8 dark:border-slate-800 dark:bg-[#172220]`}>
+      <div className={`w-full ${wide ? 'max-w-2xl' : 'max-w-md'} rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8 dark:border-slate-800 dark:bg-[#1c1830]`}>
         <h1 className="text-2xl font-semibold">{title}</h1>
         {subtitle && <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{subtitle}</p>}
         <div className="mt-6">{children}</div>
@@ -42,7 +42,7 @@ export function Field({ label, error, hint, children, required }: { label: strin
 }
 
 const control =
-  'w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/30 disabled:bg-slate-100 disabled:text-slate-500 dark:border-slate-700 dark:bg-[#0f1716] dark:disabled:bg-slate-800'
+  'w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/30 disabled:bg-slate-100 disabled:text-slate-500 dark:border-slate-700 dark:bg-[#131020] dark:disabled:bg-slate-800'
 
 export const Input = forwardRef<HTMLInputElement, InputHTMLAttributes<HTMLInputElement>>((props, ref) => (
   <input ref={ref} {...props} className={`${control} ${props.className ?? ''}`} />

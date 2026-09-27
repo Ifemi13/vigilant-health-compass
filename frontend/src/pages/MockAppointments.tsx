@@ -185,21 +185,21 @@ function AppointmentsCalendar({ userId, pets }: { userId: string; pets: Pet[] })
 
   return (
     <>
-      <Link to="/pets" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">← Back to pet care</Link>
+      <Link to="/pets" className="text-sm font-medium text-accent hover:underline dark:text-accent-light">← Back to pet care</Link>
       <header className="mt-5 border-b border-slate-200 pb-5 dark:border-slate-800">
-        <p className="text-sm font-semibold uppercase tracking-wide text-accent dark:text-teal-300">Madison, Wisconsin</p>
+        <p className="text-sm font-semibold uppercase tracking-wide text-accent dark:text-accent-light">Madison, Wisconsin</p>
         <h1 className="mt-2 text-3xl font-semibold">Pet appointments</h1>
         <p className="mt-2 max-w-2xl text-sm text-slate-600 dark:text-slate-400">
           Choose a date, veterinarian, and available time for your pet’s next visit.
         </p>
       </header>
 
-      {message && <p className="mt-4 rounded-lg border border-accent/30 bg-accent-soft/30 p-3 text-sm dark:border-teal-800 dark:bg-teal-950/30" role="status">{message}</p>}
+      {message && <p className="mt-4 rounded-lg border border-accent/30 bg-accent-soft/30 p-3 text-sm dark:border-accent/40 dark:bg-accent/10" role="status">{message}</p>}
 
       {wellnessDue && nextCheckupDate && lastCheckup && (
         <aside className={`mt-5 rounded-lg border p-4 ${daysUntilCheckup !== null && daysUntilCheckup < 0
           ? 'border-amber-300 bg-amber-50 text-amber-950 dark:border-amber-900 dark:bg-amber-950/30 dark:text-amber-100'
-          : 'border-slate-200 bg-white dark:border-slate-800 dark:bg-[#172220]'}`}>
+          : 'border-slate-200 bg-white dark:border-slate-800 dark:bg-[#1c1830]'}`}>
           <h2 className="font-semibold">{daysUntilCheckup !== null && daysUntilCheckup < 0 ? 'A wellness check-in may be due' : 'A wellness check-in is coming up'}</h2>
           <p className="mt-1 text-sm">{activePet?.name ?? petLookupName}’s last recorded routine check-up was {formatDate(lastCheckup.appointmentDate)}. Six months falls on {formatDate(nextCheckupDate)}.</p>
           <p className="mt-1 text-xs opacity-80">A general reminder only; timing depends on your pet’s age, health, and veterinarian’s advice.</p>
@@ -224,8 +224,8 @@ function AppointmentsCalendar({ userId, pets }: { userId: string; pets: Pet[] })
               const hasAppointment = (calendarAppointments.get(key) ?? 0) > 0
               return (
                 <button key={key} type="button" aria-pressed={isSelected} aria-label={`${day.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}${hasAppointment ? ', appointment saved' : ''}`} onClick={() => setSelectedDate(key)} className={`relative flex aspect-square min-h-11 flex-col items-center justify-center border-b border-r border-slate-200 text-sm transition-colors dark:border-slate-800 ${isSelected ? 'bg-accent text-white' : 'hover:bg-accent-soft/50 dark:hover:bg-accent/15'} ${isCurrentMonth ? '' : 'text-slate-400 dark:text-slate-600'}`}>
-                  <span className={key === today && !isSelected ? 'font-bold text-accent dark:text-teal-300' : ''}>{day.getDate()}</span>
-                  {hasAppointment && <span className={`absolute bottom-1 h-1 w-1 rounded-full ${isSelected ? 'bg-white' : 'bg-accent dark:bg-teal-300'}`} aria-hidden />}
+                  <span className={key === today && !isSelected ? 'font-bold text-accent dark:text-accent-light' : ''}>{day.getDate()}</span>
+                  {hasAppointment && <span className={`absolute bottom-1 h-1 w-1 rounded-full ${isSelected ? 'bg-white' : 'bg-accent dark:bg-accent-light'}`} aria-hidden />}
                 </button>
               )
             })}
@@ -252,7 +252,7 @@ function AppointmentsCalendar({ userId, pets }: { userId: string; pets: Pet[] })
               )}
               {!activePet && (
                 <label className="block text-sm font-medium">Pet name
-                  <input required maxLength={100} value={petName} onChange={(event) => setPetName(event.target.value)} placeholder="Enter your pet’s name" className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 font-normal dark:border-slate-700 dark:bg-[#172220]" />
+                  <input required maxLength={100} value={petName} onChange={(event) => setPetName(event.target.value)} placeholder="Enter your pet’s name" className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 font-normal dark:border-slate-700 dark:bg-[#1c1830]" />
                 </label>
               )}
 
@@ -278,7 +278,7 @@ function AppointmentsCalendar({ userId, pets }: { userId: string; pets: Pet[] })
                 </Select>
               </label>
               <label className="block text-sm font-medium">Note <span className="font-normal text-slate-500">(optional)</span>
-                <textarea rows={2} maxLength={1000} value={notes} onChange={(event) => setNotes(event.target.value)} className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-slate-700 dark:bg-[#172220]" />
+                <textarea rows={2} maxLength={1000} value={notes} onChange={(event) => setNotes(event.target.value)} className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-slate-700 dark:bg-[#1c1830]" />
               </label>
               <Button type="submit" disabled={availableTimes.length === 0 || !availableTimes.includes(selectedTime)}>Book appointment</Button>
             </form>
@@ -306,8 +306,8 @@ function AppointmentsCalendar({ userId, pets }: { userId: string; pets: Pet[] })
         </div>
         {showCheckupForm && (
           <form onSubmit={recordCheckup} className="mt-4 flex flex-wrap items-end gap-3">
-            {!activePet && <label className="min-w-48 flex-1 text-sm font-medium">Pet name<input required maxLength={100} value={petName} onChange={(event) => setPetName(event.target.value)} className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 font-normal dark:border-slate-700 dark:bg-[#172220]" /></label>}
-            <label className="text-sm font-medium">Last check-up date<input required type="date" max={today} value={checkupDate} onChange={(event) => setCheckupDate(event.target.value)} className="mt-1 block rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#172220]" /></label>
+            {!activePet && <label className="min-w-48 flex-1 text-sm font-medium">Pet name<input required maxLength={100} value={petName} onChange={(event) => setPetName(event.target.value)} className="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 font-normal dark:border-slate-700 dark:bg-[#1c1830]" /></label>}
+            <label className="text-sm font-medium">Last check-up date<input required type="date" max={today} value={checkupDate} onChange={(event) => setCheckupDate(event.target.value)} className="mt-1 block rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-[#1c1830]" /></label>
             <Button type="submit">Save check-up</Button>
           </form>
         )}

@@ -241,7 +241,7 @@ export default function GuardianForm({ onBack }: { onBack: () => void }) {
 function Section({ title, children, oneColumn }: { title: string; children: React.ReactNode; oneColumn?: boolean }) {
   return (
     <fieldset>
-      <legend className="mb-3 text-sm font-semibold tracking-wide text-accent uppercase dark:text-teal-300">{title}</legend>
+      <legend className="mb-3 text-sm font-semibold tracking-wide text-accent uppercase dark:text-accent-light">{title}</legend>
       <div className={`grid gap-4 ${oneColumn ? '' : 'sm:grid-cols-2'}`}>{children}</div>
     </fieldset>
   )

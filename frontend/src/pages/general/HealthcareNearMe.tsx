@@ -82,16 +82,16 @@ export default function HealthcareNearMe() {
 
   return (
     <>
-      <Link to="/general" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
+      <Link to="/general" className="text-sm font-medium text-accent hover:underline dark:text-accent-light">
         ← Back to General
       </Link>
       <h1 className="mt-4 flex items-center gap-3 text-3xl font-semibold">
-        <MapPinFilled size={32} className="shrink-0 text-accent dark:text-teal-300" />
+        <MapPinFilled size={32} className="shrink-0 text-accent dark:text-accent-light" />
         Healthcare Near Me
       </h1>
       <p className="mt-2 text-slate-600 dark:text-slate-400">Find hospitals and community health clinics in Wisconsin.</p>
 
-      <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-[#172220]">
+      <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-[#1c1830]">
         <form onSubmit={searchTyped} role="search" className="flex flex-wrap gap-2">
           <label htmlFor="near-me-location" className="sr-only">
             City or ZIP code
@@ -135,7 +135,7 @@ export default function HealthcareNearMe() {
                 aria-checked={type === filter.value}
                 onClick={() => update({ type: filter.value })}
                 className={`rounded-md px-3 py-1 text-sm font-medium transition-colors ${
-                  type === filter.value ? 'bg-accent text-white' : 'text-slate-600 hover:text-accent dark:text-slate-300 dark:hover:text-teal-300'
+                  type === filter.value ? 'bg-accent text-white' : 'text-slate-600 hover:text-accent dark:text-slate-300 dark:hover:text-accent-light'
                 }`}
               >
                 {filter.label}
@@ -194,7 +194,7 @@ function Results({ search }: { search: NearMeSearch }) {
 function PlaceCard({ place }: { place: NearbyPlace }) {
   const isHospital = place.kind === 'HOSPITAL'
   return (
-    <li className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-[#172220]">
+    <li className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-[#1c1830]">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="min-w-0">
           <h3 className="font-semibold">{place.name}</h3>
@@ -205,7 +205,7 @@ function PlaceCard({ place }: { place: NearbyPlace }) {
           </p>
         </div>
         <span
-          className="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium whitespace-nowrap text-accent-strong dark:bg-accent/20 dark:text-teal-200"
+          className="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium whitespace-nowrap text-accent-strong dark:bg-accent/20 dark:text-accent-pale"
           title={place.locationApproximate ? 'Approximate: measured to the center of its ZIP code or city' : undefined}
         >
           {place.locationApproximate ? '≈ ' : ''}
@@ -218,16 +218,16 @@ function PlaceCard({ place }: { place: NearbyPlace }) {
       <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
         {isHospital && <StarRating rating={place.starRating} />}
         {place.phone && (
-          <a href={`tel:${place.phone}`} className="text-accent hover:underline dark:text-teal-300">
+          <a href={`tel:${place.phone}`} className="text-accent hover:underline dark:text-accent-light">
             {place.phone}
           </a>
         )}
         {place.website && (
-          <a href={place.website} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline dark:text-teal-300">
+          <a href={place.website} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline dark:text-accent-light">
             Website ↗
           </a>
         )}
-        <a href={directionsUrl(place)} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline dark:text-teal-300">
+        <a href={directionsUrl(place)} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline dark:text-accent-light">
           Directions ↗
         </a>
       </div>

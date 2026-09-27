@@ -16,7 +16,7 @@ export default function Navbar({ section }: { section: NavSection }) {
   const initial = (session?.user.email ?? '?').charAt(0).toUpperCase()
 
   return (
-    <header className="border-b border-slate-200 bg-white dark:border-slate-800 dark:bg-[#172220]">
+    <header className="border-b border-slate-200 bg-white dark:border-slate-800 dark:bg-[#1c1830]">
       <nav className="mx-auto flex h-16 max-w-4xl items-center justify-between px-4">
         <Link to="/" aria-label="Home screen">
           <Logo />
@@ -26,7 +26,7 @@ export default function Navbar({ section }: { section: NavSection }) {
           end
           className={({ isActive }) =>
             `flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium transition-colors hover:bg-accent-soft/60 dark:hover:bg-accent/20 ${
-              isActive ? 'bg-accent-soft/60 text-accent-strong dark:bg-accent/20 dark:text-teal-300' : ''
+              isActive ? 'bg-accent-soft/60 text-accent-strong dark:bg-accent/20 dark:text-accent-light' : ''
             }`
           }
         >

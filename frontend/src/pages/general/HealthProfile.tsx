@@ -37,7 +37,7 @@ export default function HealthProfile() {
   const profile = useHealthProfile()
 
   const backLink = (
-    <Link to="/general" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
+    <Link to="/general" className="text-sm font-medium text-accent hover:underline dark:text-accent-light">
       ← Back to General
     </Link>
   )
@@ -58,7 +58,7 @@ export default function HealthProfile() {
     <>
       {backLink}
       <h1 className="mt-4 flex items-center gap-3 text-3xl font-semibold">
-        <ClipboardFilled size={32} className="shrink-0 text-accent dark:text-teal-300" />
+        <ClipboardFilled size={32} className="shrink-0 text-accent dark:text-accent-light" />
         Health Profile
       </h1>
       <p className="mt-2 text-slate-600 dark:text-slate-400">
@@ -102,7 +102,7 @@ function ProfileForm({ initial }: { initial: Profile | null }) {
     <form
       onSubmit={handleSubmit(onSubmit)}
       noValidate
-      className="mt-6 space-y-4 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#172220]"
+      className="mt-6 space-y-4 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#1c1830]"
     >
       <ErrorBanner message={error} />
       <div className="grid gap-4 sm:grid-cols-2">

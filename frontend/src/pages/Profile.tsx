@@ -25,7 +25,7 @@ export default function Profile() {
 
   return (
     <>
-      <button type="button" onClick={goBack} className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
+      <button type="button" onClick={goBack} className="text-sm font-medium text-accent hover:underline dark:text-accent-light">
         ← Back
       </button>
       <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
@@ -64,7 +64,7 @@ function PetCard({ pet }: { pet: Pet }) {
     <Card
       title={
         <span className="inline-flex items-center gap-2">
-          <PawFilled size={20} className="text-accent dark:text-teal-300" />
+          <PawFilled size={20} className="text-accent dark:text-accent-light" />
           {pet.name}
         </span>
       }
@@ -86,7 +86,7 @@ function PetCard({ pet }: { pet: Pet }) {
 
 function Card({ title, children }: { title: ReactNode; children: ReactNode }) {
   return (
-    <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#172220]">
+    <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#1c1830]">
       <h2 className="mb-4 text-lg font-semibold">{title}</h2>
       <dl className="grid gap-x-6 gap-y-3 sm:grid-cols-[9rem_1fr]">{children}</dl>
     </section>

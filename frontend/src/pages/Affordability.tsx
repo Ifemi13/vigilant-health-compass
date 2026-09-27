@@ -71,11 +71,11 @@ export default function Affordability() {
 
   return (
     <>
-      <Link to="/pets" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
+      <Link to="/pets" className="text-sm font-medium text-accent hover:underline dark:text-accent-light">
         ← Back to Pets
       </Link>
       <h1 className="mt-4 flex items-center gap-3 text-3xl font-semibold">
-        <PigMoneyFilled size={32} className="shrink-0 text-accent dark:text-teal-300" />
+        <PigMoneyFilled size={32} className="shrink-0 text-accent dark:text-accent-light" />
         Affordability
       </h1>
       <p className="mt-2 text-slate-600 dark:text-slate-400">
@@ -149,7 +149,7 @@ function FilterForm({
     <form
       onSubmit={handleSubmit(onSearch)}
       noValidate
-      className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#172220]"
+      className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#1c1830]"
     >
       <div className="grid gap-4 sm:grid-cols-2">
         <div className="sm:col-span-2">
@@ -242,14 +242,14 @@ function ClinicCard({ clinic, species }: { clinic: Clinic; species: Species }) {
 
   return (
     // The name link stretches over the whole card (after:inset-0); the source link sits above it (z-10).
-    <li className="relative rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-accent hover:shadow-md dark:border-slate-800 dark:bg-[#172220]">
+    <li className="relative rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-accent hover:shadow-md dark:border-slate-800 dark:bg-[#1c1830]">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="min-w-0">
           <h3 className="font-semibold">
             <Link
               to={`/affordability/clinics/${clinic.id}?species=${species}`}
               state={{ backTo: location.pathname + location.search }}
-              className="after:absolute after:inset-0 after:rounded-2xl hover:text-accent focus:outline-none focus-visible:after:ring-2 focus-visible:after:ring-accent/40 dark:hover:text-teal-300"
+              className="after:absolute after:inset-0 after:rounded-2xl hover:text-accent focus:outline-none focus-visible:after:ring-2 focus-visible:after:ring-accent/40 dark:hover:text-accent-light"
             >
               {clinic.name}
             </Link>
@@ -270,7 +270,7 @@ function ClinicCard({ clinic, species }: { clinic: Clinic; species: Species }) {
               {price.service}
               {price.note && <span className="text-xs text-slate-500 dark:text-slate-400"> · {price.note}</span>}
             </span>
-            <span className="font-semibold text-accent-strong dark:text-teal-200">{formatPriceRange(price.price, price.priceHigh)}</span>
+            <span className="font-semibold text-accent-strong dark:text-accent-pale">{formatPriceRange(price.price, price.priceHigh)}</span>
           </li>
         ))}
       </ul>
@@ -288,12 +288,12 @@ function ClinicCard({ clinic, species }: { clinic: Clinic; species: Species }) {
             href={clinic.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="relative z-10 text-accent hover:underline dark:text-teal-300"
+            className="relative z-10 text-accent hover:underline dark:text-accent-light"
           >
             Source: {sourceHost(clinic.sourceUrl)} ↗
           </a>
         )}
-        <span className="ml-auto font-medium text-accent dark:text-teal-300" aria-hidden>
+        <span className="ml-auto font-medium text-accent dark:text-accent-light" aria-hidden>
           Get a price →
         </span>
       </div>

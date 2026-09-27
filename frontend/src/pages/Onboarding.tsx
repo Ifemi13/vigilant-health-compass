@@ -42,7 +42,7 @@ export default function Onboarding() {
             onClick={() => setRole(option.role)}
             className="rounded-xl border border-slate-200 p-5 text-left transition hover:border-accent hover:bg-accent-soft/40 focus:ring-2 focus:ring-accent/30 focus:outline-none dark:border-slate-700 dark:hover:bg-accent/15"
           >
-            <span className="inline-flex text-accent dark:text-teal-300" aria-hidden>
+            <span className="inline-flex text-accent dark:text-accent-light" aria-hidden>
               <option.icon size={30} />
             </span>
             <span className="mt-2 block font-semibold">{option.title}</span>
@@ -50,7 +50,7 @@ export default function Onboarding() {
           </button>
         ))}
       </div>
-      <Link to="/" className="mt-6 inline-block text-sm font-medium text-accent hover:underline dark:text-teal-300">
+      <Link to="/" className="mt-6 inline-block text-sm font-medium text-accent hover:underline dark:text-accent-light">
         ← Back
       </Link>
     </AuthCard>

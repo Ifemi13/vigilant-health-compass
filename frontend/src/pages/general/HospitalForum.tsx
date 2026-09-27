@@ -26,7 +26,7 @@ export default function HospitalForum() {
   const hospital = useHospital(hospitalId)
 
   const backLink = (
-    <Link to={`/general/awareness/${topicId}`} className="text-sm font-medium text-accent hover:underline dark:text-teal-300">
+    <Link to={`/general/awareness/${topicId}`} className="text-sm font-medium text-accent hover:underline dark:text-accent-light">
       ← Back to {topic?.title ?? 'topic'}
     </Link>
   )
@@ -48,7 +48,7 @@ export default function HospitalForum() {
   return (
     <>
       {backLink}
-      <section className="mt-4 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#172220]">
+      <section className="mt-4 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#1c1830]">
         <div className="flex flex-wrap items-start justify-between gap-3">
           <h1 className="text-2xl font-semibold">{h.name}</h1>
           <StarRating rating={h.starRating} />
@@ -62,7 +62,7 @@ export default function HospitalForum() {
           {h.county && <span className="text-slate-500 dark:text-slate-400"> · {h.county} County</span>}
         </p>
         {h.phone && (
-          <a href={`tel:${h.phone}`} className="mt-2 inline-block text-sm text-accent hover:underline dark:text-teal-300">
+          <a href={`tel:${h.phone}`} className="mt-2 inline-block text-sm text-accent hover:underline dark:text-accent-light">
             {h.phone}
           </a>
         )}
@@ -105,7 +105,7 @@ function CommentForm({ topicId, hospitalId }: { topicId: string; hospitalId: str
   }
 
   return (
-    <form onSubmit={onSubmit} noValidate className="mt-4 rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-[#172220]">
+    <form onSubmit={onSubmit} noValidate className="mt-4 rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-[#1c1830]">
       <label htmlFor="comment" className="sr-only">
         Your suggestion
       </label>
@@ -116,7 +116,7 @@ function CommentForm({ topicId, hospitalId }: { topicId: string; hospitalId: str
         value={body}
         onChange={(e) => setBody(e.target.value)}
         placeholder="What has helped you, or what would you suggest?"
-        className="w-full resize-y rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/30 dark:border-slate-700 dark:bg-[#0f1716]"
+        className="w-full resize-y rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/30 dark:border-slate-700 dark:bg-[#131020]"
       />
       {error && <p className="mt-2 text-sm text-red-600 dark:text-red-400">{error}</p>}
       <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
@@ -128,7 +128,7 @@ function CommentForm({ topicId, hospitalId }: { topicId: string; hospitalId: str
               {healthProfile.data === null && (
                 <>
                   {' '}
-                  <Link to="/general/health-profile" className="text-accent hover:underline dark:text-teal-300">
+                  <Link to="/general/health-profile" className="text-accent hover:underline dark:text-accent-light">
                     Add your age and sex
                   </Link>{' '}
                   to show them on your posts.
@@ -229,9 +229,9 @@ function CommentItem({ comment, topicId, hospitalId }: { comment: HospitalCommen
   }
 
   return (
-    <li className="flex gap-3 rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-[#172220]">
+    <li className="flex gap-3 rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-[#1c1830]">
       <span
-        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent-soft text-xs font-semibold text-accent-strong dark:bg-accent/20 dark:text-teal-200"
+        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent-soft text-xs font-semibold text-accent-strong dark:bg-accent/20 dark:text-accent-pale"
         aria-hidden
       >
         {initials}
@@ -266,7 +266,7 @@ function CommentItem({ comment, topicId, hospitalId }: { comment: HospitalCommen
               value={draft}
               onChange={(e) => setDraft(e.target.value)}
               autoFocus
-              className="w-full resize-y rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/30 dark:border-slate-700 dark:bg-[#0f1716]"
+              className="w-full resize-y rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-accent focus:ring-2 focus:ring-accent/30 dark:border-slate-700 dark:bg-[#131020]"
             />
             <div className="mt-2 flex items-center justify-end gap-2">
               <span className="mr-auto text-xs text-slate-400">
@@ -288,7 +288,7 @@ function CommentItem({ comment, topicId, hospitalId }: { comment: HospitalCommen
 
         {comment.mine && mode === 'view' && (
           <div className="mt-2 flex gap-3 text-xs font-medium">
-            <button type="button" onClick={startEditing} className="text-accent hover:underline dark:text-teal-300">
+            <button type="button" onClick={startEditing} className="text-accent hover:underline dark:text-accent-light">
               Edit
             </button>
             <button

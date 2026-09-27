@@ -104,24 +104,24 @@ export default function Awareness() {
 
   return (
     <>
-      <Link to="/pets" className="text-sm font-medium text-accent hover:underline dark:text-teal-300">← Back to Pets</Link>
+      <Link to="/pets" className="text-sm font-medium text-accent hover:underline dark:text-accent-light">← Back to Pets</Link>
       <div className="mt-6 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wide text-accent dark:text-teal-300">Pet wellness guide</p>
+          <p className="text-sm font-semibold uppercase tracking-wide text-accent dark:text-accent-light">Pet wellness guide</p>
           <h1 className="mt-2 text-3xl font-semibold">Awareness</h1>
           <p className="mt-2 max-w-2xl text-slate-600 dark:text-slate-400">Clear, practical notes on common health concerns, food, and everyday care.</p>
         </div>
         {pets.length > 1 ? (
           <label className="grid gap-1 text-sm font-medium">
             Choose a pet
-            <select value={pet?.id ?? ''} onChange={(event) => setSelectedPetId(event.target.value)} className="min-w-48 rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 dark:border-slate-700 dark:bg-[#172220] dark:text-white">
+            <select value={pet?.id ?? ''} onChange={(event) => setSelectedPetId(event.target.value)} className="min-w-48 rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 dark:border-slate-700 dark:bg-[#1c1830] dark:text-white">
               {pets.map((item) => <option key={item.id} value={item.id}>{item.name}</option>)}
             </select>
           </label>
         ) : !pet ? (
           <label className="grid gap-1 text-sm font-medium">
             Browse guidance for
-            <select value={generalSpecies} onChange={(event) => setGeneralSpecies(event.target.value as Species)} className="min-w-48 rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 dark:border-slate-700 dark:bg-[#172220] dark:text-white">
+            <select value={generalSpecies} onChange={(event) => setGeneralSpecies(event.target.value as Species)} className="min-w-48 rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 dark:border-slate-700 dark:bg-[#1c1830] dark:text-white">
               <option value="dog">Dogs</option><option value="cat">Cats</option><option value="other">Other species</option>
             </select>
           </label>
@@ -145,7 +145,7 @@ export default function Awareness() {
         </div>
         <div className="grid gap-3 md:grid-cols-2">{items.map((item) => <GuideCard key={item.title} item={item} />)}</div>
         {breedNote && (
-          <aside className="mt-4 rounded-lg border border-accent/30 bg-accent-soft/40 p-4 dark:border-teal-800 dark:bg-teal-950/30">
+          <aside className="mt-4 rounded-lg border border-accent/30 bg-accent-soft/40 p-4 dark:border-accent/40 dark:bg-accent/10">
             <h3 className="font-semibold">Breed-aware note: {breedNote.title}</h3>
             <p className="mt-2 text-sm text-slate-700 dark:text-slate-300">{breedNote.description}</p>
             <p className="mt-2 text-sm">{breedNote.action}</p>
@@ -153,7 +153,7 @@ export default function Awareness() {
           </aside>
         )}
         {topic === 'nutrition' && pet && (
-          <div className="mt-4 rounded-lg border border-slate-200 bg-white p-4 text-sm dark:border-slate-800 dark:bg-[#172220]">
+          <div className="mt-4 rounded-lg border border-slate-200 bg-white p-4 text-sm dark:border-slate-800 dark:bg-[#1c1830]">
             <h3 className="font-semibold">Your pet’s recorded details</h3>
             <p className="mt-1 text-slate-600 dark:text-slate-400">{pet.weightKg != null ? `Recorded weight: ${pet.weightKg} kg. Weight alone does not show whether it is healthy; ask your vet about body condition and portions.` : 'No weight is recorded. Ask your vet about body condition and an appropriate daily portion.'}</p>
           </div>
@@ -170,14 +170,14 @@ export default function Awareness() {
         <h2 className="font-semibold">When to get help</h2>
         <p className="mt-1">Trouble breathing, collapse, seizures, suspected poisoning, or inability to pass urine needs urgent veterinary attention. For any worrying or worsening change, contact your clinic.</p>
       </aside>
-      {!pet && <p className="mt-5 text-sm text-slate-600 dark:text-slate-400">Guidance is general because no pet profile is available. <Link to="/profile" className="font-medium text-accent underline dark:text-teal-300">View your profile</Link>.</p>}
+      {!pet && <p className="mt-5 text-sm text-slate-600 dark:text-slate-400">Guidance is general because no pet profile is available. <Link to="/profile" className="font-medium text-accent underline dark:text-accent-light">View your profile</Link>.</p>}
     </>
   )
 }
 
 function PetContext({ pet, species, stage }: { pet: Pet; species: Species; stage: string | null }) {
   return (
-    <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm dark:border-slate-800 dark:bg-[#172220]">
+    <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm dark:border-slate-800 dark:bg-[#1c1830]">
       <span className="font-semibold">Guidance for {pet.name}</span>
       <span className="text-slate-500 dark:text-slate-400">{[pet.species, pet.breed, stage].filter(Boolean).join(' · ')}</span>
       {species === 'other' && <span className="text-slate-500 dark:text-slate-400">Species-specific dog and cat guidance is not shown.</span>}
@@ -187,7 +187,7 @@ function PetContext({ pet, species, stage }: { pet: Pet; species: Species; stage
 
 function GuideCard({ item }: { item: GuideItem }) {
   return (
-    <article className="rounded-lg border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-[#172220]">
+    <article className="rounded-lg border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-[#1c1830]">
       <h3 className="font-semibold">{item.title}</h3>
       <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">{item.description}</p>
       <p className="mt-3 border-t border-slate-100 pt-3 text-sm dark:border-slate-800">{item.action}</p>
