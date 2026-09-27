@@ -7,6 +7,7 @@ import Awareness from './pages/Awareness'
 import Affordability from './pages/Affordability'
 import ClinicDetail from './pages/ClinicDetail'
 import ComingSoon from './pages/ComingSoon'
+import HealthAlerts from './pages/HealthAlerts'
 import Onboarding from './pages/Onboarding'
 import PetsHome from './pages/PetsHome'
 import Profile from './pages/Profile'
@@ -19,6 +20,7 @@ import { SECTIONS } from './sections'
 const FEATURE_PAGES: Record<string, ReactNode> = {
   '/affordability': <Affordability />,
   '/awareness': <Awareness />,
+  '/health-alerts': <HealthAlerts />,
 }
 
 export default function App() {
