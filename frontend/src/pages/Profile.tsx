@@ -1,25 +1,14 @@
 import { PawFilled } from '@mingcute/react/core-filled'
-import { useQueryClient } from '@tanstack/react-query'
-import type { ReactNode } from 'react'
 import { useLocation, useNavigate } from 'react-router'
-import { Button } from '../components/ui'
+import { ProfileCard as Card, ProfileRow as Row, SignOutButton } from '../components/ProfileCard'
 import { ACTIVITY_LABELS, ENVIRONMENT_LABELS, useMe, type Pet } from '../lib/profile'
-import { supabase } from '../lib/supabase'
 
 export default function Profile() {
   const { data: me } = useMe()
   const navigate = useNavigate()
   const location = useLocation()
-  const queryClient = useQueryClient()
 
-  // Profile opens from both the Pets and General navbars, so go back to wherever the user came from.
-  const goBack = () => (location.key === 'default' ? navigate('/', { replace: true }) : navigate(-1))
-
-  const signOut = async () => {
-    await supabase.auth.signOut()
-    queryClient.clear()
-    navigate('/signin', { replace: true })
-  }
+  const goBack = () => (location.key === 'default' ? navigate('/pets', { replace: true }) : navigate(-1))
 
   if (!me) return null
 
@@ -33,9 +22,7 @@ export default function Profile() {
           <h1 className="text-3xl font-semibold">Your profile</h1>
           <p className="mt-1 text-slate-600 dark:text-slate-400">{me.role === 'VET' ? 'Veterinarian' : 'Pet guardian'}</p>
         </div>
-        <Button variant="secondary" onClick={signOut}>
-          Sign out
-        </Button>
+        <SignOutButton />
       </div>
 
       <Card title="Account">
@@ -81,24 +68,6 @@ function PetCard({ pet }: { pet: Pet }) {
       <Row label="Health history" value={pet.healthHistory} />
       <Row label="Vaccinations" value={pet.vaccinationHistory} />
     </Card>
-  )
-}
-
-function Card({ title, children }: { title: ReactNode; children: ReactNode }) {
-  return (
-    <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-[#1c1830]">
-      <h2 className="mb-4 text-lg font-semibold">{title}</h2>
-      <dl className="grid gap-x-6 gap-y-3 sm:grid-cols-[9rem_1fr]">{children}</dl>
-    </section>
-  )
-}
-
-function Row({ label, value }: { label: string; value: string | null }) {
-  return (
-    <>
-      <dt className="text-sm text-slate-500 dark:text-slate-400">{label}</dt>
-      <dd className="text-sm whitespace-pre-line">{value || '—'}</dd>
-    </>
   )
 }
 

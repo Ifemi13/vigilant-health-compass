@@ -13,6 +13,7 @@ import ComingSoon from './pages/ComingSoon'
 import AwarenessTopic from './pages/general/AwarenessTopic'
 import AwarenessTopics from './pages/general/AwarenessTopics'
 import GeneralHome from './pages/general/GeneralHome'
+import GeneralProfile from './pages/general/GeneralProfile'
 import HealthProfile from './pages/general/HealthProfile'
 import HealthcareNearMe from './pages/general/HealthcareNearMe'
 import HospitalForum from './pages/general/HospitalForum'
@@ -58,6 +59,7 @@ export default function App() {
         <Route path="/general/awareness/:topicId/hospitals/:hospitalId" element={<HospitalForum />} />
         <Route path="/general/health-profile" element={<HealthProfile />} />
         <Route path="/general/near-me" element={<HealthcareNearMe />} />
+        <Route path="/general/profile" element={<GeneralProfile />} />
         {GENERAL_PANELS.filter((panel) => !BUILT_GENERAL_PANELS.includes(panel.path)).map((panel) => (
           <Route
             key={panel.path}

@@ -10,8 +10,11 @@ export interface NavSection {
   icon: IconComponent
 }
 
-/** Top bar shared by the Pets and General sections: logo (to the home screen), section link, Profile. */
-export default function Navbar({ section }: { section: NavSection }) {
+/**
+ * Top bar shared by the Pets and General sections: logo (to the home screen), section link, Profile.
+ * Each section has its own profile page, so the Profile link goes to `profileTo`.
+ */
+export default function Navbar({ section, profileTo }: { section: NavSection; profileTo: string }) {
   const { session } = useAuth()
   const initial = (session?.user.email ?? '?').charAt(0).toUpperCase()
 
@@ -34,7 +37,7 @@ export default function Navbar({ section }: { section: NavSection }) {
           {section.label}
         </NavLink>
         <NavLink
-          to="/profile"
+          to={profileTo}
           className={({ isActive }) =>
             `flex items-center gap-2 rounded-full py-1 pr-3 pl-1 text-sm font-medium transition-colors hover:bg-accent-soft/60 dark:hover:bg-accent/20 ${
               isActive ? 'bg-accent-soft/60 dark:bg-accent/20' : ''

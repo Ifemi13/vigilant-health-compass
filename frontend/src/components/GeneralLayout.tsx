@@ -6,7 +6,7 @@ import Navbar from './Navbar'
 export default function GeneralLayout() {
   return (
     <div className="min-h-svh">
-      <Navbar section={{ to: '/general', label: 'General', icon: CompassFilled }} />
+      <Navbar section={{ to: '/general', label: 'General', icon: CompassFilled }} profileTo="/general/profile" />
       <main className="mx-auto max-w-4xl px-4 py-10">
         <Outlet />
       </main>
