@@ -140,7 +140,7 @@ export default function WomensCare() {
             </div>
 
             <div className="mt-4 overflow-hidden rounded-lg border border-slate-200 bg-[#eef7f4] p-2 dark:border-slate-800 dark:bg-[#162521]">
-              <ComposableMap width={640} height={430} projection="geoAlbers" projectionConfig={{ center: [-89.5, 44.5], parallels: [43, 46], scale: 4700 }} className="h-auto w-full" aria-label="Interactive Wisconsin county map">
+              <ComposableMap width={640} height={430} projection="geoAlbers" projectionConfig={{ rotate: [89.8, 0, 0], center: [0, 44.8], parallels: [43, 46], scale: 4700 }} className="h-auto w-full" aria-label="Interactive Wisconsin county map">
                 <Geographies geography="/data/wisconsin-counties.geojson">
                   {({ geographies }) => geographies.map((geography) => {
                     const countyName = String(geography.properties?.name ?? '')
