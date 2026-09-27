@@ -1,0 +1,3923 @@
+{
+"source": "U.S. Census Bureau 2024 Gazetteer: ZIP Code Tabulation Areas (ZCTA) internal points",
+"url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_Gaz_zcta_national.zip",
+"filter": "ZCTAs 530xx-549xx (Wisconsin)",
+"retrieved": "2026-09-26",
+"zips": [
+{
+"zip": "53001",
+"latitude": 43.607877,
+"longitude": -88.055245
+},
+{
+"zip": "53002",
+"latitude": 43.463972,
+"longitude": -88.352057
+},
+{
+"zip": "53003",
+"latitude": 43.212283,
+"longitude": -88.519618
+},
+{
+"zip": "53004",
+"latitude": 43.499517,
+"longitude": -87.880511
+},
+{
+"zip": "53005",
+"latitude": 43.062401,
+"longitude": -88.098804
+},
+{
+"zip": "53006",
+"latitude": 43.620098,
+"longitude": -88.533555
+},
+{
+"zip": "53007",
+"latitude": 43.108448,
+"longitude": -88.072232
+},
+{
+"zip": "53010",
+"latitude": 43.612534,
+"longitude": -88.272017
+},
+{
+"zip": "53011",
+"latitude": 43.659584,
+"longitude": -88.091389
+},
+{
+"zip": "53012",
+"latitude": 43.314732,
+"longitude": -88.034639
+},
+{
+"zip": "53013",
+"latitude": 43.565318,
+"longitude": -87.846917
+},
+{
+"zip": "53014",
+"latitude": 44.026076,
+"longitude": -88.176312
+},
+{
+"zip": "53015",
+"latitude": 43.907689,
+"longitude": -87.785999
+},
+{
+"zip": "53016",
+"latitude": 43.311063,
+"longitude": -88.717679
+},
+{
+"zip": "53017",
+"latitude": 43.201546,
+"longitude": -88.252557
+},
+{
+"zip": "53018",
+"latitude": 43.048156,
+"longitude": -88.3905
+},
+{
+"zip": "53019",
+"latitude": 43.696272,
+"longitude": -88.302788
+},
+{
+"zip": "53020",
+"latitude": 43.861777,
+"longitude": -88.011415
+},
+{
+"zip": "53021",
+"latitude": 43.49465,
+"longitude": -88.009329
+},
+{
+"zip": "53022",
+"latitude": 43.232179,
+"longitude": -88.1158
+},
+{
+"zip": "53023",
+"latitude": 43.780438,
+"longitude": -88.10667
+},
+{
+"zip": "53024",
+"latitude": 43.332043,
+"longitude": -87.932727
+},
+{
+"zip": "53027",
+"latitude": 43.316267,
+"longitude": -88.371075
+},
+{
+"zip": "53029",
+"latitude": 43.146603,
+"longitude": -88.341
+},
+{
+"zip": "53031",
+"latitude": 43.640401,
+"longitude": -87.91782
+},
+{
+"zip": "53032",
+"latitude": 43.446723,
+"longitude": -88.623452
+},
+{
+"zip": "53033",
+"latitude": 43.239613,
+"longitude": -88.25398
+},
+{
+"zip": "53034",
+"latitude": 43.330168,
+"longitude": -88.618784
+},
+{
+"zip": "53035",
+"latitude": 43.387774,
+"longitude": -88.543422
+},
+{
+"zip": "53036",
+"latitude": 43.179661,
+"longitude": -88.575045
+},
+{
+"zip": "53037",
+"latitude": 43.312701,
+"longitude": -88.160386
+},
+{
+"zip": "53038",
+"latitude": 43.084577,
+"longitude": -88.790993
+},
+{
+"zip": "53039",
+"latitude": 43.369786,
+"longitude": -88.709466
+},
+{
+"zip": "53040",
+"latitude": 43.526965,
+"longitude": -88.191027
+},
+{
+"zip": "53042",
+"latitude": 43.956873,
+"longitude": -87.972329
+},
+{
+"zip": "53044",
+"latitude": 43.738345,
+"longitude": -87.783011
+},
+{
+"zip": "53045",
+"latitude": 43.058889,
+"longitude": -88.15252
+},
+{
+"zip": "53046",
+"latitude": 43.15724,
+"longitude": -88.158198
+},
+{
+"zip": "53047",
+"latitude": 43.260504,
+"longitude": -88.628678
+},
+{
+"zip": "53048",
+"latitude": 43.573797,
+"longitude": -88.457153
+},
+{
+"zip": "53049",
+"latitude": 43.886116,
+"longitude": -88.288605
+},
+{
+"zip": "53050",
+"latitude": 43.510549,
+"longitude": -88.547354
+},
+{
+"zip": "53051",
+"latitude": 43.159411,
+"longitude": -88.121548
+},
+{
+"zip": "53057",
+"latitude": 43.794689,
+"longitude": -88.236793
+},
+{
+"zip": "53058",
+"latitude": 43.112352,
+"longitude": -88.411579
+},
+{
+"zip": "53059",
+"latitude": 43.288468,
+"longitude": -88.524978
+},
+{
+"zip": "53061",
+"latitude": 43.945427,
+"longitude": -88.120654
+},
+{
+"zip": "53063",
+"latitude": 43.9635,
+"longitude": -87.802928
+},
+{
+"zip": "53065",
+"latitude": 43.679772,
+"longitude": -88.571625
+},
+{
+"zip": "53066",
+"latitude": 43.113916,
+"longitude": -88.489195
+},
+{
+"zip": "53069",
+"latitude": 43.112665,
+"longitude": -88.432986
+},
+{
+"zip": "53070",
+"latitude": 43.620528,
+"longitude": -87.806981
+},
+{
+"zip": "53072",
+"latitude": 43.079955,
+"longitude": -88.266595
+},
+{
+"zip": "53073",
+"latitude": 43.751541,
+"longitude": -87.996265
+},
+{
+"zip": "53074",
+"latitude": 43.431139,
+"longitude": -87.887322
+},
+{
+"zip": "53075",
+"latitude": 43.564515,
+"longitude": -87.990969
+},
+{
+"zip": "53076",
+"latitude": 43.269659,
+"longitude": -88.208999
+},
+{
+"zip": "53078",
+"latitude": 43.317703,
+"longitude": -88.466213
+},
+{
+"zip": "53079",
+"latitude": 43.814532,
+"longitude": -88.199468
+},
+{
+"zip": "53080",
+"latitude": 43.405726,
+"longitude": -87.986276
+},
+{
+"zip": "53081",
+"latitude": 43.710329,
+"longitude": -87.733076
+},
+{
+"zip": "53083",
+"latitude": 43.815995,
+"longitude": -87.764488
+},
+{
+"zip": "53085",
+"latitude": 43.732838,
+"longitude": -87.855452
+},
+{
+"zip": "53086",
+"latitude": 43.329685,
+"longitude": -88.273217
+},
+{
+"zip": "53088",
+"latitude": 44.071746,
+"longitude": -88.299592
+},
+{
+"zip": "53089",
+"latitude": 43.145469,
+"longitude": -88.238302
+},
+{
+"zip": "53090",
+"latitude": 43.462267,
+"longitude": -88.171686
+},
+{
+"zip": "53091",
+"latitude": 43.499624,
+"longitude": -88.434562
+},
+{
+"zip": "53092",
+"latitude": 43.214964,
+"longitude": -87.951218
+},
+{
+"zip": "53093",
+"latitude": 43.650061,
+"longitude": -87.93557
+},
+{
+"zip": "53094",
+"latitude": 43.144017,
+"longitude": -88.731994
+},
+{
+"zip": "53095",
+"latitude": 43.387671,
+"longitude": -88.158285
+},
+{
+"zip": "53097",
+"latitude": 43.242049,
+"longitude": -88.009823
+},
+{
+"zip": "53098",
+"latitude": 43.253742,
+"longitude": -88.710584
+},
+{
+"zip": "53099",
+"latitude": 43.380446,
+"longitude": -88.525704
+},
+{
+"zip": "53103",
+"latitude": 42.880533,
+"longitude": -88.217334
+},
+{
+"zip": "53104",
+"latitude": 42.547457,
+"longitude": -88.03928
+},
+{
+"zip": "53105",
+"latitude": 42.6636,
+"longitude": -88.280304
+},
+{
+"zip": "53108",
+"latitude": 42.815148,
+"longitude": -87.942986
+},
+{
+"zip": "53110",
+"latitude": 42.950505,
+"longitude": -87.860883
+},
+{
+"zip": "53114",
+"latitude": 42.609352,
+"longitude": -88.745886
+},
+{
+"zip": "53115",
+"latitude": 42.656603,
+"longitude": -88.668293
+},
+{
+"zip": "53118",
+"latitude": 42.962495,
+"longitude": -88.491539
+},
+{
+"zip": "53119",
+"latitude": 42.89309,
+"longitude": -88.485608
+},
+{
+"zip": "53120",
+"latitude": 42.80275,
+"longitude": -88.417448
+},
+{
+"zip": "53121",
+"latitude": 42.719665,
+"longitude": -88.534317
+},
+{
+"zip": "53122",
+"latitude": 43.04752,
+"longitude": -88.087029
+},
+{
+"zip": "53125",
+"latitude": 42.545706,
+"longitude": -88.561668
+},
+{
+"zip": "53126",
+"latitude": 42.794482,
+"longitude": -87.997744
+},
+{
+"zip": "53127",
+"latitude": 42.956246,
+"longitude": -88.380422
+},
+{
+"zip": "53128",
+"latitude": 42.528607,
+"longitude": -88.335232
+},
+{
+"zip": "53129",
+"latitude": 42.939993,
+"longitude": -88.000857
+},
+{
+"zip": "53130",
+"latitude": 42.941231,
+"longitude": -88.0495
+},
+{
+"zip": "53132",
+"latitude": 42.886404,
+"longitude": -88.012027
+},
+{
+"zip": "53137",
+"latitude": 43.007883,
+"longitude": -88.669078
+},
+{
+"zip": "53139",
+"latitude": 42.685512,
+"longitude": -88.120797
+},
+{
+"zip": "53140",
+"latitude": 42.620224,
+"longitude": -87.828347
+},
+{
+"zip": "53142",
+"latitude": 42.561695,
+"longitude": -87.891757
+},
+{
+"zip": "53143",
+"latitude": 42.561565,
+"longitude": -87.828956
+},
+{
+"zip": "53144",
+"latitude": 42.622122,
+"longitude": -87.920178
+},
+{
+"zip": "53146",
+"latitude": 42.973705,
+"longitude": -88.155385
+},
+{
+"zip": "53147",
+"latitude": 42.558204,
+"longitude": -88.451878
+},
+{
+"zip": "53149",
+"latitude": 42.875371,
+"longitude": -88.341581
+},
+{
+"zip": "53150",
+"latitude": 42.871356,
+"longitude": -88.13432
+},
+{
+"zip": "53151",
+"latitude": 42.97393,
+"longitude": -88.095566
+},
+{
+"zip": "53153",
+"latitude": 42.940891,
+"longitude": -88.402108
+},
+{
+"zip": "53154",
+"latitude": 42.878693,
+"longitude": -87.898676
+},
+{
+"zip": "53156",
+"latitude": 42.889875,
+"longitude": -88.588845
+},
+{
+"zip": "53157",
+"latitude": 42.537694,
+"longitude": -88.368555
+},
+{
+"zip": "53158",
+"latitude": 42.52459,
+"longitude": -87.885754
+},
+{
+"zip": "53167",
+"latitude": 42.730069,
+"longitude": -88.225404
+},
+{
+"zip": "53168",
+"latitude": 42.575473,
+"longitude": -88.124355
+},
+{
+"zip": "53170",
+"latitude": 42.555548,
+"longitude": -88.156246
+},
+{
+"zip": "53172",
+"latitude": 42.911998,
+"longitude": -87.859664
+},
+{
+"zip": "53176",
+"latitude": 42.643045,
+"longitude": -88.414458
+},
+{
+"zip": "53177",
+"latitude": 42.704395,
+"longitude": -87.933959
+},
+{
+"zip": "53178",
+"latitude": 43.029545,
+"longitude": -88.596788
+},
+{
+"zip": "53179",
+"latitude": 42.513801,
+"longitude": -88.130588
+},
+{
+"zip": "53181",
+"latitude": 42.519845,
+"longitude": -88.240997
+},
+{
+"zip": "53182",
+"latitude": 42.697723,
+"longitude": -88.040516
+},
+{
+"zip": "53183",
+"latitude": 43.005837,
+"longitude": -88.370357
+},
+{
+"zip": "53184",
+"latitude": 42.520486,
+"longitude": -88.613199
+},
+{
+"zip": "53185",
+"latitude": 42.798205,
+"longitude": -88.194451
+},
+{
+"zip": "53186",
+"latitude": 43.022155,
+"longitude": -88.204676
+},
+{
+"zip": "53188",
+"latitude": 43.020011,
+"longitude": -88.294411
+},
+{
+"zip": "53189",
+"latitude": 42.944064,
+"longitude": -88.290974
+},
+{
+"zip": "53190",
+"latitude": 42.807774,
+"longitude": -88.736204
+},
+{
+"zip": "53191",
+"latitude": 42.577543,
+"longitude": -88.545964
+},
+{
+"zip": "53192",
+"latitude": 42.516451,
+"longitude": -88.184286
+},
+{
+"zip": "53195",
+"latitude": 42.513955,
+"longitude": -88.490108
+},
+{
+"zip": "53202",
+"latitude": 43.049673,
+"longitude": -87.892384
+},
+{
+"zip": "53203",
+"latitude": 43.03807,
+"longitude": -87.914533
+},
+{
+"zip": "53204",
+"latitude": 43.018587,
+"longitude": -87.926053
+},
+{
+"zip": "53205",
+"latitude": 43.053576,
+"longitude": -87.933531
+},
+{
+"zip": "53206",
+"latitude": 43.07523,
+"longitude": -87.933521
+},
+{
+"zip": "53207",
+"latitude": 42.975097,
+"longitude": -87.8989
+},
+{
+"zip": "53208",
+"latitude": 43.043979,
+"longitude": -87.968096
+},
+{
+"zip": "53209",
+"latitude": 43.127801,
+"longitude": -87.949434
+},
+{
+"zip": "53210",
+"latitude": 43.068886,
+"longitude": -87.973815
+},
+{
+"zip": "53211",
+"latitude": 43.083056,
+"longitude": -87.883305
+},
+{
+"zip": "53212",
+"latitude": 43.073857,
+"longitude": -87.908604
+},
+{
+"zip": "53213",
+"latitude": 43.048801,
+"longitude": -88.001825
+},
+{
+"zip": "53214",
+"latitude": 43.020328,
+"longitude": -88.012866
+},
+{
+"zip": "53215",
+"latitude": 42.999273,
+"longitude": -87.943018
+},
+{
+"zip": "53216",
+"latitude": 43.086333,
+"longitude": -87.976321
+},
+{
+"zip": "53217",
+"latitude": 43.158225,
+"longitude": -87.913231
+},
+{
+"zip": "53218",
+"latitude": 43.11372,
+"longitude": -87.99298
+},
+{
+"zip": "53219",
+"latitude": 42.995181,
+"longitude": -87.993688
+},
+{
+"zip": "53220",
+"latitude": 42.965172,
+"longitude": -87.991328
+},
+{
+"zip": "53221",
+"latitude": 42.953909,
+"longitude": -87.943306
+},
+{
+"zip": "53222",
+"latitude": 43.081401,
+"longitude": -88.034966
+},
+{
+"zip": "53223",
+"latitude": 43.161027,
+"longitude": -87.988111
+},
+{
+"zip": "53224",
+"latitude": 43.16333,
+"longitude": -88.039699
+},
+{
+"zip": "53225",
+"latitude": 43.114266,
+"longitude": -88.042947
+},
+{
+"zip": "53226",
+"latitude": 43.050631,
+"longitude": -88.043161
+},
+{
+"zip": "53227",
+"latitude": 42.995814,
+"longitude": -88.042017
+},
+{
+"zip": "53228",
+"latitude": 42.969046,
+"longitude": -88.043224
+},
+{
+"zip": "53233",
+"latitude": 43.036914,
+"longitude": -87.933508
+},
+{
+"zip": "53235",
+"latitude": 42.973107,
+"longitude": -87.867895
+},
+{
+"zip": "53295",
+"latitude": 43.02227,
+"longitude": -87.976617
+},
+{
+"zip": "53402",
+"latitude": 42.795888,
+"longitude": -87.816532
+},
+{
+"zip": "53403",
+"latitude": 42.684171,
+"longitude": -87.815533
+},
+{
+"zip": "53404",
+"latitude": 42.760834,
+"longitude": -87.815278
+},
+{
+"zip": "53405",
+"latitude": 42.727644,
+"longitude": -87.829134
+},
+{
+"zip": "53406",
+"latitude": 42.734536,
+"longitude": -87.864893
+},
+{
+"zip": "53501",
+"latitude": 42.603546,
+"longitude": -89.075661
+},
+{
+"zip": "53502",
+"latitude": 42.730406,
+"longitude": -89.438069
+},
+{
+"zip": "53503",
+"latitude": 43.142976,
+"longitude": -89.957507
+},
+{
+"zip": "53504",
+"latitude": 42.717524,
+"longitude": -89.850503
+},
+{
+"zip": "53505",
+"latitude": 42.661074,
+"longitude": -88.820897
+},
+{
+"zip": "53506",
+"latitude": 43.164816,
+"longitude": -90.286348
+},
+{
+"zip": "53507",
+"latitude": 42.984266,
+"longitude": -89.914026
+},
+{
+"zip": "53508",
+"latitude": 42.866188,
+"longitude": -89.575582
+},
+{
+"zip": "53510",
+"latitude": 42.742415,
+"longitude": -90.322612
+},
+{
+"zip": "53511",
+"latitude": 42.546428,
+"longitude": -89.106715
+},
+{
+"zip": "53515",
+"latitude": 43.115004,
+"longitude": -89.739338
+},
+{
+"zip": "53516",
+"latitude": 42.79685,
+"longitude": -89.873566
+},
+{
+"zip": "53517",
+"latitude": 43.056983,
+"longitude": -89.832329
+},
+{
+"zip": "53518",
+"latitude": 43.240989,
+"longitude": -90.59513
+},
+{
+"zip": "53520",
+"latitude": 42.600902,
+"longitude": -89.361163
+},
+{
+"zip": "53521",
+"latitude": 42.838105,
+"longitude": -89.400302
+},
+{
+"zip": "53522",
+"latitude": 42.556909,
+"longitude": -89.78349
+},
+{
+"zip": "53523",
+"latitude": 42.984409,
+"longitude": -89.028839
+},
+{
+"zip": "53525",
+"latitude": 42.544032,
+"longitude": -88.846623
+},
+{
+"zip": "53526",
+"latitude": 42.974318,
+"longitude": -90.344407
+},
+{
+"zip": "53527",
+"latitude": 43.051357,
+"longitude": -89.192257
+},
+{
+"zip": "53528",
+"latitude": 43.1183,
+"longitude": -89.638014
+},
+{
+"zip": "53529",
+"latitude": 43.243074,
+"longitude": -89.531098
+},
+{
+"zip": "53530",
+"latitude": 42.693554,
+"longitude": -90.111658
+},
+{
+"zip": "53531",
+"latitude": 43.05689,
+"longitude": -89.099536
+},
+{
+"zip": "53532",
+"latitude": 43.249739,
+"longitude": -89.326713
+},
+{
+"zip": "53533",
+"latitude": 42.99682,
+"longitude": -90.162324
+},
+{
+"zip": "53534",
+"latitude": 42.860823,
+"longitude": -89.09331
+},
+{
+"zip": "53536",
+"latitude": 42.761233,
+"longitude": -89.267862
+},
+{
+"zip": "53537",
+"latitude": 42.672679,
+"longitude": -89.210601
+},
+{
+"zip": "53538",
+"latitude": 42.908935,
+"longitude": -88.871563
+},
+{
+"zip": "53540",
+"latitude": 43.221829,
+"longitude": -90.29361
+},
+{
+"zip": "53541",
+"latitude": 42.569708,
+"longitude": -90.029663
+},
+{
+"zip": "53543",
+"latitude": 43.057568,
+"longitude": -90.34546
+},
+{
+"zip": "53544",
+"latitude": 42.87756,
+"longitude": -89.905663
+},
+{
+"zip": "53545",
+"latitude": 42.738735,
+"longitude": -89.040224
+},
+{
+"zip": "53546",
+"latitude": 42.652244,
+"longitude": -88.948166
+},
+{
+"zip": "53548",
+"latitude": 42.689322,
+"longitude": -89.131287
+},
+{
+"zip": "53549",
+"latitude": 42.984485,
+"longitude": -88.765584
+},
+{
+"zip": "53550",
+"latitude": 42.552842,
+"longitude": -89.49393
+},
+{
+"zip": "53551",
+"latitude": 43.079479,
+"longitude": -88.916098
+},
+{
+"zip": "53553",
+"latitude": 42.912324,
+"longitude": -90.296958
+},
+{
+"zip": "53554",
+"latitude": 42.908694,
+"longitude": -90.440667
+},
+{
+"zip": "53555",
+"latitude": 43.320154,
+"longitude": -89.555784
+},
+{
+"zip": "53556",
+"latitude": 43.238115,
+"longitude": -90.245515
+},
+{
+"zip": "53557",
+"latitude": 43.338949,
+"longitude": -88.797661
+},
+{
+"zip": "53558",
+"latitude": 42.997128,
+"longitude": -89.275481
+},
+{
+"zip": "53559",
+"latitude": 43.165573,
+"longitude": -89.081901
+},
+{
+"zip": "53560",
+"latitude": 43.192255,
+"longitude": -89.737666
+},
+{
+"zip": "53561",
+"latitude": 43.399407,
+"longitude": -89.651691
+},
+{
+"zip": "53562",
+"latitude": 43.115952,
+"longitude": -89.543473
+},
+{
+"zip": "53563",
+"latitude": 42.781025,
+"longitude": -88.933515
+},
+{
+"zip": "53565",
+"latitude": 42.837485,
+"longitude": -90.166593
+},
+{
+"zip": "53566",
+"latitude": 42.609146,
+"longitude": -89.649429
+},
+{
+"zip": "53569",
+"latitude": 42.989235,
+"longitude": -90.434858
+},
+{
+"zip": "53570",
+"latitude": 42.731054,
+"longitude": -89.61958
+},
+{
+"zip": "53571",
+"latitude": 43.277906,
+"longitude": -89.353641
+},
+{
+"zip": "53572",
+"latitude": 42.960808,
+"longitude": -89.750087
+},
+{
+"zip": "53573",
+"latitude": 43.180877,
+"longitude": -90.459279
+},
+{
+"zip": "53574",
+"latitude": 42.818517,
+"longitude": -89.651825
+},
+{
+"zip": "53575",
+"latitude": 42.931609,
+"longitude": -89.387082
+},
+{
+"zip": "53576",
+"latitude": 42.625738,
+"longitude": -89.233212
+},
+{
+"zip": "53577",
+"latitude": 43.311608,
+"longitude": -90.064349
+},
+{
+"zip": "53578",
+"latitude": 43.311092,
+"longitude": -89.768881
+},
+{
+"zip": "53579",
+"latitude": 43.295981,
+"longitude": -88.867735
+},
+{
+"zip": "53580",
+"latitude": 42.859439,
+"longitude": -90.381301
+},
+{
+"zip": "53581",
+"latitude": 43.376738,
+"longitude": -90.419474
+},
+{
+"zip": "53582",
+"latitude": 43.018374,
+"longitude": -89.978797
+},
+{
+"zip": "53583",
+"latitude": 43.251453,
+"longitude": -89.813919
+},
+{
+"zip": "53584",
+"latitude": 43.279367,
+"longitude": -90.294675
+},
+{
+"zip": "53585",
+"latitude": 42.530456,
+"longitude": -88.720628
+},
+{
+"zip": "53586",
+"latitude": 42.572731,
+"longitude": -90.227024
+},
+{
+"zip": "53587",
+"latitude": 42.580307,
+"longitude": -89.904145
+},
+{
+"zip": "53588",
+"latitude": 43.189163,
+"longitude": -90.080481
+},
+{
+"zip": "53589",
+"latitude": 42.928255,
+"longitude": -89.215237
+},
+{
+"zip": "53590",
+"latitude": 43.19989,
+"longitude": -89.207148
+},
+{
+"zip": "53593",
+"latitude": 42.985198,
+"longitude": -89.579337
+},
+{
+"zip": "53594",
+"latitude": 43.183316,
+"longitude": -88.971228
+},
+{
+"zip": "53597",
+"latitude": 43.18141,
+"longitude": -89.457373
+},
+{
+"zip": "53598",
+"latitude": 43.209737,
+"longitude": -89.336532
+},
+{
+"zip": "53599",
+"latitude": 42.647308,
+"longitude": -89.857206
+},
+{
+"zip": "53703",
+"latitude": 43.079607,
+"longitude": -89.378423
+},
+{
+"zip": "53704",
+"latitude": 43.135832,
+"longitude": -89.34748
+},
+{
+"zip": "53705",
+"latitude": 43.074014,
+"longitude": -89.460509
+},
+{
+"zip": "53706",
+"latitude": 43.075022,
+"longitude": -89.409969
+},
+{
+"zip": "53711",
+"latitude": 43.011281,
+"longitude": -89.40931
+},
+{
+"zip": "53713",
+"latitude": 43.036981,
+"longitude": -89.393248
+},
+{
+"zip": "53714",
+"latitude": 43.100348,
+"longitude": -89.311966
+},
+{
+"zip": "53715",
+"latitude": 43.05561,
+"longitude": -89.387808
+},
+{
+"zip": "53716",
+"latitude": 43.065149,
+"longitude": -89.315015
+},
+{
+"zip": "53717",
+"latitude": 43.067686,
+"longitude": -89.521056
+},
+{
+"zip": "53718",
+"latitude": 43.097019,
+"longitude": -89.274603
+},
+{
+"zip": "53719",
+"latitude": 43.047533,
+"longitude": -89.506263
+},
+{
+"zip": "53726",
+"latitude": 43.070699,
+"longitude": -89.421896
+},
+{
+"zip": "53792",
+"latitude": 43.077166,
+"longitude": -89.430412
+},
+{
+"zip": "53801",
+"latitude": 42.924833,
+"longitude": -91.07456
+},
+{
+"zip": "53802",
+"latitude": 42.805457,
+"longitude": -90.893602
+},
+{
+"zip": "53803",
+"latitude": 42.559139,
+"longitude": -90.355078
+},
+{
+"zip": "53804",
+"latitude": 42.876456,
+"longitude": -90.907982
+},
+{
+"zip": "53805",
+"latitude": 43.142976,
+"longitude": -90.683004
+},
+{
+"zip": "53806",
+"latitude": 42.729852,
+"longitude": -90.919845
+},
+{
+"zip": "53807",
+"latitude": 42.616835,
+"longitude": -90.472701
+},
+{
+"zip": "53808",
+"latitude": 42.637432,
+"longitude": -90.59206
+},
+{
+"zip": "53809",
+"latitude": 42.993622,
+"longitude": -90.633235
+},
+{
+"zip": "53810",
+"latitude": 42.819851,
+"longitude": -90.997889
+},
+{
+"zip": "53811",
+"latitude": 42.541192,
+"longitude": -90.525122
+},
+{
+"zip": "53812",
+"latitude": 42.580805,
+"longitude": -90.602421
+},
+{
+"zip": "53813",
+"latitude": 42.843965,
+"longitude": -90.716982
+},
+{
+"zip": "53816",
+"latitude": 42.977951,
+"longitude": -90.857728
+},
+{
+"zip": "53817",
+"latitude": 42.940288,
+"longitude": -90.972343
+},
+{
+"zip": "53818",
+"latitude": 42.7457,
+"longitude": -90.492321
+},
+{
+"zip": "53820",
+"latitude": 42.699772,
+"longitude": -90.701468
+},
+{
+"zip": "53821",
+"latitude": 43.049076,
+"longitude": -91.057334
+},
+{
+"zip": "53825",
+"latitude": 42.91834,
+"longitude": -90.588504
+},
+{
+"zip": "53826",
+"latitude": 43.113736,
+"longitude": -90.924658
+},
+{
+"zip": "53827",
+"latitude": 43.045865,
+"longitude": -90.820473
+},
+{
+"zip": "53901",
+"latitude": 43.560907,
+"longitude": -89.483147
+},
+{
+"zip": "53910",
+"latitude": 43.886678,
+"longitude": -89.807748
+},
+{
+"zip": "53911",
+"latitude": 43.325818,
+"longitude": -89.367503
+},
+{
+"zip": "53913",
+"latitude": 43.492773,
+"longitude": -89.72873
+},
+{
+"zip": "53916",
+"latitude": 43.455976,
+"longitude": -88.848515
+},
+{
+"zip": "53919",
+"latitude": 43.733861,
+"longitude": -88.776014
+},
+{
+"zip": "53920",
+"latitude": 43.670723,
+"longitude": -89.604598
+},
+{
+"zip": "53922",
+"latitude": 43.52093,
+"longitude": -88.715147
+},
+{
+"zip": "53923",
+"latitude": 43.574139,
+"longitude": -89.138363
+},
+{
+"zip": "53924",
+"latitude": 43.483411,
+"longitude": -90.261729
+},
+{
+"zip": "53925",
+"latitude": 43.326703,
+"longitude": -89.057148
+},
+{
+"zip": "53926",
+"latitude": 43.666882,
+"longitude": -89.222839
+},
+{
+"zip": "53928",
+"latitude": 43.418098,
+"longitude": -89.155032
+},
+{
+"zip": "53929",
+"latitude": 43.75661,
+"longitude": -90.290996
+},
+{
+"zip": "53930",
+"latitude": 43.685212,
+"longitude": -89.498144
+},
+{
+"zip": "53931",
+"latitude": 43.742542,
+"longitude": -88.866939
+},
+{
+"zip": "53932",
+"latitude": 43.422362,
+"longitude": -89.055328
+},
+{
+"zip": "53933",
+"latitude": 43.584046,
+"longitude": -88.875214
+},
+{
+"zip": "53934",
+"latitude": 43.979489,
+"longitude": -89.823633
+},
+{
+"zip": "53935",
+"latitude": 43.587632,
+"longitude": -89.06555
+},
+{
+"zip": "53936",
+"latitude": 43.868893,
+"longitude": -89.707306
+},
+{
+"zip": "53937",
+"latitude": 43.386885,
+"longitude": -90.145424
+},
+{
+"zip": "53939",
+"latitude": 43.690381,
+"longitude": -89.138839
+},
+{
+"zip": "53940",
+"latitude": 43.591278,
+"longitude": -89.794431
+},
+{
+"zip": "53941",
+"latitude": 43.580149,
+"longitude": -90.135776
+},
+{
+"zip": "53942",
+"latitude": 43.463955,
+"longitude": -90.165331
+},
+{
+"zip": "53943",
+"latitude": 43.386819,
+"longitude": -90.035254
+},
+{
+"zip": "53944",
+"latitude": 43.688416,
+"longitude": -89.930181
+},
+{
+"zip": "53946",
+"latitude": 43.719381,
+"longitude": -89.021662
+},
+{
+"zip": "53947",
+"latitude": 43.746768,
+"longitude": -89.137671
+},
+{
+"zip": "53948",
+"latitude": 43.776559,
+"longitude": -90.040249
+},
+{
+"zip": "53949",
+"latitude": 43.782615,
+"longitude": -89.339644
+},
+{
+"zip": "53950",
+"latitude": 43.901156,
+"longitude": -90.137798
+},
+{
+"zip": "53951",
+"latitude": 43.38793,
+"longitude": -89.876247
+},
+{
+"zip": "53952",
+"latitude": 43.784927,
+"longitude": -89.58969
+},
+{
+"zip": "53953",
+"latitude": 43.766096,
+"longitude": -89.457916
+},
+{
+"zip": "53954",
+"latitude": 43.55154,
+"longitude": -89.313911
+},
+{
+"zip": "53955",
+"latitude": 43.399878,
+"longitude": -89.39869
+},
+{
+"zip": "53956",
+"latitude": 43.542019,
+"longitude": -89.017566
+},
+{
+"zip": "53959",
+"latitude": 43.533502,
+"longitude": -89.997349
+},
+{
+"zip": "53960",
+"latitude": 43.426085,
+"longitude": -89.235375
+},
+{
+"zip": "53961",
+"latitude": 43.463686,
+"longitude": -89.944341
+},
+{
+"zip": "53962",
+"latitude": 43.68353,
+"longitude": -90.264986
+},
+{
+"zip": "53963",
+"latitude": 43.634671,
+"longitude": -88.737589
+},
+{
+"zip": "53964",
+"latitude": 43.912582,
+"longitude": -89.512502
+},
+{
+"zip": "53965",
+"latitude": 43.671422,
+"longitude": -89.748134
+},
+{
+"zip": "53968",
+"latitude": 43.635315,
+"longitude": -90.235854
+},
+{
+"zip": "53969",
+"latitude": 43.495662,
+"longitude": -89.300282
+},
+{
+"zip": "54001",
+"latitude": 45.33433,
+"longitude": -92.386607
+},
+{
+"zip": "54002",
+"latitude": 44.959627,
+"longitude": -92.371857
+},
+{
+"zip": "54003",
+"latitude": 44.783102,
+"longitude": -92.446405
+},
+{
+"zip": "54004",
+"latitude": 45.30222,
+"longitude": -92.125177
+},
+{
+"zip": "54005",
+"latitude": 45.228602,
+"longitude": -92.230101
+},
+{
+"zip": "54006",
+"latitude": 45.590505,
+"longitude": -92.646687
+},
+{
+"zip": "54007",
+"latitude": 45.190329,
+"longitude": -92.35294
+},
+{
+"zip": "54009",
+"latitude": 45.352521,
+"longitude": -92.577819
+},
+{
+"zip": "54011",
+"latitude": 44.718292,
+"longitude": -92.464706
+},
+{
+"zip": "54013",
+"latitude": 45.08295,
+"longitude": -92.228166
+},
+{
+"zip": "54014",
+"latitude": 44.648704,
+"longitude": -92.572769
+},
+{
+"zip": "54015",
+"latitude": 44.970815,
+"longitude": -92.453163
+},
+{
+"zip": "54016",
+"latitude": 44.981214,
+"longitude": -92.694785
+},
+{
+"zip": "54017",
+"latitude": 45.120019,
+"longitude": -92.51979
+},
+{
+"zip": "54020",
+"latitude": 45.27476,
+"longitude": -92.662039
+},
+{
+"zip": "54021",
+"latitude": 44.734183,
+"longitude": -92.706307
+},
+{
+"zip": "54022",
+"latitude": 44.846857,
+"longitude": -92.611118
+},
+{
+"zip": "54023",
+"latitude": 44.977409,
+"longitude": -92.548196
+},
+{
+"zip": "54024",
+"latitude": 45.5017,
+"longitude": -92.640733
+},
+{
+"zip": "54025",
+"latitude": 45.143751,
+"longitude": -92.680358
+},
+{
+"zip": "54026",
+"latitude": 45.227579,
+"longitude": -92.53474
+},
+{
+"zip": "54027",
+"latitude": 44.924026,
+"longitude": -92.199858
+},
+{
+"zip": "54028",
+"latitude": 44.954968,
+"longitude": -92.283413
+},
+{
+"zip": "54082",
+"latitude": 45.069563,
+"longitude": -92.7511
+},
+{
+"zip": "54101",
+"latitude": 44.785785,
+"longitude": -88.075082
+},
+{
+"zip": "54102",
+"latitude": 45.498029,
+"longitude": -88.014598
+},
+{
+"zip": "54103",
+"latitude": 45.63688,
+"longitude": -88.516296
+},
+{
+"zip": "54104",
+"latitude": 45.4344,
+"longitude": -88.271131
+},
+{
+"zip": "54106",
+"latitude": 44.485462,
+"longitude": -88.456588
+},
+{
+"zip": "54107",
+"latitude": 44.700663,
+"longitude": -88.456942
+},
+{
+"zip": "54110",
+"latitude": 44.184885,
+"longitude": -88.0819
+},
+{
+"zip": "54111",
+"latitude": 44.812102,
+"longitude": -88.380018
+},
+{
+"zip": "54112",
+"latitude": 45.054691,
+"longitude": -88.05484
+},
+{
+"zip": "54113",
+"latitude": 44.261995,
+"longitude": -88.309534
+},
+{
+"zip": "54114",
+"latitude": 45.245414,
+"longitude": -88.108864
+},
+{
+"zip": "54115",
+"latitude": 44.405368,
+"longitude": -88.08935
+},
+{
+"zip": "54119",
+"latitude": 45.61198,
+"longitude": -88.196344
+},
+{
+"zip": "54120",
+"latitude": 45.803454,
+"longitude": -88.569329
+},
+{
+"zip": "54121",
+"latitude": 45.865638,
+"longitude": -88.326971
+},
+{
+"zip": "54123",
+"latitude": 44.208779,
+"longitude": -88.155184
+},
+{
+"zip": "54124",
+"latitude": 44.908023,
+"longitude": -88.345233
+},
+{
+"zip": "54125",
+"latitude": 45.579138,
+"longitude": -88.401622
+},
+{
+"zip": "54126",
+"latitude": 44.288933,
+"longitude": -88.032469
+},
+{
+"zip": "54127",
+"latitude": 44.796922,
+"longitude": -88.268174
+},
+{
+"zip": "54128",
+"latitude": 44.864838,
+"longitude": -88.808757
+},
+{
+"zip": "54129",
+"latitude": 44.125112,
+"longitude": -88.199405
+},
+{
+"zip": "54130",
+"latitude": 44.311017,
+"longitude": -88.244079
+},
+{
+"zip": "54135",
+"latitude": 44.907717,
+"longitude": -88.626589
+},
+{
+"zip": "54136",
+"latitude": 44.268219,
+"longitude": -88.338535
+},
+{
+"zip": "54137",
+"latitude": 44.75843,
+"longitude": -88.256104
+},
+{
+"zip": "54138",
+"latitude": 45.333606,
+"longitude": -88.409689
+},
+{
+"zip": "54139",
+"latitude": 44.956844,
+"longitude": -88.075505
+},
+{
+"zip": "54140",
+"latitude": 44.288433,
+"longitude": -88.310552
+},
+{
+"zip": "54141",
+"latitude": 44.728584,
+"longitude": -87.998318
+},
+{
+"zip": "54143",
+"latitude": 45.076169,
+"longitude": -87.698833
+},
+{
+"zip": "54149",
+"latitude": 45.211171,
+"longitude": -88.443513
+},
+{
+"zip": "54150",
+"latitude": 44.969198,
+"longitude": -88.788175
+},
+{
+"zip": "54151",
+"latitude": 45.725441,
+"longitude": -87.988217
+},
+{
+"zip": "54152",
+"latitude": 44.566466,
+"longitude": -88.470528
+},
+{
+"zip": "54153",
+"latitude": 44.898069,
+"longitude": -87.91574
+},
+{
+"zip": "54154",
+"latitude": 44.87369,
+"longitude": -88.182068
+},
+{
+"zip": "54155",
+"latitude": 44.527495,
+"longitude": -88.200548
+},
+{
+"zip": "54156",
+"latitude": 45.610359,
+"longitude": -87.944169
+},
+{
+"zip": "54157",
+"latitude": 45.048231,
+"longitude": -87.8112
+},
+{
+"zip": "54159",
+"latitude": 45.193355,
+"longitude": -87.838849
+},
+{
+"zip": "54160",
+"latitude": 44.118481,
+"longitude": -88.101704
+},
+{
+"zip": "54161",
+"latitude": 45.135186,
+"longitude": -88.150639
+},
+{
+"zip": "54162",
+"latitude": 44.66254,
+"longitude": -88.270904
+},
+{
+"zip": "54165",
+"latitude": 44.521215,
+"longitude": -88.316334
+},
+{
+"zip": "54166",
+"latitude": 44.778789,
+"longitude": -88.634568
+},
+{
+"zip": "54169",
+"latitude": 44.176686,
+"longitude": -88.280739
+},
+{
+"zip": "54170",
+"latitude": 44.536096,
+"longitude": -88.57693
+},
+{
+"zip": "54171",
+"latitude": 44.715231,
+"longitude": -88.096472
+},
+{
+"zip": "54173",
+"latitude": 44.640749,
+"longitude": -88.014886
+},
+{
+"zip": "54174",
+"latitude": 45.03449,
+"longitude": -88.437377
+},
+{
+"zip": "54175",
+"latitude": 45.304391,
+"longitude": -88.62536
+},
+{
+"zip": "54177",
+"latitude": 45.366107,
+"longitude": -87.913138
+},
+{
+"zip": "54180",
+"latitude": 44.330219,
+"longitude": -88.178304
+},
+{
+"zip": "54201",
+"latitude": 44.626823,
+"longitude": -87.486614
+},
+{
+"zip": "54202",
+"latitude": 45.087307,
+"longitude": -87.140061
+},
+{
+"zip": "54204",
+"latitude": 44.755474,
+"longitude": -87.605318
+},
+{
+"zip": "54205",
+"latitude": 44.61075,
+"longitude": -87.632443
+},
+{
+"zip": "54207",
+"latitude": 44.080075,
+"longitude": -87.982256
+},
+{
+"zip": "54208",
+"latitude": 44.363565,
+"longitude": -87.799595
+},
+{
+"zip": "54209",
+"latitude": 45.017946,
+"longitude": -87.270394
+},
+{
+"zip": "54210",
+"latitude": 45.246247,
+"longitude": -87.035915
+},
+{
+"zip": "54211",
+"latitude": 45.160359,
+"longitude": -87.166369
+},
+{
+"zip": "54212",
+"latitude": 45.109775,
+"longitude": -87.209029
+},
+{
+"zip": "54213",
+"latitude": 44.695162,
+"longitude": -87.528228
+},
+{
+"zip": "54214",
+"latitude": 44.19893,
+"longitude": -87.714444
+},
+{
+"zip": "54215",
+"latitude": 44.226774,
+"longitude": -87.803316
+},
+{
+"zip": "54216",
+"latitude": 44.438598,
+"longitude": -87.569911
+},
+{
+"zip": "54217",
+"latitude": 44.548118,
+"longitude": -87.717899
+},
+{
+"zip": "54220",
+"latitude": 44.091177,
+"longitude": -87.724511
+},
+{
+"zip": "54227",
+"latitude": 44.284115,
+"longitude": -87.804799
+},
+{
+"zip": "54228",
+"latitude": 44.278161,
+"longitude": -87.650284
+},
+{
+"zip": "54229",
+"latitude": 44.560061,
+"longitude": -87.815517
+},
+{
+"zip": "54230",
+"latitude": 44.159839,
+"longitude": -87.91504
+},
+{
+"zip": "54232",
+"latitude": 44.007345,
+"longitude": -87.924787
+},
+{
+"zip": "54234",
+"latitude": 45.181963,
+"longitude": -87.10151
+},
+{
+"zip": "54235",
+"latitude": 44.843613,
+"longitude": -87.37279
+},
+{
+"zip": "54241",
+"latitude": 44.215871,
+"longitude": -87.594706
+},
+{
+"zip": "54245",
+"latitude": 44.030924,
+"longitude": -87.898061
+},
+{
+"zip": "54246",
+"latitude": 45.373209,
+"longitude": -86.899374
+},
+{
+"zip": "54247",
+"latitude": 44.199973,
+"longitude": -87.790095
+},
+{
+"zip": "54301",
+"latitude": 44.480778,
+"longitude": -88.016063
+},
+{
+"zip": "54302",
+"latitude": 44.506657,
+"longitude": -87.976285
+},
+{
+"zip": "54303",
+"latitude": 44.543349,
+"longitude": -88.047176
+},
+{
+"zip": "54304",
+"latitude": 44.49279,
+"longitude": -88.067301
+},
+{
+"zip": "54307",
+"latitude": 44.470458,
+"longitude": -88.036594
+},
+{
+"zip": "54311",
+"latitude": 44.480319,
+"longitude": -87.892082
+},
+{
+"zip": "54313",
+"latitude": 44.583773,
+"longitude": -88.115037
+},
+{
+"zip": "54401",
+"latitude": 44.966821,
+"longitude": -89.709421
+},
+{
+"zip": "54403",
+"latitude": 45.018505,
+"longitude": -89.525117
+},
+{
+"zip": "54405",
+"latitude": 44.96753,
+"longitude": -90.282268
+},
+{
+"zip": "54406",
+"latitude": 44.412217,
+"longitude": -89.30493
+},
+{
+"zip": "54407",
+"latitude": 44.532194,
+"longitude": -89.281769
+},
+{
+"zip": "54408",
+"latitude": 45.025581,
+"longitude": -89.323997
+},
+{
+"zip": "54409",
+"latitude": 45.122181,
+"longitude": -89.170872
+},
+{
+"zip": "54410",
+"latitude": 44.542291,
+"longitude": -90.030599
+},
+{
+"zip": "54411",
+"latitude": 45.06256,
+"longitude": -90.033418
+},
+{
+"zip": "54412",
+"latitude": 44.663265,
+"longitude": -89.974225
+},
+{
+"zip": "54413",
+"latitude": 44.291454,
+"longitude": -90.148197
+},
+{
+"zip": "54414",
+"latitude": 44.959673,
+"longitude": -89.176857
+},
+{
+"zip": "54416",
+"latitude": 44.884118,
+"longitude": -88.94842
+},
+{
+"zip": "54417",
+"latitude": 45.027187,
+"longitude": -89.654128
+},
+{
+"zip": "54418",
+"latitude": 45.211795,
+"longitude": -88.983032
+},
+{
+"zip": "54420",
+"latitude": 44.610077,
+"longitude": -90.350683
+},
+{
+"zip": "54421",
+"latitude": 44.895191,
+"longitude": -90.288689
+},
+{
+"zip": "54422",
+"latitude": 44.977342,
+"longitude": -90.445395
+},
+{
+"zip": "54423",
+"latitude": 44.578892,
+"longitude": -89.425918
+},
+{
+"zip": "54424",
+"latitude": 45.286662,
+"longitude": -89.192334
+},
+{
+"zip": "54425",
+"latitude": 45.006782,
+"longitude": -90.341083
+},
+{
+"zip": "54426",
+"latitude": 44.911498,
+"longitude": -89.996824
+},
+{
+"zip": "54427",
+"latitude": 44.824616,
+"longitude": -89.257133
+},
+{
+"zip": "54428",
+"latitude": 45.443489,
+"longitude": -89.161449
+},
+{
+"zip": "54430",
+"latitude": 45.13608,
+"longitude": -88.885701
+},
+{
+"zip": "54433",
+"latitude": 45.226674,
+"longitude": -90.812628
+},
+{
+"zip": "54435",
+"latitude": 45.360468,
+"longitude": -89.438197
+},
+{
+"zip": "54436",
+"latitude": 44.534563,
+"longitude": -90.427162
+},
+{
+"zip": "54437",
+"latitude": 44.777208,
+"longitude": -90.629136
+},
+{
+"zip": "54440",
+"latitude": 44.807094,
+"longitude": -89.390975
+},
+{
+"zip": "54441",
+"latitude": 44.642011,
+"longitude": -90.10604
+},
+{
+"zip": "54442",
+"latitude": 45.358854,
+"longitude": -89.65898
+},
+{
+"zip": "54443",
+"latitude": 44.608922,
+"longitude": -89.751725
+},
+{
+"zip": "54446",
+"latitude": 44.747785,
+"longitude": -90.466411
+},
+{
+"zip": "54447",
+"latitude": 45.106647,
+"longitude": -90.72209
+},
+{
+"zip": "54448",
+"latitude": 44.93369,
+"longitude": -89.831664
+},
+{
+"zip": "54449",
+"latitude": 44.637705,
+"longitude": -90.196801
+},
+{
+"zip": "54450",
+"latitude": 45.003649,
+"longitude": -89.041805
+},
+{
+"zip": "54451",
+"latitude": 45.19739,
+"longitude": -90.407651
+},
+{
+"zip": "54452",
+"latitude": 45.217729,
+"longitude": -89.793643
+},
+{
+"zip": "54454",
+"latitude": 44.601983,
+"longitude": -89.883974
+},
+{
+"zip": "54455",
+"latitude": 44.766821,
+"longitude": -89.684474
+},
+{
+"zip": "54456",
+"latitude": 44.544396,
+"longitude": -90.632781
+},
+{
+"zip": "54457",
+"latitude": 44.229258,
+"longitude": -89.897501
+},
+{
+"zip": "54458",
+"latitude": 44.497118,
+"longitude": -89.306142
+},
+{
+"zip": "54459",
+"latitude": 45.412588,
+"longitude": -90.237432
+},
+{
+"zip": "54460",
+"latitude": 44.953422,
+"longitude": -90.532895
+},
+{
+"zip": "54462",
+"latitude": 45.392002,
+"longitude": -89.007393
+},
+{
+"zip": "54463",
+"latitude": 45.498652,
+"longitude": -89.232818
+},
+{
+"zip": "54464",
+"latitude": 45.054774,
+"longitude": -89.01748
+},
+{
+"zip": "54465",
+"latitude": 45.396263,
+"longitude": -88.875744
+},
+{
+"zip": "54466",
+"latitude": 44.385459,
+"longitude": -90.327046
+},
+{
+"zip": "54467",
+"latitude": 44.413919,
+"longitude": -89.538901
+},
+{
+"zip": "54469",
+"latitude": 44.345149,
+"longitude": -89.874087
+},
+{
+"zip": "54470",
+"latitude": 45.291895,
+"longitude": -90.136696
+},
+{
+"zip": "54471",
+"latitude": 44.930719,
+"longitude": -89.424316
+},
+{
+"zip": "54473",
+"latitude": 44.650645,
+"longitude": -89.352368
+},
+{
+"zip": "54474",
+"latitude": 44.873714,
+"longitude": -89.61975
+},
+{
+"zip": "54475",
+"latitude": 44.484609,
+"longitude": -89.793126
+},
+{
+"zip": "54476",
+"latitude": 44.88996,
+"longitude": -89.520725
+},
+{
+"zip": "54479",
+"latitude": 44.750611,
+"longitude": -90.331989
+},
+{
+"zip": "54480",
+"latitude": 45.05431,
+"longitude": -90.269289
+},
+{
+"zip": "54481",
+"latitude": 44.522502,
+"longitude": -89.646137
+},
+{
+"zip": "54482",
+"latitude": 44.550416,
+"longitude": -89.509449
+},
+{
+"zip": "54484",
+"latitude": 44.800275,
+"longitude": -90.081667
+},
+{
+"zip": "54485",
+"latitude": 45.393438,
+"longitude": -89.220286
+},
+{
+"zip": "54486",
+"latitude": 44.718048,
+"longitude": -89.045227
+},
+{
+"zip": "54487",
+"latitude": 45.510949,
+"longitude": -89.744184
+},
+{
+"zip": "54488",
+"latitude": 44.843146,
+"longitude": -90.346204
+},
+{
+"zip": "54489",
+"latitude": 44.460777,
+"longitude": -90.003987
+},
+{
+"zip": "54490",
+"latitude": 45.32538,
+"longitude": -90.408626
+},
+{
+"zip": "54491",
+"latitude": 45.227481,
+"longitude": -88.749006
+},
+{
+"zip": "54493",
+"latitude": 44.69676,
+"longitude": -90.81072
+},
+{
+"zip": "54494",
+"latitude": 44.340807,
+"longitude": -89.735011
+},
+{
+"zip": "54495",
+"latitude": 44.391655,
+"longitude": -89.958705
+},
+{
+"zip": "54498",
+"latitude": 45.035112,
+"longitude": -90.629022
+},
+{
+"zip": "54499",
+"latitude": 44.789831,
+"longitude": -89.176405
+},
+{
+"zip": "54501",
+"latitude": 45.657615,
+"longitude": -89.349239
+},
+{
+"zip": "54511",
+"latitude": 45.737476,
+"longitude": -88.823136
+},
+{
+"zip": "54512",
+"latitude": 46.091151,
+"longitude": -89.659025
+},
+{
+"zip": "54513",
+"latitude": 45.578372,
+"longitude": -90.141255
+},
+{
+"zip": "54514",
+"latitude": 46.032511,
+"longitude": -90.495824
+},
+{
+"zip": "54515",
+"latitude": 45.512603,
+"longitude": -90.491098
+},
+{
+"zip": "54517",
+"latitude": 46.121051,
+"longitude": -90.934042
+},
+{
+"zip": "54519",
+"latitude": 46.054749,
+"longitude": -89.263568
+},
+{
+"zip": "54520",
+"latitude": 45.54124,
+"longitude": -88.9329
+},
+{
+"zip": "54521",
+"latitude": 45.916231,
+"longitude": -89.254165
+},
+{
+"zip": "54524",
+"latitude": 45.828177,
+"longitude": -90.392415
+},
+{
+"zip": "54525",
+"latitude": 46.434358,
+"longitude": -90.225507
+},
+{
+"zip": "54526",
+"latitude": 45.529271,
+"longitude": -90.85718
+},
+{
+"zip": "54527",
+"latitude": 46.126172,
+"longitude": -90.640325
+},
+{
+"zip": "54529",
+"latitude": 45.677711,
+"longitude": -89.667165
+},
+{
+"zip": "54530",
+"latitude": 45.529066,
+"longitude": -90.715445
+},
+{
+"zip": "54531",
+"latitude": 45.752823,
+"longitude": -89.774652
+},
+{
+"zip": "54534",
+"latitude": 46.352058,
+"longitude": -90.22372
+},
+{
+"zip": "54536",
+"latitude": 46.347698,
+"longitude": -90.338071
+},
+{
+"zip": "54537",
+"latitude": 45.533815,
+"longitude": -90.602234
+},
+{
+"zip": "54538",
+"latitude": 45.979627,
+"longitude": -89.926581
+},
+{
+"zip": "54539",
+"latitude": 45.809175,
+"longitude": -89.577404
+},
+{
+"zip": "54540",
+"latitude": 46.154791,
+"longitude": -89.372738
+},
+{
+"zip": "54541",
+"latitude": 45.553631,
+"longitude": -88.662073
+},
+{
+"zip": "54542",
+"latitude": 45.922608,
+"longitude": -88.745342
+},
+{
+"zip": "54545",
+"latitude": 46.133995,
+"longitude": -89.854518
+},
+{
+"zip": "54546",
+"latitude": 46.287313,
+"longitude": -90.748955
+},
+{
+"zip": "54547",
+"latitude": 46.21159,
+"longitude": -90.10617
+},
+{
+"zip": "54548",
+"latitude": 45.866014,
+"longitude": -89.831735
+},
+{
+"zip": "54550",
+"latitude": 46.347845,
+"longitude": -90.259437
+},
+{
+"zip": "54552",
+"latitude": 45.929782,
+"longitude": -90.292821
+},
+{
+"zip": "54554",
+"latitude": 46.060032,
+"longitude": -89.064052
+},
+{
+"zip": "54555",
+"latitude": 45.768047,
+"longitude": -90.330476
+},
+{
+"zip": "54556",
+"latitude": 45.53473,
+"longitude": -90.317067
+},
+{
+"zip": "54557",
+"latitude": 46.211775,
+"longitude": -89.747843
+},
+{
+"zip": "54558",
+"latitude": 45.925125,
+"longitude": -89.499382
+},
+{
+"zip": "54559",
+"latitude": 46.495208,
+"longitude": -90.49123
+},
+{
+"zip": "54560",
+"latitude": 46.036677,
+"longitude": -89.552305
+},
+{
+"zip": "54561",
+"latitude": 46.06915,
+"longitude": -89.426527
+},
+{
+"zip": "54562",
+"latitude": 45.802655,
+"longitude": -89.079344
+},
+{
+"zip": "54563",
+"latitude": 45.460162,
+"longitude": -90.970548
+},
+{
+"zip": "54564",
+"latitude": 45.604132,
+"longitude": -89.961429
+},
+{
+"zip": "54565",
+"latitude": 46.284828,
+"longitude": -90.465513
+},
+{
+"zip": "54566",
+"latitude": 45.428346,
+"longitude": -88.630658
+},
+{
+"zip": "54568",
+"latitude": 45.960879,
+"longitude": -89.668172
+},
+{
+"zip": "54601",
+"latitude": 43.806243,
+"longitude": -91.140632
+},
+{
+"zip": "54603",
+"latitude": 43.857742,
+"longitude": -91.251775
+},
+{
+"zip": "54610",
+"latitude": 44.365117,
+"longitude": -91.831714
+},
+{
+"zip": "54611",
+"latitude": 44.446225,
+"longitude": -90.951582
+},
+{
+"zip": "54612",
+"latitude": 44.249594,
+"longitude": -91.501513
+},
+{
+"zip": "54613",
+"latitude": 44.075585,
+"longitude": -89.923744
+},
+{
+"zip": "54614",
+"latitude": 43.904941,
+"longitude": -90.952842
+},
+{
+"zip": "54615",
+"latitude": 44.266352,
+"longitude": -90.784217
+},
+{
+"zip": "54616",
+"latitude": 44.311465,
+"longitude": -91.213854
+},
+{
+"zip": "54618",
+"latitude": 43.963629,
+"longitude": -90.285854
+},
+{
+"zip": "54619",
+"latitude": 43.7575,
+"longitude": -90.774231
+},
+{
+"zip": "54621",
+"latitude": 43.646508,
+"longitude": -91.082311
+},
+{
+"zip": "54622",
+"latitude": 44.273429,
+"longitude": -91.773972
+},
+{
+"zip": "54623",
+"latitude": 43.72924,
+"longitude": -91.027212
+},
+{
+"zip": "54624",
+"latitude": 43.461506,
+"longitude": -91.131141
+},
+{
+"zip": "54625",
+"latitude": 44.132865,
+"longitude": -91.525052
+},
+{
+"zip": "54626",
+"latitude": 43.219662,
+"longitude": -91.054076
+},
+{
+"zip": "54627",
+"latitude": 44.171454,
+"longitude": -91.226764
+},
+{
+"zip": "54628",
+"latitude": 43.372994,
+"longitude": -91.026177
+},
+{
+"zip": "54629",
+"latitude": 44.174054,
+"longitude": -91.63934
+},
+{
+"zip": "54630",
+"latitude": 44.122749,
+"longitude": -91.373028
+},
+{
+"zip": "54631",
+"latitude": 43.288563,
+"longitude": -90.833269
+},
+{
+"zip": "54632",
+"latitude": 43.561085,
+"longitude": -91.146932
+},
+{
+"zip": "54634",
+"latitude": 43.581681,
+"longitude": -90.422391
+},
+{
+"zip": "54635",
+"latitude": 44.402904,
+"longitude": -91.045552
+},
+{
+"zip": "54636",
+"latitude": 44.003164,
+"longitude": -91.223953
+},
+{
+"zip": "54637",
+"latitude": 43.878745,
+"longitude": -90.270778
+},
+{
+"zip": "54638",
+"latitude": 43.785642,
+"longitude": -90.405061
+},
+{
+"zip": "54639",
+"latitude": 43.610809,
+"longitude": -90.599646
+},
+{
+"zip": "54642",
+"latitude": 44.152076,
+"longitude": -91.044944
+},
+{
+"zip": "54643",
+"latitude": 44.18818,
+"longitude": -90.63237
+},
+{
+"zip": "54644",
+"latitude": 44.036084,
+"longitude": -91.063408
+},
+{
+"zip": "54645",
+"latitude": 43.320799,
+"longitude": -90.929039
+},
+{
+"zip": "54646",
+"latitude": 44.082822,
+"longitude": -90.092968
+},
+{
+"zip": "54648",
+"latitude": 43.836918,
+"longitude": -90.6345
+},
+{
+"zip": "54650",
+"latitude": 43.909405,
+"longitude": -91.224829
+},
+{
+"zip": "54651",
+"latitude": 43.72304,
+"longitude": -90.566398
+},
+{
+"zip": "54652",
+"latitude": 43.475689,
+"longitude": -90.772333
+},
+{
+"zip": "54653",
+"latitude": 43.821366,
+"longitude": -90.926922
+},
+{
+"zip": "54654",
+"latitude": 43.268539,
+"longitude": -90.954198
+},
+{
+"zip": "54655",
+"latitude": 43.370959,
+"longitude": -90.759061
+},
+{
+"zip": "54656",
+"latitude": 43.990087,
+"longitude": -90.80319
+},
+{
+"zip": "54657",
+"latitude": 43.199351,
+"longitude": -90.909688
+},
+{
+"zip": "54658",
+"latitude": 43.682596,
+"longitude": -91.187099
+},
+{
+"zip": "54659",
+"latitude": 44.28706,
+"longitude": -91.096274
+},
+{
+"zip": "54660",
+"latitude": 43.985009,
+"longitude": -90.505437
+},
+{
+"zip": "54661",
+"latitude": 44.057603,
+"longitude": -91.467828
+},
+{
+"zip": "54664",
+"latitude": 43.48833,
+"longitude": -90.642904
+},
+{
+"zip": "54665",
+"latitude": 43.531978,
+"longitude": -90.928599
+},
+{
+"zip": "54666",
+"latitude": 44.170133,
+"longitude": -90.449668
+},
+{
+"zip": "54667",
+"latitude": 43.666366,
+"longitude": -90.864779
+},
+{
+"zip": "54669",
+"latitude": 43.911169,
+"longitude": -91.083953
+},
+{
+"zip": "54670",
+"latitude": 43.837992,
+"longitude": -90.482723
+},
+{
+"zip": "54701",
+"latitude": 44.751984,
+"longitude": -91.514998
+},
+{
+"zip": "54703",
+"latitude": 44.834611,
+"longitude": -91.520448
+},
+{
+"zip": "54720",
+"latitude": 44.805042,
+"longitude": -91.437019
+},
+{
+"zip": "54721",
+"latitude": 44.633744,
+"longitude": -92.082731
+},
+{
+"zip": "54722",
+"latitude": 44.711812,
+"longitude": -91.096003
+},
+{
+"zip": "54723",
+"latitude": 44.610586,
+"longitude": -92.419425
+},
+{
+"zip": "54724",
+"latitude": 45.107813,
+"longitude": -91.484409
+},
+{
+"zip": "54725",
+"latitude": 45.073194,
+"longitude": -91.990915
+},
+{
+"zip": "54726",
+"latitude": 44.937235,
+"longitude": -91.025904
+},
+{
+"zip": "54727",
+"latitude": 44.953953,
+"longitude": -91.159107
+},
+{
+"zip": "54728",
+"latitude": 45.30795,
+"longitude": -91.637762
+},
+{
+"zip": "54729",
+"latitude": 44.946356,
+"longitude": -91.394524
+},
+{
+"zip": "54730",
+"latitude": 45.018518,
+"longitude": -91.719608
+},
+{
+"zip": "54731",
+"latitude": 45.349837,
+"longitude": -91.090398
+},
+{
+"zip": "54732",
+"latitude": 45.14463,
+"longitude": -91.170488
+},
+{
+"zip": "54733",
+"latitude": 45.27866,
+"longitude": -91.850182
+},
+{
+"zip": "54734",
+"latitude": 45.093283,
+"longitude": -92.114129
+},
+{
+"zip": "54736",
+"latitude": 44.612868,
+"longitude": -91.924613
+},
+{
+"zip": "54737",
+"latitude": 44.71841,
+"longitude": -91.981626
+},
+{
+"zip": "54738",
+"latitude": 44.588292,
+"longitude": -91.488813
+},
+{
+"zip": "54739",
+"latitude": 44.859783,
+"longitude": -91.701162
+},
+{
+"zip": "54740",
+"latitude": 44.751437,
+"longitude": -92.166807
+},
+{
+"zip": "54741",
+"latitude": 44.610234,
+"longitude": -90.980075
+},
+{
+"zip": "54742",
+"latitude": 44.762783,
+"longitude": -91.272041
+},
+{
+"zip": "54745",
+"latitude": 45.251132,
+"longitude": -91.123401
+},
+{
+"zip": "54746",
+"latitude": 44.547856,
+"longitude": -90.86441
+},
+{
+"zip": "54747",
+"latitude": 44.394958,
+"longitude": -91.500452
+},
+{
+"zip": "54748",
+"latitude": 45.075083,
+"longitude": -91.26302
+},
+{
+"zip": "54749",
+"latitude": 44.951199,
+"longitude": -92.0991
+},
+{
+"zip": "54750",
+"latitude": 44.635286,
+"longitude": -92.284954
+},
+{
+"zip": "54751",
+"latitude": 44.85063,
+"longitude": -91.933502
+},
+{
+"zip": "54754",
+"latitude": 44.426436,
+"longitude": -90.773969
+},
+{
+"zip": "54755",
+"latitude": 44.575754,
+"longitude": -91.681293
+},
+{
+"zip": "54756",
+"latitude": 44.468071,
+"longitude": -91.939604
+},
+{
+"zip": "54757",
+"latitude": 45.237197,
+"longitude": -91.522349
+},
+{
+"zip": "54758",
+"latitude": 44.557919,
+"longitude": -91.216522
+},
+{
+"zip": "54759",
+"latitude": 44.497878,
+"longitude": -92.12093
+},
+{
+"zip": "54760",
+"latitude": 44.424142,
+"longitude": -91.206127
+},
+{
+"zip": "54761",
+"latitude": 44.623236,
+"longitude": -92.1783
+},
+{
+"zip": "54762",
+"latitude": 45.256474,
+"longitude": -91.996707
+},
+{
+"zip": "54763",
+"latitude": 45.180248,
+"longitude": -91.875269
+},
+{
+"zip": "54766",
+"latitude": 45.340738,
+"longitude": -90.857989
+},
+{
+"zip": "54767",
+"latitude": 44.8299,
+"longitude": -92.255237
+},
+{
+"zip": "54768",
+"latitude": 44.96712,
+"longitude": -90.927085
+},
+{
+"zip": "54769",
+"latitude": 44.509543,
+"longitude": -92.227439
+},
+{
+"zip": "54770",
+"latitude": 44.55195,
+"longitude": -91.373065
+},
+{
+"zip": "54771",
+"latitude": 44.92394,
+"longitude": -90.80674
+},
+{
+"zip": "54772",
+"latitude": 45.081011,
+"longitude": -91.887397
+},
+{
+"zip": "54773",
+"latitude": 44.390016,
+"longitude": -91.2964
+},
+{
+"zip": "54801",
+"latitude": 45.863919,
+"longitude": -91.937464
+},
+{
+"zip": "54805",
+"latitude": 45.412059,
+"longitude": -92.023537
+},
+{
+"zip": "54806",
+"latitude": 46.551759,
+"longitude": -90.845656
+},
+{
+"zip": "54810",
+"latitude": 45.457219,
+"longitude": -92.388369
+},
+{
+"zip": "54812",
+"latitude": 45.392467,
+"longitude": -91.882622
+},
+{
+"zip": "54813",
+"latitude": 45.657437,
+"longitude": -92.022462
+},
+{
+"zip": "54814",
+"latitude": 46.86331,
+"longitude": -90.901205
+},
+{
+"zip": "54817",
+"latitude": 45.676433,
+"longitude": -91.532367
+},
+{
+"zip": "54819",
+"latitude": 45.475775,
+"longitude": -91.302138
+},
+{
+"zip": "54820",
+"latitude": 46.556557,
+"longitude": -91.562013
+},
+{
+"zip": "54821",
+"latitude": 46.216971,
+"longitude": -91.166187
+},
+{
+"zip": "54822",
+"latitude": 45.400937,
+"longitude": -91.694413
+},
+{
+"zip": "54824",
+"latitude": 45.484715,
+"longitude": -92.539887
+},
+{
+"zip": "54826",
+"latitude": 45.496504,
+"longitude": -92.176817
+},
+{
+"zip": "54827",
+"latitude": 46.801174,
+"longitude": -91.111594
+},
+{
+"zip": "54828",
+"latitude": 45.840978,
+"longitude": -91.294249
+},
+{
+"zip": "54829",
+"latitude": 45.567884,
+"longitude": -92.076524
+},
+{
+"zip": "54830",
+"latitude": 46.106014,
+"longitude": -92.225683
+},
+{
+"zip": "54832",
+"latitude": 46.319287,
+"longitude": -91.343441
+},
+{
+"zip": "54835",
+"latitude": 45.679838,
+"longitude": -91.249937
+},
+{
+"zip": "54836",
+"latitude": 46.454438,
+"longitude": -92.195041
+},
+{
+"zip": "54837",
+"latitude": 45.674284,
+"longitude": -92.357709
+},
+{
+"zip": "54838",
+"latitude": 46.249103,
+"longitude": -91.7944
+},
+{
+"zip": "54839",
+"latitude": 46.356374,
+"longitude": -91.150715
+},
+{
+"zip": "54840",
+"latitude": 45.751262,
+"longitude": -92.692383
+},
+{
+"zip": "54841",
+"latitude": 45.607593,
+"longitude": -91.778588
+},
+{
+"zip": "54842",
+"latitude": 46.490793,
+"longitude": -91.871965
+},
+{
+"zip": "54843",
+"latitude": 46.023604,
+"longitude": -91.293027
+},
+{
+"zip": "54844",
+"latitude": 46.781465,
+"longitude": -91.215472
+},
+{
+"zip": "54845",
+"latitude": 45.803543,
+"longitude": -92.144504
+},
+{
+"zip": "54846",
+"latitude": 46.378316,
+"longitude": -90.720238
+},
+{
+"zip": "54847",
+"latitude": 46.579326,
+"longitude": -91.39985
+},
+{
+"zip": "54848",
+"latitude": 45.516039,
+"longitude": -91.103822
+},
+{
+"zip": "54849",
+"latitude": 46.482245,
+"longitude": -91.71671
+},
+{
+"zip": "54850",
+"latitude": 46.940645,
+"longitude": -90.57083
+},
+{
+"zip": "54853",
+"latitude": 45.576404,
+"longitude": -92.458671
+},
+{
+"zip": "54854",
+"latitude": 46.65038,
+"longitude": -91.667167
+},
+{
+"zip": "54855",
+"latitude": 46.382631,
+"longitude": -90.82752
+},
+{
+"zip": "54856",
+"latitude": 46.432392,
+"longitude": -91.109905
+},
+{
+"zip": "54857",
+"latitude": 45.593407,
+"longitude": -91.599298
+},
+{
+"zip": "54858",
+"latitude": 45.519382,
+"longitude": -92.457844
+},
+{
+"zip": "54859",
+"latitude": 46.126055,
+"longitude": -91.848834
+},
+{
+"zip": "54861",
+"latitude": 46.598934,
+"longitude": -90.643311
+},
+{
+"zip": "54862",
+"latitude": 45.807575,
+"longitude": -91.118161
+},
+{
+"zip": "54864",
+"latitude": 46.602212,
+"longitude": -91.801438
+},
+{
+"zip": "54865",
+"latitude": 46.756,
+"longitude": -91.374842
+},
+{
+"zip": "54867",
+"latitude": 45.821695,
+"longitude": -91.203123
+},
+{
+"zip": "54868",
+"latitude": 45.528148,
+"longitude": -91.716577
+},
+{
+"zip": "54870",
+"latitude": 45.70926,
+"longitude": -91.775273
+},
+{
+"zip": "54871",
+"latitude": 45.749634,
+"longitude": -92.002023
+},
+{
+"zip": "54872",
+"latitude": 45.77231,
+"longitude": -92.391514
+},
+{
+"zip": "54873",
+"latitude": 46.346345,
+"longitude": -91.702231
+},
+{
+"zip": "54874",
+"latitude": 46.571798,
+"longitude": -91.938747
+},
+{
+"zip": "54875",
+"latitude": 45.973507,
+"longitude": -91.693054
+},
+{
+"zip": "54876",
+"latitude": 45.827511,
+"longitude": -91.501096
+},
+{
+"zip": "54880",
+"latitude": 46.590874,
+"longitude": -92.12831
+},
+{
+"zip": "54888",
+"latitude": 45.974807,
+"longitude": -91.866892
+},
+{
+"zip": "54889",
+"latitude": 45.415113,
+"longitude": -92.170107
+},
+{
+"zip": "54891",
+"latitude": 46.697766,
+"longitude": -90.971168
+},
+{
+"zip": "54893",
+"latitude": 45.878684,
+"longitude": -92.325978
+},
+{
+"zip": "54895",
+"latitude": 45.449432,
+"longitude": -91.46076
+},
+{
+"zip": "54896",
+"latitude": 45.806223,
+"longitude": -90.883546
+},
+{
+"zip": "54901",
+"latitude": 44.062759,
+"longitude": -88.535773
+},
+{
+"zip": "54902",
+"latitude": 43.946895,
+"longitude": -88.540285
+},
+{
+"zip": "54904",
+"latitude": 44.0234,
+"longitude": -88.623839
+},
+{
+"zip": "54909",
+"latitude": 44.280704,
+"longitude": -89.367404
+},
+{
+"zip": "54911",
+"latitude": 44.281533,
+"longitude": -88.381003
+},
+{
+"zip": "54913",
+"latitude": 44.335996,
+"longitude": -88.39997
+},
+{
+"zip": "54914",
+"latitude": 44.267634,
+"longitude": -88.499046
+},
+{
+"zip": "54915",
+"latitude": 44.242088,
+"longitude": -88.361084
+},
+{
+"zip": "54921",
+"latitude": 44.295741,
+"longitude": -89.579301
+},
+{
+"zip": "54922",
+"latitude": 44.548638,
+"longitude": -88.742749
+},
+{
+"zip": "54923",
+"latitude": 43.99772,
+"longitude": -88.9668
+},
+{
+"zip": "54926",
+"latitude": 44.615607,
+"longitude": -89.020239
+},
+{
+"zip": "54927",
+"latitude": 44.103128,
+"longitude": -88.654369
+},
+{
+"zip": "54928",
+"latitude": 44.752704,
+"longitude": -88.879232
+},
+{
+"zip": "54929",
+"latitude": 44.640938,
+"longitude": -88.739982
+},
+{
+"zip": "54930",
+"latitude": 44.03264,
+"longitude": -89.554799
+},
+{
+"zip": "54931",
+"latitude": 44.270225,
+"longitude": -88.668244
+},
+{
+"zip": "54932",
+"latitude": 43.840339,
+"longitude": -88.61944
+},
+{
+"zip": "54933",
+"latitude": 44.658611,
+"longitude": -88.71404
+},
+{
+"zip": "54935",
+"latitude": 43.775457,
+"longitude": -88.432601
+},
+{
+"zip": "54937",
+"latitude": 43.724107,
+"longitude": -88.398163
+},
+{
+"zip": "54940",
+"latitude": 44.22037,
+"longitude": -88.842561
+},
+{
+"zip": "54941",
+"latitude": 43.844703,
+"longitude": -88.992882
+},
+{
+"zip": "54942",
+"latitude": 44.299013,
+"longitude": -88.542674
+},
+{
+"zip": "54943",
+"latitude": 44.122562,
+"longitude": -89.572665
+},
+{
+"zip": "54944",
+"latitude": 44.324687,
+"longitude": -88.626956
+},
+{
+"zip": "54945",
+"latitude": 44.568636,
+"longitude": -89.136826
+},
+{
+"zip": "54946",
+"latitude": 44.337097,
+"longitude": -89.145114
+},
+{
+"zip": "54947",
+"latitude": 44.203594,
+"longitude": -88.698749
+},
+{
+"zip": "54948",
+"latitude": 44.776062,
+"longitude": -88.885647
+},
+{
+"zip": "54949",
+"latitude": 44.494046,
+"longitude": -88.91261
+},
+{
+"zip": "54950",
+"latitude": 44.657215,
+"longitude": -88.918084
+},
+{
+"zip": "54952",
+"latitude": 44.202041,
+"longitude": -88.339418
+},
+{
+"zip": "54956",
+"latitude": 44.182337,
+"longitude": -88.527647
+},
+{
+"zip": "54960",
+"latitude": 43.941733,
+"longitude": -89.218999
+},
+{
+"zip": "54961",
+"latitude": 44.410204,
+"longitude": -88.761688
+},
+{
+"zip": "54962",
+"latitude": 44.486188,
+"longitude": -89.030971
+},
+{
+"zip": "54963",
+"latitude": 44.045644,
+"longitude": -88.76728
+},
+{
+"zip": "54964",
+"latitude": 43.915614,
+"longitude": -88.741945
+},
+{
+"zip": "54965",
+"latitude": 44.167973,
+"longitude": -89.043887
+},
+{
+"zip": "54966",
+"latitude": 44.210102,
+"longitude": -89.50478
+},
+{
+"zip": "54967",
+"latitude": 44.12674,
+"longitude": -88.975792
+},
+{
+"zip": "54968",
+"latitude": 43.84693,
+"longitude": -89.136064
+},
+{
+"zip": "54970",
+"latitude": 44.072763,
+"longitude": -89.098173
+},
+{
+"zip": "54971",
+"latitude": 43.855118,
+"longitude": -88.833583
+},
+{
+"zip": "54974",
+"latitude": 43.781841,
+"longitude": -88.652136
+},
+{
+"zip": "54977",
+"latitude": 44.461176,
+"longitude": -89.171211
+},
+{
+"zip": "54978",
+"latitude": 44.794239,
+"longitude": -88.914001
+},
+{
+"zip": "54979",
+"latitude": 43.872535,
+"longitude": -88.536399
+},
+{
+"zip": "54980",
+"latitude": 43.986125,
+"longitude": -88.765941
+},
+{
+"zip": "54981",
+"latitude": 44.322675,
+"longitude": -89.131481
+},
+{
+"zip": "54982",
+"latitude": 44.069753,
+"longitude": -89.292831
+},
+{
+"zip": "54983",
+"latitude": 44.316862,
+"longitude": -88.935165
+},
+{
+"zip": "54984",
+"latitude": 44.190566,
+"longitude": -89.223457
+},
+{
+"zip": "54985",
+"latitude": 44.075638,
+"longitude": -88.519717
+},
+{
+"zip": "54986",
+"latitude": 44.117492,
+"longitude": -88.747427
+}
+]
+}

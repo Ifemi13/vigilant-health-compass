@@ -13,6 +13,7 @@ import AwarenessTopic from './pages/general/AwarenessTopic'
 import AwarenessTopics from './pages/general/AwarenessTopics'
 import GeneralHome from './pages/general/GeneralHome'
 import HealthProfile from './pages/general/HealthProfile'
+import HealthcareNearMe from './pages/general/HealthcareNearMe'
 import HospitalForum from './pages/general/HospitalForum'
 import HealthAlerts from './pages/HealthAlerts'
 import Onboarding from './pages/Onboarding'
@@ -31,7 +32,7 @@ const FEATURE_PAGES: Record<string, ReactNode> = {
 }
 
 /** General panels with their own pages (routed explicitly below); the rest show "coming soon". */
-const BUILT_GENERAL_PANELS = ['/general/awareness', '/general/health-profile']
+const BUILT_GENERAL_PANELS = ['/general/awareness', '/general/health-profile', '/general/near-me']
 
 export default function App() {
   return (
@@ -53,6 +54,7 @@ export default function App() {
         <Route path="/general/awareness/:topicId" element={<AwarenessTopic />} />
         <Route path="/general/awareness/:topicId/hospitals/:hospitalId" element={<HospitalForum />} />
         <Route path="/general/health-profile" element={<HealthProfile />} />
+        <Route path="/general/near-me" element={<HealthcareNearMe />} />
         {GENERAL_PANELS.filter((panel) => !BUILT_GENERAL_PANELS.includes(panel.path)).map((panel) => (
           <Route
             key={panel.path}

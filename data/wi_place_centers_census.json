@@ -1,0 +1,4855 @@
+{
+"source": "U.S. Census Bureau 2024 Gazetteer: Places (Wisconsin) internal points",
+"url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_gaz_place_55.txt",
+"retrieved": "2026-09-26",
+"places": [
+{
+"name": "Abbotsford",
+"kind": "city",
+"latitude": 44.943486,
+"longitude": -90.317339
+},
+{
+"name": "Abrams",
+"kind": "CDP",
+"latitude": 44.779625,
+"longitude": -88.060383
+},
+{
+"name": "Adams",
+"kind": "city",
+"latitude": 43.95524,
+"longitude": -89.816548
+},
+{
+"name": "Adell",
+"kind": "village",
+"latitude": 43.620354,
+"longitude": -87.945886
+},
+{
+"name": "Albany",
+"kind": "village",
+"latitude": 42.707073,
+"longitude": -89.436918
+},
+{
+"name": "Algoma",
+"kind": "city",
+"latitude": 44.605677,
+"longitude": -87.448008
+},
+{
+"name": "Allens Grove",
+"kind": "CDP",
+"latitude": 42.578287,
+"longitude": -88.76679
+},
+{
+"name": "Allenton",
+"kind": "CDP",
+"latitude": 43.421854,
+"longitude": -88.344829
+},
+{
+"name": "Allouez",
+"kind": "village",
+"latitude": 44.472257,
+"longitude": -88.026237
+},
+{
+"name": "Alma",
+"kind": "city",
+"latitude": 44.33981,
+"longitude": -91.918498
+},
+{
+"name": "Alma Center",
+"kind": "village",
+"latitude": 44.437026,
+"longitude": -90.912848
+},
+{
+"name": "Almena",
+"kind": "village",
+"latitude": 45.414923,
+"longitude": -92.03832
+},
+{
+"name": "Almond",
+"kind": "village",
+"latitude": 44.261011,
+"longitude": -89.408638
+},
+{
+"name": "Alto",
+"kind": "CDP",
+"latitude": 43.667638,
+"longitude": -88.792355
+},
+{
+"name": "Altoona",
+"kind": "city",
+"latitude": 44.799963,
+"longitude": -91.439585
+},
+{
+"name": "Amberg",
+"kind": "CDP",
+"latitude": 45.506075,
+"longitude": -87.987589
+},
+{
+"name": "Amery",
+"kind": "city",
+"latitude": 45.30459,
+"longitude": -92.363356
+},
+{
+"name": "Amherst",
+"kind": "village",
+"latitude": 44.448329,
+"longitude": -89.281683
+},
+{
+"name": "Amherst Junction",
+"kind": "village",
+"latitude": 44.468509,
+"longitude": -89.31722
+},
+{
+"name": "Angelica",
+"kind": "CDP",
+"latitude": 44.675029,
+"longitude": -88.321566
+},
+{
+"name": "Aniwa",
+"kind": "village",
+"latitude": 45.009987,
+"longitude": -89.207946
+},
+{
+"name": "Antigo",
+"kind": "city",
+"latitude": 45.141269,
+"longitude": -89.155225
+},
+{
+"name": "Appleton",
+"kind": "city",
+"latitude": 44.278873,
+"longitude": -88.388284
+},
+{
+"name": "Arcadia",
+"kind": "city",
+"latitude": 44.248575,
+"longitude": -91.491545
+},
+{
+"name": "Arena",
+"kind": "village",
+"latitude": 43.163628,
+"longitude": -89.907397
+},
+{
+"name": "Argonne",
+"kind": "CDP",
+"latitude": 45.658219,
+"longitude": -88.877747
+},
+{
+"name": "Argyle",
+"kind": "village",
+"latitude": 42.701409,
+"longitude": -89.865671
+},
+{
+"name": "Arkansaw",
+"kind": "CDP",
+"latitude": 44.63431,
+"longitude": -92.021072
+},
+{
+"name": "Arkdale",
+"kind": "CDP",
+"latitude": 44.026185,
+"longitude": -89.88609
+},
+{
+"name": "Arlington",
+"kind": "village",
+"latitude": 43.335052,
+"longitude": -89.372573
+},
+{
+"name": "Arpin",
+"kind": "village",
+"latitude": 44.539381,
+"longitude": -90.031512
+},
+{
+"name": "Ashippun",
+"kind": "CDP",
+"latitude": 43.218213,
+"longitude": -88.515942
+},
+{
+"name": "Ashland",
+"kind": "city",
+"latitude": 46.58176,
+"longitude": -90.871898
+},
+{
+"name": "Ashwaubenon",
+"kind": "village",
+"latitude": 44.479409,
+"longitude": -88.08748
+},
+{
+"name": "Athens",
+"kind": "village",
+"latitude": 45.034871,
+"longitude": -90.07921
+},
+{
+"name": "Auburndale",
+"kind": "village",
+"latitude": 44.626596,
+"longitude": -90.014405
+},
+{
+"name": "Augusta",
+"kind": "city",
+"latitude": 44.678407,
+"longitude": -91.120332
+},
+{
+"name": "Avoca",
+"kind": "village",
+"latitude": 43.187676,
+"longitude": -90.326345
+},
+{
+"name": "Babcock",
+"kind": "CDP",
+"latitude": 44.304401,
+"longitude": -90.107649
+},
+{
+"name": "Bagley",
+"kind": "village",
+"latitude": 42.901521,
+"longitude": -91.097002
+},
+{
+"name": "Baileys Harbor",
+"kind": "CDP",
+"latitude": 45.067089,
+"longitude": -87.135538
+},
+{
+"name": "Baldwin",
+"kind": "village",
+"latitude": 44.954482,
+"longitude": -92.371588
+},
+{
+"name": "Balsam Lake",
+"kind": "village",
+"latitude": 45.462041,
+"longitude": -92.447066
+},
+{
+"name": "Bancroft",
+"kind": "CDP",
+"latitude": 44.308554,
+"longitude": -89.506181
+},
+{
+"name": "Bangor",
+"kind": "village",
+"latitude": 43.893715,
+"longitude": -90.993385
+},
+{
+"name": "Baraboo",
+"kind": "city",
+"latitude": 43.468072,
+"longitude": -89.738387
+},
+{
+"name": "Barneveld",
+"kind": "village",
+"latitude": 43.012213,
+"longitude": -89.898168
+},
+{
+"name": "Barron",
+"kind": "city",
+"latitude": 45.402192,
+"longitude": -91.84435
+},
+{
+"name": "Barronett",
+"kind": "CDP",
+"latitude": 45.636229,
+"longitude": -91.993745
+},
+{
+"name": "Batavia",
+"kind": "CDP",
+"latitude": 43.592342,
+"longitude": -88.048365
+},
+{
+"name": "Bay City",
+"kind": "village",
+"latitude": 44.589297,
+"longitude": -92.453455
+},
+{
+"name": "Bayfield",
+"kind": "city",
+"latitude": 46.816135,
+"longitude": -90.824838
+},
+{
+"name": "Bayfront",
+"kind": "CDP",
+"latitude": 46.623539,
+"longitude": -90.78962
+},
+{
+"name": "Bayside",
+"kind": "village",
+"latitude": 43.182584,
+"longitude": -87.901705
+},
+{
+"name": "Bear Creek",
+"kind": "village",
+"latitude": 44.531318,
+"longitude": -88.727536
+},
+{
+"name": "Beaver Dam",
+"kind": "city",
+"latitude": 43.468105,
+"longitude": -88.8309
+},
+{
+"name": "Belgium",
+"kind": "village",
+"latitude": 43.501807,
+"longitude": -87.847551
+},
+{
+"name": "Bell Center",
+"kind": "village",
+"latitude": 43.291866,
+"longitude": -90.825505
+},
+{
+"name": "Belleville",
+"kind": "village",
+"latitude": 42.864018,
+"longitude": -89.539616
+},
+{
+"name": "Bellevue",
+"kind": "village",
+"latitude": 44.460769,
+"longitude": -87.955933
+},
+{
+"name": "Belmont",
+"kind": "village",
+"latitude": 42.73767,
+"longitude": -90.334326
+},
+{
+"name": "Beloit",
+"kind": "city",
+"latitude": 42.523506,
+"longitude": -89.01766
+},
+{
+"name": "Benton",
+"kind": "village",
+"latitude": 42.570006,
+"longitude": -90.38345
+},
+{
+"name": "Berlin",
+"kind": "city",
+"latitude": 43.969729,
+"longitude": -88.950033
+},
+{
+"name": "Big Bend",
+"kind": "village",
+"latitude": 42.883895,
+"longitude": -88.203596
+},
+{
+"name": "Big Falls",
+"kind": "village",
+"latitude": 44.615607,
+"longitude": -89.020239
+},
+{
+"name": "Big Foot Prairie",
+"kind": "CDP",
+"latitude": 42.495538,
+"longitude": -88.601691
+},
+{
+"name": "Birch Hill",
+"kind": "CDP",
+"latitude": 46.520821,
+"longitude": -90.555457
+},
+{
+"name": "Birchwood",
+"kind": "village",
+"latitude": 45.657679,
+"longitude": -91.550616
+},
+{
+"name": "Birnamwood",
+"kind": "village",
+"latitude": 44.931882,
+"longitude": -89.209503
+},
+{
+"name": "Biron",
+"kind": "village",
+"latitude": 44.428356,
+"longitude": -89.765765
+},
+{
+"name": "Black Creek",
+"kind": "village",
+"latitude": 44.474519,
+"longitude": -88.450191
+},
+{
+"name": "Black Earth",
+"kind": "village",
+"latitude": 43.134619,
+"longitude": -89.747354
+},
+{
+"name": "Black River Falls",
+"kind": "city",
+"latitude": 44.298452,
+"longitude": -90.842787
+},
+{
+"name": "Blair",
+"kind": "city",
+"latitude": 44.327131,
+"longitude": -91.299402
+},
+{
+"name": "Blanchardville",
+"kind": "village",
+"latitude": 42.810443,
+"longitude": -89.860576
+},
+{
+"name": "Bloomer",
+"kind": "city",
+"latitude": 45.102828,
+"longitude": -91.49154
+},
+{
+"name": "Bloomfield",
+"kind": "village",
+"latitude": 42.549037,
+"longitude": -88.351773
+},
+{
+"name": "Bloomington",
+"kind": "village",
+"latitude": 42.893141,
+"longitude": -90.926501
+},
+{
+"name": "Blue Mounds",
+"kind": "village",
+"latitude": 43.01778,
+"longitude": -89.82686
+},
+{
+"name": "Blue River",
+"kind": "village",
+"latitude": 43.184416,
+"longitude": -90.571829
+},
+{
+"name": "Bluffview",
+"kind": "CDP",
+"latitude": 43.362463,
+"longitude": -89.773743
+},
+{
+"name": "Boaz",
+"kind": "village",
+"latitude": 43.329925,
+"longitude": -90.527653
+},
+{
+"name": "Bohners Lake",
+"kind": "CDP",
+"latitude": 42.622027,
+"longitude": -88.28426
+},
+{
+"name": "Bonduel",
+"kind": "village",
+"latitude": 44.737994,
+"longitude": -88.45135
+},
+{
+"name": "Boscobel",
+"kind": "city",
+"latitude": 43.147132,
+"longitude": -90.705141
+},
+{
+"name": "Boulder Junction",
+"kind": "CDP",
+"latitude": 46.1148,
+"longitude": -89.654438
+},
+{
+"name": "Bowler",
+"kind": "village",
+"latitude": 44.862745,
+"longitude": -88.981408
+},
+{
+"name": "Boyceville",
+"kind": "village",
+"latitude": 45.042815,
+"longitude": -92.038473
+},
+{
+"name": "Boyd",
+"kind": "village",
+"latitude": 44.953281,
+"longitude": -91.039766
+},
+{
+"name": "Brandon",
+"kind": "village",
+"latitude": 43.73542,
+"longitude": -88.782116
+},
+{
+"name": "Brice Prairie",
+"kind": "CDP",
+"latitude": 43.937526,
+"longitude": -91.307364
+},
+{
+"name": "Briggsville",
+"kind": "CDP",
+"latitude": 43.660293,
+"longitude": -89.592846
+},
+{
+"name": "Brillion",
+"kind": "city",
+"latitude": 44.17351,
+"longitude": -88.067823
+},
+{
+"name": "Bristol",
+"kind": "village",
+"latitude": 42.532323,
+"longitude": -88.009098
+},
+{
+"name": "Brodhead",
+"kind": "city",
+"latitude": 42.616836,
+"longitude": -89.375604
+},
+{
+"name": "Brookfield",
+"kind": "city",
+"latitude": 43.06432,
+"longitude": -88.117794
+},
+{
+"name": "Brooklyn",
+"kind": "village",
+"latitude": 42.849596,
+"longitude": -89.37639
+},
+{
+"name": "Brothertown",
+"kind": "CDP",
+"latitude": 43.974964,
+"longitude": -88.317467
+},
+{
+"name": "Brown Deer",
+"kind": "village",
+"latitude": 43.174327,
+"longitude": -87.974959
+},
+{
+"name": "Browns Lake",
+"kind": "CDP",
+"latitude": 42.689527,
+"longitude": -88.237726
+},
+{
+"name": "Brownsville",
+"kind": "village",
+"latitude": 43.614608,
+"longitude": -88.495215
+},
+{
+"name": "Browntown",
+"kind": "village",
+"latitude": 42.578789,
+"longitude": -89.789406
+},
+{
+"name": "Bruce",
+"kind": "village",
+"latitude": 45.463455,
+"longitude": -91.279266
+},
+{
+"name": "Brule",
+"kind": "CDP",
+"latitude": 46.55843,
+"longitude": -91.570892
+},
+{
+"name": "Buffalo City",
+"kind": "city",
+"latitude": 44.223161,
+"longitude": -91.865888
+},
+{
+"name": "Burlington",
+"kind": "city",
+"latitude": 42.675249,
+"longitude": -88.271871
+},
+{
+"name": "Burnett",
+"kind": "CDP",
+"latitude": 43.506496,
+"longitude": -88.708441
+},
+{
+"name": "Butler",
+"kind": "village",
+"latitude": 43.108448,
+"longitude": -88.072232
+},
+{
+"name": "Butte des Morts",
+"kind": "CDP",
+"latitude": 44.10626,
+"longitude": -88.657269
+},
+{
+"name": "Butternut",
+"kind": "village",
+"latitude": 46.013304,
+"longitude": -90.497426
+},
+{
+"name": "Cable",
+"kind": "CDP",
+"latitude": 46.201093,
+"longitude": -91.293667
+},
+{
+"name": "Cadott",
+"kind": "village",
+"latitude": 44.949802,
+"longitude": -91.15376
+},
+{
+"name": "Caledonia",
+"kind": "village",
+"latitude": 42.797411,
+"longitude": -87.877405
+},
+{
+"name": "Cambria",
+"kind": "village",
+"latitude": 43.541358,
+"longitude": -89.111482
+},
+{
+"name": "Cambridge",
+"kind": "village",
+"latitude": 43.006555,
+"longitude": -89.021412
+},
+{
+"name": "Cameron",
+"kind": "village",
+"latitude": 45.403592,
+"longitude": -91.73975
+},
+{
+"name": "Campbellsport",
+"kind": "village",
+"latitude": 43.597512,
+"longitude": -88.280598
+},
+{
+"name": "Camp Douglas",
+"kind": "village",
+"latitude": 43.919721,
+"longitude": -90.269703
+},
+{
+"name": "Caroline",
+"kind": "CDP",
+"latitude": 44.723175,
+"longitude": -88.89857
+},
+{
+"name": "Cascade",
+"kind": "village",
+"latitude": 43.661474,
+"longitude": -88.008806
+},
+{
+"name": "Casco",
+"kind": "village",
+"latitude": 44.555185,
+"longitude": -87.620283
+},
+{
+"name": "Cashton",
+"kind": "village",
+"latitude": 43.741217,
+"longitude": -90.786628
+},
+{
+"name": "Cassville",
+"kind": "village",
+"latitude": 42.715172,
+"longitude": -90.989137
+},
+{
+"name": "Cataract",
+"kind": "CDP",
+"latitude": 44.086735,
+"longitude": -90.838414
+},
+{
+"name": "Catawba",
+"kind": "village",
+"latitude": 45.537104,
+"longitude": -90.533516
+},
+{
+"name": "Cazenovia",
+"kind": "village",
+"latitude": 43.525252,
+"longitude": -90.20404
+},
+{
+"name": "Cecil",
+"kind": "village",
+"latitude": 44.81137,
+"longitude": -88.449276
+},
+{
+"name": "Cedarburg",
+"kind": "city",
+"latitude": 43.299923,
+"longitude": -87.988438
+},
+{
+"name": "Cedar Grove",
+"kind": "village",
+"latitude": 43.568247,
+"longitude": -87.822969
+},
+{
+"name": "Ceex Haci",
+"kind": "CDP",
+"latitude": 44.281796,
+"longitude": -89.965021
+},
+{
+"name": "Centuria",
+"kind": "village",
+"latitude": 45.448691,
+"longitude": -92.557894
+},
+{
+"name": "Chain O' Lakes",
+"kind": "CDP",
+"latitude": 44.33203,
+"longitude": -89.162767
+},
+{
+"name": "Chaseburg",
+"kind": "village",
+"latitude": 43.661131,
+"longitude": -91.095895
+},
+{
+"name": "Chelsea",
+"kind": "CDP",
+"latitude": 45.292855,
+"longitude": -90.305354
+},
+{
+"name": "Chenequa",
+"kind": "village",
+"latitude": 43.123134,
+"longitude": -88.381387
+},
+{
+"name": "Chetek",
+"kind": "city",
+"latitude": 45.316064,
+"longitude": -91.653232
+},
+{
+"name": "Chief Lake",
+"kind": "CDP",
+"latitude": 45.938728,
+"longitude": -91.335895
+},
+{
+"name": "Chili",
+"kind": "CDP",
+"latitude": 44.633455,
+"longitude": -90.36191
+},
+{
+"name": "Chilton",
+"kind": "city",
+"latitude": 44.030188,
+"longitude": -88.161667
+},
+{
+"name": "Chippewa Falls",
+"kind": "city",
+"latitude": 44.934653,
+"longitude": -91.389165
+},
+{
+"name": "Clam Lake",
+"kind": "CDP",
+"latitude": 46.154438,
+"longitude": -90.905809
+},
+{
+"name": "Clarks Mills",
+"kind": "CDP",
+"latitude": 44.091142,
+"longitude": -87.862627
+},
+{
+"name": "Clayton",
+"kind": "village",
+"latitude": 45.327452,
+"longitude": -92.164524
+},
+{
+"name": "Clear Lake",
+"kind": "village",
+"latitude": 45.24798,
+"longitude": -92.267805
+},
+{
+"name": "Cleveland",
+"kind": "village",
+"latitude": 43.918064,
+"longitude": -87.749809
+},
+{
+"name": "Clinton",
+"kind": "village",
+"latitude": 42.557474,
+"longitude": -88.868055
+},
+{
+"name": "Clintonville",
+"kind": "city",
+"latitude": 44.62212,
+"longitude": -88.751714
+},
+{
+"name": "Clyman",
+"kind": "village",
+"latitude": 43.311651,
+"longitude": -88.72307
+},
+{
+"name": "Cobb",
+"kind": "village",
+"latitude": 42.966665,
+"longitude": -90.328485
+},
+{
+"name": "Cochrane",
+"kind": "village",
+"latitude": 44.227092,
+"longitude": -91.841075
+},
+{
+"name": "Colby",
+"kind": "city",
+"latitude": 44.911327,
+"longitude": -90.315729
+},
+{
+"name": "Coleman",
+"kind": "village",
+"latitude": 45.066998,
+"longitude": -88.035661
+},
+{
+"name": "Colfax",
+"kind": "village",
+"latitude": 44.996966,
+"longitude": -91.725513
+},
+{
+"name": "Collins",
+"kind": "CDP",
+"latitude": 44.085671,
+"longitude": -87.981124
+},
+{
+"name": "Coloma",
+"kind": "village",
+"latitude": 44.038651,
+"longitude": -89.531148
+},
+{
+"name": "Columbus",
+"kind": "city",
+"latitude": 43.336805,
+"longitude": -89.029988
+},
+{
+"name": "Combined Locks",
+"kind": "village",
+"latitude": 44.261995,
+"longitude": -88.309534
+},
+{
+"name": "Como",
+"kind": "CDP",
+"latitude": 42.613055,
+"longitude": -88.486115
+},
+{
+"name": "Conrath",
+"kind": "village",
+"latitude": 45.384185,
+"longitude": -91.035708
+},
+{
+"name": "Coon Valley",
+"kind": "village",
+"latitude": 43.701893,
+"longitude": -91.011415
+},
+{
+"name": "Cornell",
+"kind": "city",
+"latitude": 45.163817,
+"longitude": -91.150436
+},
+{
+"name": "Cornucopia",
+"kind": "CDP",
+"latitude": 46.856681,
+"longitude": -91.108144
+},
+{
+"name": "Cottage Grove",
+"kind": "village",
+"latitude": 43.092222,
+"longitude": -89.205337
+},
+{
+"name": "Couderay",
+"kind": "village",
+"latitude": 45.797438,
+"longitude": -91.296704
+},
+{
+"name": "Crandon",
+"kind": "city",
+"latitude": 45.5678,
+"longitude": -88.895537
+},
+{
+"name": "Crivitz",
+"kind": "village",
+"latitude": 45.23335,
+"longitude": -88.006947
+},
+{
+"name": "Cross Plains",
+"kind": "village",
+"latitude": 43.115026,
+"longitude": -89.647119
+},
+{
+"name": "Cuba City",
+"kind": "city",
+"latitude": 42.603615,
+"longitude": -90.431798
+},
+{
+"name": "Cudahy",
+"kind": "city",
+"latitude": 42.946711,
+"longitude": -87.864016
+},
+{
+"name": "Cumberland",
+"kind": "city",
+"latitude": 45.536073,
+"longitude": -92.024753
+},
+{
+"name": "Curtiss",
+"kind": "village",
+"latitude": 44.952767,
+"longitude": -90.439585
+},
+{
+"name": "Dale",
+"kind": "CDP",
+"latitude": 44.27566,
+"longitude": -88.673017
+},
+{
+"name": "Dallas",
+"kind": "village",
+"latitude": 45.258178,
+"longitude": -91.814619
+},
+{
+"name": "Dalton",
+"kind": "CDP",
+"latitude": 43.6564,
+"longitude": -89.207633
+},
+{
+"name": "Danbury",
+"kind": "CDP",
+"latitude": 46.009548,
+"longitude": -92.376323
+},
+{
+"name": "Dane",
+"kind": "village",
+"latitude": 43.2461,
+"longitude": -89.499577
+},
+{
+"name": "Darien",
+"kind": "village",
+"latitude": 42.599001,
+"longitude": -88.714273
+},
+{
+"name": "Darlington",
+"kind": "city",
+"latitude": 42.676355,
+"longitude": -90.12052
+},
+{
+"name": "Deerfield",
+"kind": "village",
+"latitude": 43.049181,
+"longitude": -89.076153
+},
+{
+"name": "Deer Park",
+"kind": "village",
+"latitude": 45.18854,
+"longitude": -92.388687
+},
+{
+"name": "DeForest",
+"kind": "village",
+"latitude": 43.227335,
+"longitude": -89.345702
+},
+{
+"name": "Dekorra",
+"kind": "CDP",
+"latitude": 43.453876,
+"longitude": -89.460309
+},
+{
+"name": "Delafield",
+"kind": "city",
+"latitude": 43.067421,
+"longitude": -88.388833
+},
+{
+"name": "Delavan",
+"kind": "city",
+"latitude": 42.630455,
+"longitude": -88.629781
+},
+{
+"name": "Delavan Lake",
+"kind": "CDP",
+"latitude": 42.598884,
+"longitude": -88.624497
+},
+{
+"name": "Dellwood",
+"kind": "CDP",
+"latitude": 43.945106,
+"longitude": -89.928003
+},
+{
+"name": "Denmark",
+"kind": "village",
+"latitude": 44.349336,
+"longitude": -87.831198
+},
+{
+"name": "De Pere",
+"kind": "city",
+"latitude": 44.43099,
+"longitude": -88.079936
+},
+{
+"name": "De Soto",
+"kind": "village",
+"latitude": 43.429061,
+"longitude": -91.196334
+},
+{
+"name": "Diamond Bluff",
+"kind": "CDP",
+"latitude": 44.648888,
+"longitude": -92.618884
+},
+{
+"name": "Diaperville",
+"kind": "CDP",
+"latitude": 46.604782,
+"longitude": -90.713502
+},
+{
+"name": "Dickeyville",
+"kind": "village",
+"latitude": 42.625437,
+"longitude": -90.59609
+},
+{
+"name": "Dodge",
+"kind": "CDP",
+"latitude": 44.134381,
+"longitude": -91.549335
+},
+{
+"name": "Dodgeville",
+"kind": "city",
+"latitude": 42.966011,
+"longitude": -90.129717
+},
+{
+"name": "Dorchester",
+"kind": "village",
+"latitude": 45.001426,
+"longitude": -90.331157
+},
+{
+"name": "Dousman",
+"kind": "village",
+"latitude": 43.009381,
+"longitude": -88.47557
+},
+{
+"name": "Downing",
+"kind": "village",
+"latitude": 45.04982,
+"longitude": -92.124322
+},
+{
+"name": "Downsville",
+"kind": "CDP",
+"latitude": 44.775055,
+"longitude": -91.928659
+},
+{
+"name": "Doylestown",
+"kind": "village",
+"latitude": 43.428274,
+"longitude": -89.146858
+},
+{
+"name": "Dresser",
+"kind": "village",
+"latitude": 45.363176,
+"longitude": -92.634675
+},
+{
+"name": "Drummond",
+"kind": "CDP",
+"latitude": 46.343697,
+"longitude": -91.249894
+},
+{
+"name": "Dunbar",
+"kind": "CDP",
+"latitude": 45.646709,
+"longitude": -88.179716
+},
+{
+"name": "Durand",
+"kind": "city",
+"latitude": 44.622405,
+"longitude": -91.960308
+},
+{
+"name": "Dyckesville",
+"kind": "CDP",
+"latitude": 44.640309,
+"longitude": -87.764824
+},
+{
+"name": "Eagle",
+"kind": "village",
+"latitude": 42.882243,
+"longitude": -88.463377
+},
+{
+"name": "Eagle Lake",
+"kind": "CDP",
+"latitude": 42.695587,
+"longitude": -88.128844
+},
+{
+"name": "Eagle River",
+"kind": "city",
+"latitude": 45.924695,
+"longitude": -89.257779
+},
+{
+"name": "Eastman",
+"kind": "village",
+"latitude": 43.165171,
+"longitude": -91.032768
+},
+{
+"name": "Easton",
+"kind": "CDP",
+"latitude": 43.836023,
+"longitude": -89.799125
+},
+{
+"name": "East Troy",
+"kind": "village",
+"latitude": 42.785184,
+"longitude": -88.395573
+},
+{
+"name": "Eau Claire",
+"kind": "city",
+"latitude": 44.818343,
+"longitude": -91.494769
+},
+{
+"name": "Eden",
+"kind": "village",
+"latitude": 43.694065,
+"longitude": -88.366064
+},
+{
+"name": "Edgar",
+"kind": "village",
+"latitude": 44.922851,
+"longitude": -89.962611
+},
+{
+"name": "Edgerton",
+"kind": "city",
+"latitude": 42.838947,
+"longitude": -89.069571
+},
+{
+"name": "Edmund",
+"kind": "CDP",
+"latitude": 42.966221,
+"longitude": -90.264438
+},
+{
+"name": "Egg Harbor",
+"kind": "village",
+"latitude": 45.051314,
+"longitude": -87.304882
+},
+{
+"name": "Eland",
+"kind": "village",
+"latitude": 44.866913,
+"longitude": -89.208963
+},
+{
+"name": "Elcho",
+"kind": "CDP",
+"latitude": 45.436765,
+"longitude": -89.188825
+},
+{
+"name": "Elderon",
+"kind": "village",
+"latitude": 44.787402,
+"longitude": -89.252117
+},
+{
+"name": "Eleva",
+"kind": "village",
+"latitude": 44.576566,
+"longitude": -91.470254
+},
+{
+"name": "Elkhart Lake",
+"kind": "village",
+"latitude": 43.831899,
+"longitude": -88.01312
+},
+{
+"name": "Elkhorn",
+"kind": "city",
+"latitude": 42.671601,
+"longitude": -88.536256
+},
+{
+"name": "Elk Mound",
+"kind": "village",
+"latitude": 44.874421,
+"longitude": -91.686238
+},
+{
+"name": "Ellison Bay",
+"kind": "CDP",
+"latitude": 45.255326,
+"longitude": -87.072914
+},
+{
+"name": "Ellsworth",
+"kind": "village",
+"latitude": 44.736178,
+"longitude": -92.480249
+},
+{
+"name": "Elm Grove",
+"kind": "village",
+"latitude": 43.04752,
+"longitude": -88.087029
+},
+{
+"name": "Elmwood",
+"kind": "village",
+"latitude": 44.780073,
+"longitude": -92.14897
+},
+{
+"name": "Elmwood Park",
+"kind": "village",
+"latitude": 42.691254,
+"longitude": -87.822051
+},
+{
+"name": "Elroy",
+"kind": "city",
+"latitude": 43.741562,
+"longitude": -90.270172
+},
+{
+"name": "Embarrass",
+"kind": "village",
+"latitude": 44.670484,
+"longitude": -88.703189
+},
+{
+"name": "Emerald",
+"kind": "CDP",
+"latitude": 45.086675,
+"longitude": -92.249478
+},
+{
+"name": "Endeavor",
+"kind": "village",
+"latitude": 43.714386,
+"longitude": -89.469166
+},
+{
+"name": "Ephraim",
+"kind": "village",
+"latitude": 45.167749,
+"longitude": -87.172619
+},
+{
+"name": "Ettrick",
+"kind": "village",
+"latitude": 44.169553,
+"longitude": -91.265042
+},
+{
+"name": "Eureka",
+"kind": "CDP",
+"latitude": 44.011625,
+"longitude": -88.841388
+},
+{
+"name": "Evansville",
+"kind": "city",
+"latitude": 42.77823,
+"longitude": -89.294786
+},
+{
+"name": "Exeland",
+"kind": "village",
+"latitude": 45.667431,
+"longitude": -91.241478
+},
+{
+"name": "Fairchild",
+"kind": "village",
+"latitude": 44.605234,
+"longitude": -90.956722
+},
+{
+"name": "Fairwater",
+"kind": "village",
+"latitude": 43.742542,
+"longitude": -88.866939
+},
+{
+"name": "Fall Creek",
+"kind": "village",
+"latitude": 44.763962,
+"longitude": -91.277797
+},
+{
+"name": "Fall River",
+"kind": "village",
+"latitude": 43.385851,
+"longitude": -89.045468
+},
+{
+"name": "Fennimore",
+"kind": "city",
+"latitude": 42.979388,
+"longitude": -90.64917
+},
+{
+"name": "Fenwood",
+"kind": "village",
+"latitude": 44.86578,
+"longitude": -90.014578
+},
+{
+"name": "Ferryville",
+"kind": "village",
+"latitude": 43.353312,
+"longitude": -91.095659
+},
+{
+"name": "Fitchburg",
+"kind": "city",
+"latitude": 42.985782,
+"longitude": -89.425334
+},
+{
+"name": "Florence",
+"kind": "CDP",
+"latitude": 45.92786,
+"longitude": -88.235237
+},
+{
+"name": "Fond du Lac",
+"kind": "city",
+"latitude": 43.772182,
+"longitude": -88.440264
+},
+{
+"name": "Fontana-on-Geneva Lake",
+"kind": "village",
+"latitude": 42.544319,
+"longitude": -88.569332
+},
+{
+"name": "Footville",
+"kind": "village",
+"latitude": 42.671452,
+"longitude": -89.20841
+},
+{
+"name": "Forest Junction",
+"kind": "CDP",
+"latitude": 44.214763,
+"longitude": -88.149581
+},
+{
+"name": "Forestville",
+"kind": "village",
+"latitude": 44.690892,
+"longitude": -87.478355
+},
+{
+"name": "Fort Atkinson",
+"kind": "city",
+"latitude": 42.923982,
+"longitude": -88.845488
+},
+{
+"name": "Fountain City",
+"kind": "city",
+"latitude": 44.11876,
+"longitude": -91.689804
+},
+{
+"name": "Fox Crossing",
+"kind": "village",
+"latitude": 44.223603,
+"longitude": -88.479075
+},
+{
+"name": "Fox Lake",
+"kind": "city",
+"latitude": 43.561568,
+"longitude": -88.914752
+},
+{
+"name": "Fox Point",
+"kind": "village",
+"latitude": 43.158126,
+"longitude": -87.901392
+},
+{
+"name": "Francis Creek",
+"kind": "village",
+"latitude": 44.200532,
+"longitude": -87.720911
+},
+{
+"name": "Franklin",
+"kind": "city",
+"latitude": 42.883879,
+"longitude": -88.011548
+},
+{
+"name": "Franks Field",
+"kind": "CDP",
+"latitude": 46.552163,
+"longitude": -90.598917
+},
+{
+"name": "Frederic",
+"kind": "village",
+"latitude": 45.652709,
+"longitude": -92.462591
+},
+{
+"name": "Fredonia",
+"kind": "village",
+"latitude": 43.471703,
+"longitude": -87.947135
+},
+{
+"name": "Fremont",
+"kind": "village",
+"latitude": 44.259933,
+"longitude": -88.870137
+},
+{
+"name": "French Island",
+"kind": "CDP",
+"latitude": 43.858653,
+"longitude": -91.260837
+},
+{
+"name": "Friendship",
+"kind": "village",
+"latitude": 43.971746,
+"longitude": -89.820016
+},
+{
+"name": "Friesland",
+"kind": "village",
+"latitude": 43.587632,
+"longitude": -89.06555
+},
+{
+"name": "Fulton",
+"kind": "CDP",
+"latitude": 42.805338,
+"longitude": -89.125859
+},
+{
+"name": "Galesville",
+"kind": "city",
+"latitude": 44.084289,
+"longitude": -91.357518
+},
+{
+"name": "Gays Mills",
+"kind": "village",
+"latitude": 43.330114,
+"longitude": -90.846233
+},
+{
+"name": "Genoa",
+"kind": "village",
+"latitude": 43.573338,
+"longitude": -91.226053
+},
+{
+"name": "Genoa City",
+"kind": "village",
+"latitude": 42.5065,
+"longitude": -88.319271
+},
+{
+"name": "Germantown",
+"kind": "village",
+"latitude": 43.234527,
+"longitude": -88.124999
+},
+{
+"name": "Gibbsville",
+"kind": "CDP",
+"latitude": 43.649117,
+"longitude": -87.834943
+},
+{
+"name": "Gillett",
+"kind": "city",
+"latitude": 44.88992,
+"longitude": -88.306176
+},
+{
+"name": "Gilman",
+"kind": "village",
+"latitude": 45.166194,
+"longitude": -90.807217
+},
+{
+"name": "Gilmanton",
+"kind": "CDP",
+"latitude": 44.480867,
+"longitude": -91.672104
+},
+{
+"name": "Glenbeulah",
+"kind": "village",
+"latitude": 43.798394,
+"longitude": -88.046792
+},
+{
+"name": "Glendale",
+"kind": "city",
+"latitude": 43.126142,
+"longitude": -87.927195
+},
+{
+"name": "Glen Flora",
+"kind": "village",
+"latitude": 45.496957,
+"longitude": -90.893479
+},
+{
+"name": "Glen Haven",
+"kind": "CDP",
+"latitude": 42.83574,
+"longitude": -91.060752
+},
+{
+"name": "Glenwood City",
+"kind": "city",
+"latitude": 45.052078,
+"longitude": -92.165813
+},
+{
+"name": "Glidden",
+"kind": "CDP",
+"latitude": 46.134673,
+"longitude": -90.572127
+},
+{
+"name": "Goodman",
+"kind": "CDP",
+"latitude": 45.619363,
+"longitude": -88.351413
+},
+{
+"name": "Gordon",
+"kind": "CDP",
+"latitude": 46.240032,
+"longitude": -91.799517
+},
+{
+"name": "Gotham",
+"kind": "CDP",
+"latitude": 43.222488,
+"longitude": -90.296957
+},
+{
+"name": "Grafton",
+"kind": "village",
+"latitude": 43.32067,
+"longitude": -87.947627
+},
+{
+"name": "Grand Marsh",
+"kind": "CDP",
+"latitude": 43.885247,
+"longitude": -89.707156
+},
+{
+"name": "Grand View",
+"kind": "CDP",
+"latitude": 46.368042,
+"longitude": -91.103438
+},
+{
+"name": "Granton",
+"kind": "village",
+"latitude": 44.588311,
+"longitude": -90.460426
+},
+{
+"name": "Grantsburg",
+"kind": "village",
+"latitude": 45.78379,
+"longitude": -92.677329
+},
+{
+"name": "Gratiot",
+"kind": "village",
+"latitude": 42.579777,
+"longitude": -90.023796
+},
+{
+"name": "Green Bay",
+"kind": "city",
+"latitude": 44.521542,
+"longitude": -87.986568
+},
+{
+"name": "Greenbush",
+"kind": "CDP",
+"latitude": 43.778076,
+"longitude": -88.094123
+},
+{
+"name": "Greendale",
+"kind": "village",
+"latitude": 42.939993,
+"longitude": -88.000857
+},
+{
+"name": "Greenfield",
+"kind": "city",
+"latitude": 42.960604,
+"longitude": -88.00567
+},
+{
+"name": "Green Lake",
+"kind": "city",
+"latitude": 43.842785,
+"longitude": -88.95579
+},
+{
+"name": "Greenleaf",
+"kind": "CDP",
+"latitude": 44.316937,
+"longitude": -88.097169
+},
+{
+"name": "Green Valley",
+"kind": "CDP",
+"latitude": 44.796922,
+"longitude": -88.268174
+},
+{
+"name": "Greenville",
+"kind": "village",
+"latitude": 44.284135,
+"longitude": -88.547272
+},
+{
+"name": "Greenwood",
+"kind": "city",
+"latitude": 44.765376,
+"longitude": -90.598951
+},
+{
+"name": "Gresham",
+"kind": "village",
+"latitude": 44.84861,
+"longitude": -88.786076
+},
+{
+"name": "Hager City",
+"kind": "CDP",
+"latitude": 44.602063,
+"longitude": -92.533469
+},
+{
+"name": "Hales Corners",
+"kind": "village",
+"latitude": 42.941231,
+"longitude": -88.0495
+},
+{
+"name": "Hammond",
+"kind": "village",
+"latitude": 44.969023,
+"longitude": -92.438072
+},
+{
+"name": "Hancock",
+"kind": "village",
+"latitude": 44.133308,
+"longitude": -89.520954
+},
+{
+"name": "Hanover",
+"kind": "CDP",
+"latitude": 42.638884,
+"longitude": -89.171034
+},
+{
+"name": "Harrison",
+"kind": "village",
+"latitude": 44.192246,
+"longitude": -88.294059
+},
+{
+"name": "Harrisville",
+"kind": "CDP",
+"latitude": 43.88429,
+"longitude": -89.409885
+},
+{
+"name": "Hartford",
+"kind": "city",
+"latitude": 43.322467,
+"longitude": -88.377737
+},
+{
+"name": "Hartland",
+"kind": "village",
+"latitude": 43.102352,
+"longitude": -88.335595
+},
+{
+"name": "Hatfield",
+"kind": "CDP",
+"latitude": 44.416937,
+"longitude": -90.751111
+},
+{
+"name": "Hatley",
+"kind": "village",
+"latitude": 44.886494,
+"longitude": -89.337101
+},
+{
+"name": "Haugen",
+"kind": "village",
+"latitude": 45.607593,
+"longitude": -91.778588
+},
+{
+"name": "Hawkins",
+"kind": "village",
+"latitude": 45.511853,
+"longitude": -90.717153
+},
+{
+"name": "Hayward",
+"kind": "city",
+"latitude": 46.006588,
+"longitude": -91.489684
+},
+{
+"name": "Hazel Green",
+"kind": "village",
+"latitude": 42.534165,
+"longitude": -90.436081
+},
+{
+"name": "Hebron",
+"kind": "CDP",
+"latitude": 42.918787,
+"longitude": -88.689478
+},
+{
+"name": "Helenville",
+"kind": "CDP",
+"latitude": 43.016537,
+"longitude": -88.699897
+},
+{
+"name": "Herbster",
+"kind": "CDP",
+"latitude": 46.842197,
+"longitude": -91.2419
+},
+{
+"name": "Hewitt",
+"kind": "village",
+"latitude": 44.642486,
+"longitude": -90.104834
+},
+{
+"name": "Highland",
+"kind": "village",
+"latitude": 43.047477,
+"longitude": -90.380085
+},
+{
+"name": "Hilbert",
+"kind": "village",
+"latitude": 44.141492,
+"longitude": -88.161084
+},
+{
+"name": "Hillsboro",
+"kind": "city",
+"latitude": 43.656497,
+"longitude": -90.334389
+},
+{
+"name": "Hingham",
+"kind": "CDP",
+"latitude": 43.654278,
+"longitude": -87.910623
+},
+{
+"name": "Hixton",
+"kind": "village",
+"latitude": 44.383081,
+"longitude": -91.0148
+},
+{
+"name": "Hobart",
+"kind": "village",
+"latitude": 44.495441,
+"longitude": -88.155601
+},
+{
+"name": "Holcombe",
+"kind": "CDP",
+"latitude": 45.222301,
+"longitude": -91.120552
+},
+{
+"name": "Hollandale",
+"kind": "village",
+"latitude": 42.874972,
+"longitude": -89.9335
+},
+{
+"name": "Holmen",
+"kind": "village",
+"latitude": 43.970767,
+"longitude": -91.265783
+},
+{
+"name": "Horicon",
+"kind": "city",
+"latitude": 43.445001,
+"longitude": -88.640328
+},
+{
+"name": "Hortonville",
+"kind": "village",
+"latitude": 44.335766,
+"longitude": -88.636599
+},
+{
+"name": "Houlton",
+"kind": "CDP",
+"latitude": 45.065942,
+"longitude": -92.788487
+},
+{
+"name": "Howard",
+"kind": "village",
+"latitude": 44.568621,
+"longitude": -88.071724
+},
+{
+"name": "Howards Grove",
+"kind": "village",
+"latitude": 43.82974,
+"longitude": -87.820326
+},
+{
+"name": "Hudson",
+"kind": "city",
+"latitude": 44.963882,
+"longitude": -92.730253
+},
+{
+"name": "Humbird",
+"kind": "CDP",
+"latitude": 44.531283,
+"longitude": -90.879166
+},
+{
+"name": "Hurley",
+"kind": "city",
+"latitude": 46.444285,
+"longitude": -90.211266
+},
+{
+"name": "Hustisford",
+"kind": "village",
+"latitude": 43.342696,
+"longitude": -88.603471
+},
+{
+"name": "Hustler",
+"kind": "village",
+"latitude": 43.877286,
+"longitude": -90.265801
+},
+{
+"name": "Independence",
+"kind": "city",
+"latitude": 44.309824,
+"longitude": -91.42071
+},
+{
+"name": "Ingram",
+"kind": "village",
+"latitude": 45.505624,
+"longitude": -90.813687
+},
+{
+"name": "Iola",
+"kind": "village",
+"latitude": 44.509708,
+"longitude": -89.117218
+},
+{
+"name": "Iron Belt",
+"kind": "CDP",
+"latitude": 46.403009,
+"longitude": -90.319218
+},
+{
+"name": "Iron Ridge",
+"kind": "village",
+"latitude": 43.398061,
+"longitude": -88.531928
+},
+{
+"name": "Iron River",
+"kind": "CDP",
+"latitude": 46.579326,
+"longitude": -91.39985
+},
+{
+"name": "Ironton",
+"kind": "village",
+"latitude": 43.544188,
+"longitude": -90.145467
+},
+{
+"name": "Ixonia",
+"kind": "CDP",
+"latitude": 43.137193,
+"longitude": -88.596316
+},
+{
+"name": "Jackson",
+"kind": "village",
+"latitude": 43.319883,
+"longitude": -88.164117
+},
+{
+"name": "Janesville",
+"kind": "city",
+"latitude": 42.684698,
+"longitude": -89.01317
+},
+{
+"name": "Jefferson",
+"kind": "city",
+"latitude": 43.003955,
+"longitude": -88.808473
+},
+{
+"name": "Jim Falls",
+"kind": "CDP",
+"latitude": 45.047823,
+"longitude": -91.271888
+},
+{
+"name": "Johnson Creek",
+"kind": "village",
+"latitude": 43.079053,
+"longitude": -88.771069
+},
+{
+"name": "Jolmaville",
+"kind": "CDP",
+"latitude": 46.433051,
+"longitude": -90.749832
+},
+{
+"name": "Juda",
+"kind": "CDP",
+"latitude": 42.589961,
+"longitude": -89.50922
+},
+{
+"name": "Jump River",
+"kind": "CDP",
+"latitude": 45.355532,
+"longitude": -90.796445
+},
+{
+"name": "Junction City",
+"kind": "village",
+"latitude": 44.594933,
+"longitude": -89.769656
+},
+{
+"name": "Juneau",
+"kind": "city",
+"latitude": 43.402904,
+"longitude": -88.703256
+},
+{
+"name": "Kaukauna",
+"kind": "city",
+"latitude": 44.277748,
+"longitude": -88.26513
+},
+{
+"name": "Kekoskee",
+"kind": "village",
+"latitude": 43.500597,
+"longitude": -88.584595
+},
+{
+"name": "Kellnersville",
+"kind": "village",
+"latitude": 44.225167,
+"longitude": -87.803115
+},
+{
+"name": "Kendall",
+"kind": "village",
+"latitude": 43.792669,
+"longitude": -90.367649
+},
+{
+"name": "Kennan",
+"kind": "village",
+"latitude": 45.530074,
+"longitude": -90.586831
+},
+{
+"name": "Kenosha",
+"kind": "city",
+"latitude": 42.587526,
+"longitude": -87.879996
+},
+{
+"name": "Keshena",
+"kind": "CDP",
+"latitude": 44.866782,
+"longitude": -88.585289
+},
+{
+"name": "Kewaskum",
+"kind": "village",
+"latitude": 43.518028,
+"longitude": -88.231528
+},
+{
+"name": "Kewaunee",
+"kind": "city",
+"latitude": 44.463574,
+"longitude": -87.521699
+},
+{
+"name": "Kiel",
+"kind": "city",
+"latitude": 43.91602,
+"longitude": -88.026497
+},
+{
+"name": "Kieler",
+"kind": "CDP",
+"latitude": 42.582306,
+"longitude": -90.605183
+},
+{
+"name": "Kimberly",
+"kind": "village",
+"latitude": 44.26676,
+"longitude": -88.338004
+},
+{
+"name": "King",
+"kind": "CDP",
+"latitude": 44.342086,
+"longitude": -89.12485
+},
+{
+"name": "Kingston",
+"kind": "village",
+"latitude": 43.693268,
+"longitude": -89.131469
+},
+{
+"name": "Knapp",
+"kind": "village",
+"latitude": 44.948898,
+"longitude": -92.080767
+},
+{
+"name": "Knowlton",
+"kind": "CDP",
+"latitude": 44.718188,
+"longitude": -89.680363
+},
+{
+"name": "Kohler",
+"kind": "village",
+"latitude": 43.739983,
+"longitude": -87.776838
+},
+{
+"name": "Krakow",
+"kind": "CDP",
+"latitude": 44.758507,
+"longitude": -88.261086
+},
+{
+"name": "Kronenwetter",
+"kind": "village",
+"latitude": 44.819893,
+"longitude": -89.588673
+},
+{
+"name": "Lac du Flambeau",
+"kind": "CDP",
+"latitude": 45.962279,
+"longitude": -89.896865
+},
+{
+"name": "Lac La Belle",
+"kind": "village",
+"latitude": 43.145515,
+"longitude": -88.517334
+},
+{
+"name": "La Crosse",
+"kind": "city",
+"latitude": 43.824685,
+"longitude": -91.224616
+},
+{
+"name": "Ladysmith",
+"kind": "city",
+"latitude": 45.460974,
+"longitude": -91.097573
+},
+{
+"name": "La Farge",
+"kind": "village",
+"latitude": 43.578243,
+"longitude": -90.638265
+},
+{
+"name": "Lake Arrowhead",
+"kind": "CDP",
+"latitude": 44.203602,
+"longitude": -89.844627
+},
+{
+"name": "Lake Camelot",
+"kind": "CDP",
+"latitude": 44.212774,
+"longitude": -89.763025
+},
+{
+"name": "Lake Delton",
+"kind": "village",
+"latitude": 43.591986,
+"longitude": -89.783139
+},
+{
+"name": "Lake Geneva",
+"kind": "city",
+"latitude": 42.583346,
+"longitude": -88.428454
+},
+{
+"name": "Lake Hallie",
+"kind": "village",
+"latitude": 44.891691,
+"longitude": -91.420333
+},
+{
+"name": "Lake Ivanhoe",
+"kind": "CDP",
+"latitude": 42.57924,
+"longitude": -88.335973
+},
+{
+"name": "Lake Koshkonong",
+"kind": "CDP",
+"latitude": 42.860502,
+"longitude": -88.940129
+},
+{
+"name": "Lake Lorraine",
+"kind": "CDP",
+"latitude": 42.73038,
+"longitude": -88.740323
+},
+{
+"name": "Lake Mills",
+"kind": "city",
+"latitude": 43.077639,
+"longitude": -88.906411
+},
+{
+"name": "Lake Nebagamon",
+"kind": "village",
+"latitude": 46.497748,
+"longitude": -91.704353
+},
+{
+"name": "Lake Ripley",
+"kind": "CDP",
+"latitude": 43.008632,
+"longitude": -88.990254
+},
+{
+"name": "Lake Sherwood",
+"kind": "CDP",
+"latitude": 44.206264,
+"longitude": -89.788058
+},
+{
+"name": "Lake Tomahawk",
+"kind": "CDP",
+"latitude": 45.809175,
+"longitude": -89.577404
+},
+{
+"name": "Lake Wazeecha",
+"kind": "CDP",
+"latitude": 44.37087,
+"longitude": -89.749231
+},
+{
+"name": "Lake Wisconsin",
+"kind": "CDP",
+"latitude": 43.36474,
+"longitude": -89.59601
+},
+{
+"name": "Lake Wissota",
+"kind": "CDP",
+"latitude": 44.925954,
+"longitude": -91.289635
+},
+{
+"name": "Lakewood",
+"kind": "CDP",
+"latitude": 45.300592,
+"longitude": -88.514541
+},
+{
+"name": "Lancaster",
+"kind": "city",
+"latitude": 42.847414,
+"longitude": -90.706412
+},
+{
+"name": "Lannon",
+"kind": "village",
+"latitude": 43.15724,
+"longitude": -88.158198
+},
+{
+"name": "Laona",
+"kind": "CDP",
+"latitude": 45.55968,
+"longitude": -88.669656
+},
+{
+"name": "Lauderdale Lakes",
+"kind": "CDP",
+"latitude": 42.772349,
+"longitude": -88.580552
+},
+{
+"name": "La Valle",
+"kind": "village",
+"latitude": 43.582669,
+"longitude": -90.130171
+},
+{
+"name": "Lebanon",
+"kind": "CDP",
+"latitude": 43.257449,
+"longitude": -88.632197
+},
+{
+"name": "Legend Lake",
+"kind": "CDP",
+"latitude": 44.895116,
+"longitude": -88.543082
+},
+{
+"name": "Lena",
+"kind": "village",
+"latitude": 44.953037,
+"longitude": -88.047325
+},
+{
+"name": "Leopolis",
+"kind": "CDP",
+"latitude": 44.765481,
+"longitude": -88.844716
+},
+{
+"name": "Lewis",
+"kind": "CDP",
+"latitude": 45.721887,
+"longitude": -92.392215
+},
+{
+"name": "Lily Lake",
+"kind": "CDP",
+"latitude": 42.565703,
+"longitude": -88.209981
+},
+{
+"name": "Lime Ridge",
+"kind": "village",
+"latitude": 43.467579,
+"longitude": -90.157692
+},
+{
+"name": "Linden",
+"kind": "village",
+"latitude": 42.918614,
+"longitude": -90.274181
+},
+{
+"name": "Lisbon",
+"kind": "village",
+"latitude": 43.157584,
+"longitude": -88.250411
+},
+{
+"name": "Little Chute",
+"kind": "village",
+"latitude": 44.291128,
+"longitude": -88.320399
+},
+{
+"name": "Little Round Lake",
+"kind": "CDP",
+"latitude": 45.969426,
+"longitude": -91.368866
+},
+{
+"name": "Little Sturgeon",
+"kind": "CDP",
+"latitude": 44.842029,
+"longitude": -87.57449
+},
+{
+"name": "Livingston",
+"kind": "village",
+"latitude": 42.900095,
+"longitude": -90.43368
+},
+{
+"name": "Lodi",
+"kind": "city",
+"latitude": 43.315531,
+"longitude": -89.539889
+},
+{
+"name": "Loganville",
+"kind": "village",
+"latitude": 43.43702,
+"longitude": -90.037365
+},
+{
+"name": "Lohrville",
+"kind": "village",
+"latitude": 44.038153,
+"longitude": -89.121158
+},
+{
+"name": "Lomira",
+"kind": "village",
+"latitude": 43.594248,
+"longitude": -88.443216
+},
+{
+"name": "Lone Rock",
+"kind": "village",
+"latitude": 43.18567,
+"longitude": -90.201286
+},
+{
+"name": "Long Lake",
+"kind": "CDP",
+"latitude": 45.843027,
+"longitude": -88.667306
+},
+{
+"name": "Lowell",
+"kind": "village",
+"latitude": 43.333564,
+"longitude": -88.813704
+},
+{
+"name": "Loyal",
+"kind": "city",
+"latitude": 44.736526,
+"longitude": -90.495618
+},
+{
+"name": "Lublin",
+"kind": "village",
+"latitude": 45.074915,
+"longitude": -90.723808
+},
+{
+"name": "Luck",
+"kind": "village",
+"latitude": 45.576753,
+"longitude": -92.462503
+},
+{
+"name": "Luxemburg",
+"kind": "village",
+"latitude": 44.544662,
+"longitude": -87.706567
+},
+{
+"name": "Lyndon Station",
+"kind": "village",
+"latitude": 43.708788,
+"longitude": -89.893654
+},
+{
+"name": "Lynxville",
+"kind": "village",
+"latitude": 43.252721,
+"longitude": -91.049379
+},
+{
+"name": "Lyons",
+"kind": "CDP",
+"latitude": 42.648231,
+"longitude": -88.360114
+},
+{
+"name": "McFarland",
+"kind": "village",
+"latitude": 43.019225,
+"longitude": -89.28342
+},
+{
+"name": "Madison",
+"kind": "city",
+"latitude": 43.087815,
+"longitude": -89.429856
+},
+{
+"name": "Maiden Rock",
+"kind": "village",
+"latitude": 44.567897,
+"longitude": -92.309307
+},
+{
+"name": "Maine",
+"kind": "village",
+"latitude": 45.05803,
+"longitude": -89.681321
+},
+{
+"name": "Manawa",
+"kind": "city",
+"latitude": 44.461517,
+"longitude": -88.920464
+},
+{
+"name": "Manitowoc",
+"kind": "city",
+"latitude": 44.097981,
+"longitude": -87.678945
+},
+{
+"name": "Maple Bluff",
+"kind": "village",
+"latitude": 43.117399,
+"longitude": -89.37105
+},
+{
+"name": "Marathon City",
+"kind": "village",
+"latitude": 44.938991,
+"longitude": -89.850095
+},
+{
+"name": "Marengo",
+"kind": "CDP",
+"latitude": 46.421926,
+"longitude": -90.808097
+},
+{
+"name": "Maribel",
+"kind": "village",
+"latitude": 44.278597,
+"longitude": -87.802126
+},
+{
+"name": "Marinette",
+"kind": "city",
+"latitude": 45.086794,
+"longitude": -87.632443
+},
+{
+"name": "Marion",
+"kind": "city",
+"latitude": 44.677313,
+"longitude": -88.902362
+},
+{
+"name": "Markesan",
+"kind": "city",
+"latitude": 43.710826,
+"longitude": -88.991214
+},
+{
+"name": "Marquette",
+"kind": "village",
+"latitude": 43.746408,
+"longitude": -89.138354
+},
+{
+"name": "Marshall",
+"kind": "village",
+"latitude": 43.170486,
+"longitude": -89.062647
+},
+{
+"name": "Marshfield",
+"kind": "city",
+"latitude": 44.663291,
+"longitude": -90.171736
+},
+{
+"name": "Mason",
+"kind": "village",
+"latitude": 46.436319,
+"longitude": -91.05984
+},
+{
+"name": "Mattoon",
+"kind": "village",
+"latitude": 45.004593,
+"longitude": -89.04118
+},
+{
+"name": "Mauston",
+"kind": "city",
+"latitude": 43.799976,
+"longitude": -90.079554
+},
+{
+"name": "Mayville",
+"kind": "city",
+"latitude": 43.498154,
+"longitude": -88.547639
+},
+{
+"name": "Mazomanie",
+"kind": "village",
+"latitude": 43.17245,
+"longitude": -89.795308
+},
+{
+"name": "Medford",
+"kind": "city",
+"latitude": 45.135433,
+"longitude": -90.343502
+},
+{
+"name": "Mellen",
+"kind": "city",
+"latitude": 46.323977,
+"longitude": -90.660454
+},
+{
+"name": "Melrose",
+"kind": "village",
+"latitude": 44.131154,
+"longitude": -90.996919
+},
+{
+"name": "Melvina",
+"kind": "village",
+"latitude": 43.802449,
+"longitude": -90.781459
+},
+{
+"name": "Menasha",
+"kind": "city",
+"latitude": 44.212338,
+"longitude": -88.427357
+},
+{
+"name": "Menomonee Falls",
+"kind": "village",
+"latitude": 43.159411,
+"longitude": -88.121548
+},
+{
+"name": "Menomonie",
+"kind": "city",
+"latitude": 44.8892,
+"longitude": -91.90957
+},
+{
+"name": "Mequon",
+"kind": "city",
+"latitude": 43.211357,
+"longitude": -88.014237
+},
+{
+"name": "Mercer",
+"kind": "CDP",
+"latitude": 46.161334,
+"longitude": -90.041842
+},
+{
+"name": "Merrill",
+"kind": "city",
+"latitude": 45.180635,
+"longitude": -89.700339
+},
+{
+"name": "Merrillan",
+"kind": "village",
+"latitude": 44.450575,
+"longitude": -90.834467
+},
+{
+"name": "Merrimac",
+"kind": "village",
+"latitude": 43.375581,
+"longitude": -89.626862
+},
+{
+"name": "Merton",
+"kind": "village",
+"latitude": 43.143682,
+"longitude": -88.312344
+},
+{
+"name": "Middleton",
+"kind": "city",
+"latitude": 43.106959,
+"longitude": -89.50634
+},
+{
+"name": "Middle Village",
+"kind": "CDP",
+"latitude": 44.926491,
+"longitude": -88.717814
+},
+{
+"name": "Milladore",
+"kind": "village",
+"latitude": 44.605625,
+"longitude": -89.855161
+},
+{
+"name": "Millston",
+"kind": "CDP",
+"latitude": 44.189264,
+"longitude": -90.645691
+},
+{
+"name": "Milltown",
+"kind": "village",
+"latitude": 45.521082,
+"longitude": -92.498503
+},
+{
+"name": "Milton",
+"kind": "city",
+"latitude": 42.774675,
+"longitude": -88.939991
+},
+{
+"name": "Milwaukee",
+"kind": "city",
+"latitude": 43.063348,
+"longitude": -87.966695
+},
+{
+"name": "Mindoro",
+"kind": "CDP",
+"latitude": 44.020139,
+"longitude": -91.101926
+},
+{
+"name": "Mineral Point",
+"kind": "city",
+"latitude": 42.863223,
+"longitude": -90.181793
+},
+{
+"name": "Minocqua",
+"kind": "CDP",
+"latitude": 45.879211,
+"longitude": -89.703617
+},
+{
+"name": "Minong",
+"kind": "village",
+"latitude": 46.098978,
+"longitude": -91.825949
+},
+{
+"name": "Mishicot",
+"kind": "village",
+"latitude": 44.228533,
+"longitude": -87.639805
+},
+{
+"name": "Mission",
+"kind": "CDP",
+"latitude": 44.345353,
+"longitude": -90.763086
+},
+{
+"name": "Mole Lake",
+"kind": "CDP",
+"latitude": 45.486128,
+"longitude": -88.975622
+},
+{
+"name": "Mondovi",
+"kind": "city",
+"latitude": 44.570255,
+"longitude": -91.666851
+},
+{
+"name": "Monona",
+"kind": "city",
+"latitude": 43.053873,
+"longitude": -89.333513
+},
+{
+"name": "Monroe",
+"kind": "city",
+"latitude": 42.603019,
+"longitude": -89.637626
+},
+{
+"name": "Montello",
+"kind": "city",
+"latitude": 43.794357,
+"longitude": -89.333183
+},
+{
+"name": "Montfort",
+"kind": "village",
+"latitude": 42.969867,
+"longitude": -90.433251
+},
+{
+"name": "Monticello",
+"kind": "village",
+"latitude": 42.744662,
+"longitude": -89.590257
+},
+{
+"name": "Montreal",
+"kind": "city",
+"latitude": 46.433177,
+"longitude": -90.241935
+},
+{
+"name": "Mosinee",
+"kind": "city",
+"latitude": 44.79182,
+"longitude": -89.684328
+},
+{
+"name": "Mountain",
+"kind": "CDP",
+"latitude": 45.186387,
+"longitude": -88.468086
+},
+{
+"name": "Mount Calvary",
+"kind": "village",
+"latitude": 43.823838,
+"longitude": -88.241105
+},
+{
+"name": "Mount Hope",
+"kind": "village",
+"latitude": 42.969635,
+"longitude": -90.859559
+},
+{
+"name": "Mount Horeb",
+"kind": "village",
+"latitude": 43.005999,
+"longitude": -89.731575
+},
+{
+"name": "Mount Pleasant",
+"kind": "village",
+"latitude": 42.708832,
+"longitude": -87.884894
+},
+{
+"name": "Mount Sterling",
+"kind": "village",
+"latitude": 43.31619,
+"longitude": -90.929223
+},
+{
+"name": "Mukwonago",
+"kind": "village",
+"latitude": 42.852988,
+"longitude": -88.320626
+},
+{
+"name": "Muscoda",
+"kind": "village",
+"latitude": 43.186419,
+"longitude": -90.4319
+},
+{
+"name": "Muskego",
+"kind": "city",
+"latitude": 42.871356,
+"longitude": -88.13432
+},
+{
+"name": "Nashotah",
+"kind": "village",
+"latitude": 43.088811,
+"longitude": -88.407958
+},
+{
+"name": "Navarino",
+"kind": "CDP",
+"latitude": 44.610914,
+"longitude": -88.493352
+},
+{
+"name": "Necedah",
+"kind": "village",
+"latitude": 44.022091,
+"longitude": -90.075051
+},
+{
+"name": "Neenah",
+"kind": "city",
+"latitude": 44.164925,
+"longitude": -88.479628
+},
+{
+"name": "Neillsville",
+"kind": "city",
+"latitude": 44.560316,
+"longitude": -90.590781
+},
+{
+"name": "Nekoosa",
+"kind": "city",
+"latitude": 44.313177,
+"longitude": -89.907891
+},
+{
+"name": "Nelson",
+"kind": "village",
+"latitude": 44.419593,
+"longitude": -91.997308
+},
+{
+"name": "Nelsonville",
+"kind": "village",
+"latitude": 44.490214,
+"longitude": -89.303542
+},
+{
+"name": "Neopit",
+"kind": "CDP",
+"latitude": 44.984688,
+"longitude": -88.814575
+},
+{
+"name": "Neosho",
+"kind": "village",
+"latitude": 43.307141,
+"longitude": -88.521184
+},
+{
+"name": "Neshkoro",
+"kind": "village",
+"latitude": 43.965128,
+"longitude": -89.215764
+},
+{
+"name": "Newald",
+"kind": "CDP",
+"latitude": 45.739576,
+"longitude": -88.700487
+},
+{
+"name": "New Auburn",
+"kind": "village",
+"latitude": 45.198779,
+"longitude": -91.566342
+},
+{
+"name": "New Berlin",
+"kind": "city",
+"latitude": 42.972,
+"longitude": -88.129168
+},
+{
+"name": "Newburg",
+"kind": "village",
+"latitude": 43.432257,
+"longitude": -88.047925
+},
+{
+"name": "New Glarus",
+"kind": "village",
+"latitude": 42.813107,
+"longitude": -89.633698
+},
+{
+"name": "New Holstein",
+"kind": "city",
+"latitude": 43.949222,
+"longitude": -88.094881
+},
+{
+"name": "New Lisbon",
+"kind": "city",
+"latitude": 43.875292,
+"longitude": -90.162379
+},
+{
+"name": "New London",
+"kind": "city",
+"latitude": 44.39591,
+"longitude": -88.73861
+},
+{
+"name": "New Munster",
+"kind": "CDP",
+"latitude": 42.575763,
+"longitude": -88.231108
+},
+{
+"name": "New Odanah",
+"kind": "CDP",
+"latitude": 46.598621,
+"longitude": -90.650817
+},
+{
+"name": "New Post",
+"kind": "CDP",
+"latitude": 45.902783,
+"longitude": -91.207142
+},
+{
+"name": "New Richmond",
+"kind": "city",
+"latitude": 45.124977,
+"longitude": -92.547938
+},
+{
+"name": "Niagara",
+"kind": "city",
+"latitude": 45.779259,
+"longitude": -88.003197
+},
+{
+"name": "Nichols",
+"kind": "village",
+"latitude": 44.567202,
+"longitude": -88.467799
+},
+{
+"name": "North Bay",
+"kind": "village",
+"latitude": 42.764171,
+"longitude": -87.780619
+},
+{
+"name": "North Fond du Lac",
+"kind": "village",
+"latitude": 43.811004,
+"longitude": -88.48549
+},
+{
+"name": "North Freedom",
+"kind": "village",
+"latitude": 43.457966,
+"longitude": -89.853833
+},
+{
+"name": "North Hudson",
+"kind": "village",
+"latitude": 44.995765,
+"longitude": -92.754998
+},
+{
+"name": "North Lake",
+"kind": "CDP",
+"latitude": 43.155297,
+"longitude": -88.367406
+},
+{
+"name": "Northport",
+"kind": "CDP",
+"latitude": 44.405015,
+"longitude": -88.811252
+},
+{
+"name": "North Prairie",
+"kind": "village",
+"latitude": 42.940891,
+"longitude": -88.402108
+},
+{
+"name": "Norwalk",
+"kind": "village",
+"latitude": 43.834174,
+"longitude": -90.626854
+},
+{
+"name": "Oak Creek",
+"kind": "city",
+"latitude": 42.878693,
+"longitude": -87.898676
+},
+{
+"name": "Oakdale",
+"kind": "village",
+"latitude": 43.962167,
+"longitude": -90.379118
+},
+{
+"name": "Oakfield",
+"kind": "village",
+"latitude": 43.684063,
+"longitude": -88.548571
+},
+{
+"name": "Oconomowoc",
+"kind": "city",
+"latitude": 43.101015,
+"longitude": -88.495115
+},
+{
+"name": "Oconomowoc Lake",
+"kind": "village",
+"latitude": 43.103817,
+"longitude": -88.449738
+},
+{
+"name": "Oconto",
+"kind": "city",
+"latitude": 44.892663,
+"longitude": -87.868509
+},
+{
+"name": "Oconto Falls",
+"kind": "city",
+"latitude": 44.865306,
+"longitude": -88.136898
+},
+{
+"name": "Odanah",
+"kind": "CDP",
+"latitude": 46.594079,
+"longitude": -90.677951
+},
+{
+"name": "Ogdensburg",
+"kind": "village",
+"latitude": 44.457205,
+"longitude": -89.024327
+},
+{
+"name": "Ogema",
+"kind": "CDP",
+"latitude": 45.456606,
+"longitude": -90.300279
+},
+{
+"name": "Okauchee Lake",
+"kind": "CDP",
+"latitude": 43.125867,
+"longitude": -88.439173
+},
+{
+"name": "Oliver",
+"kind": "village",
+"latitude": 46.645755,
+"longitude": -92.184661
+},
+{
+"name": "Omro",
+"kind": "city",
+"latitude": 44.038973,
+"longitude": -88.736994
+},
+{
+"name": "Onalaska",
+"kind": "city",
+"latitude": 43.889658,
+"longitude": -91.204356
+},
+{
+"name": "Ontario",
+"kind": "village",
+"latitude": 43.721919,
+"longitude": -90.593219
+},
+{
+"name": "Oostburg",
+"kind": "village",
+"latitude": 43.624134,
+"longitude": -87.788108
+},
+{
+"name": "Oregon",
+"kind": "village",
+"latitude": 42.925064,
+"longitude": -89.388976
+},
+{
+"name": "Orfordville",
+"kind": "village",
+"latitude": 42.629367,
+"longitude": -89.257284
+},
+{
+"name": "Osceola",
+"kind": "village",
+"latitude": 45.319253,
+"longitude": -92.695792
+},
+{
+"name": "Oshkosh",
+"kind": "city",
+"latitude": 44.023168,
+"longitude": -88.56226
+},
+{
+"name": "Osseo",
+"kind": "city",
+"latitude": 44.579831,
+"longitude": -91.213829
+},
+{
+"name": "Owen",
+"kind": "city",
+"latitude": 44.94909,
+"longitude": -90.561117
+},
+{
+"name": "Oxford",
+"kind": "village",
+"latitude": 43.780372,
+"longitude": -89.563582
+},
+{
+"name": "Paac Ciinak",
+"kind": "CDP",
+"latitude": 44.857952,
+"longitude": -89.155069
+},
+{
+"name": "Packwaukee",
+"kind": "CDP",
+"latitude": 43.765302,
+"longitude": -89.45979
+},
+{
+"name": "Paddock Lake",
+"kind": "village",
+"latitude": 42.570528,
+"longitude": -88.106783
+},
+{
+"name": "Palmyra",
+"kind": "village",
+"latitude": 42.881211,
+"longitude": -88.598107
+},
+{
+"name": "Pardeeville",
+"kind": "village",
+"latitude": 43.537272,
+"longitude": -89.302647
+},
+{
+"name": "Park Falls",
+"kind": "city",
+"latitude": 45.936339,
+"longitude": -90.444272
+},
+{
+"name": "Park Ridge",
+"kind": "village",
+"latitude": 44.519992,
+"longitude": -89.546272
+},
+{
+"name": "Patch Grove",
+"kind": "village",
+"latitude": 42.940288,
+"longitude": -90.972343
+},
+{
+"name": "Pella",
+"kind": "CDP",
+"latitude": 44.743504,
+"longitude": -88.822441
+},
+{
+"name": "Pembine",
+"kind": "CDP",
+"latitude": 45.636676,
+"longitude": -87.991306
+},
+{
+"name": "Pence",
+"kind": "CDP",
+"latitude": 46.410323,
+"longitude": -90.2695
+},
+{
+"name": "Pepin",
+"kind": "village",
+"latitude": 44.44278,
+"longitude": -92.147668
+},
+{
+"name": "Peshtigo",
+"kind": "city",
+"latitude": 45.056922,
+"longitude": -87.744077
+},
+{
+"name": "Pewaukee",
+"kind": "city",
+"latitude": 43.066141,
+"longitude": -88.244465
+},
+{
+"name": "Pewaukee",
+"kind": "village",
+"latitude": 43.086874,
+"longitude": -88.256388
+},
+{
+"name": "Phillips",
+"kind": "city",
+"latitude": 45.694035,
+"longitude": -90.40142
+},
+{
+"name": "Pigeon Falls",
+"kind": "village",
+"latitude": 44.424587,
+"longitude": -91.208341
+},
+{
+"name": "Pine River",
+"kind": "CDP",
+"latitude": 44.148598,
+"longitude": -89.075882
+},
+{
+"name": "Pittsville",
+"kind": "city",
+"latitude": 44.441673,
+"longitude": -90.136571
+},
+{
+"name": "Plain",
+"kind": "village",
+"latitude": 43.277195,
+"longitude": -90.042668
+},
+{
+"name": "Plainfield",
+"kind": "village",
+"latitude": 44.217499,
+"longitude": -89.496926
+},
+{
+"name": "Platteville",
+"kind": "city",
+"latitude": 42.727923,
+"longitude": -90.468103
+},
+{
+"name": "Pleasant Prairie",
+"kind": "village",
+"latitude": 42.526679,
+"longitude": -87.888302
+},
+{
+"name": "Plover",
+"kind": "village",
+"latitude": 44.46202,
+"longitude": -89.537971
+},
+{
+"name": "Plum City",
+"kind": "village",
+"latitude": 44.635583,
+"longitude": -92.191705
+},
+{
+"name": "Plymouth",
+"kind": "city",
+"latitude": 43.745274,
+"longitude": -87.965322
+},
+{
+"name": "Polonia",
+"kind": "CDP",
+"latitude": 44.580548,
+"longitude": -89.410626
+},
+{
+"name": "Poplar",
+"kind": "village",
+"latitude": 46.581849,
+"longitude": -91.782321
+},
+{
+"name": "Portage",
+"kind": "city",
+"latitude": 43.548951,
+"longitude": -89.465866
+},
+{
+"name": "Port Edwards",
+"kind": "village",
+"latitude": 44.357256,
+"longitude": -89.850363
+},
+{
+"name": "Port Washington",
+"kind": "city",
+"latitude": 43.384921,
+"longitude": -87.884134
+},
+{
+"name": "Port Wing",
+"kind": "CDP",
+"latitude": 46.775588,
+"longitude": -91.380612
+},
+{
+"name": "Post Lake",
+"kind": "CDP",
+"latitude": 45.430458,
+"longitude": -89.090342
+},
+{
+"name": "Potosi",
+"kind": "village",
+"latitude": 42.685515,
+"longitude": -90.707743
+},
+{
+"name": "Potter",
+"kind": "village",
+"latitude": 44.118481,
+"longitude": -88.101704
+},
+{
+"name": "Potter Lake",
+"kind": "CDP",
+"latitude": 42.820148,
+"longitude": -88.343133
+},
+{
+"name": "Pound",
+"kind": "village",
+"latitude": 45.098946,
+"longitude": -88.032449
+},
+{
+"name": "Powers Lake",
+"kind": "CDP",
+"latitude": 42.541483,
+"longitude": -88.295976
+},
+{
+"name": "Poynette",
+"kind": "village",
+"latitude": 43.392165,
+"longitude": -89.404787
+},
+{
+"name": "Poy Sippi",
+"kind": "CDP",
+"latitude": 44.136658,
+"longitude": -88.998117
+},
+{
+"name": "Prairie du Chien",
+"kind": "city",
+"latitude": 43.041618,
+"longitude": -91.135408
+},
+{
+"name": "Prairie du Sac",
+"kind": "village",
+"latitude": 43.293928,
+"longitude": -89.735231
+},
+{
+"name": "Prairie Farm",
+"kind": "village",
+"latitude": 45.236352,
+"longitude": -91.98003
+},
+{
+"name": "Prentice",
+"kind": "village",
+"latitude": 45.541224,
+"longitude": -90.292805
+},
+{
+"name": "Prescott",
+"kind": "city",
+"latitude": 44.753374,
+"longitude": -92.788975
+},
+{
+"name": "Princeton",
+"kind": "city",
+"latitude": 43.855891,
+"longitude": -89.124818
+},
+{
+"name": "Pulaski",
+"kind": "village",
+"latitude": 44.668206,
+"longitude": -88.234279
+},
+{
+"name": "Pulcifer",
+"kind": "CDP",
+"latitude": 44.849906,
+"longitude": -88.362989
+},
+{
+"name": "Racine",
+"kind": "city",
+"latitude": 42.725569,
+"longitude": -87.814224
+},
+{
+"name": "Radisson",
+"kind": "village",
+"latitude": 45.767476,
+"longitude": -91.217417
+},
+{
+"name": "Randolph",
+"kind": "village",
+"latitude": 43.539472,
+"longitude": -89.002811
+},
+{
+"name": "Random Lake",
+"kind": "village",
+"latitude": 43.554748,
+"longitude": -87.957765
+},
+{
+"name": "Raymond",
+"kind": "village",
+"latitude": 42.799157,
+"longitude": -88.010847
+},
+{
+"name": "Readstown",
+"kind": "village",
+"latitude": 43.448745,
+"longitude": -90.759082
+},
+{
+"name": "Redgranite",
+"kind": "village",
+"latitude": 44.053283,
+"longitude": -89.115869
+},
+{
+"name": "Reedsburg",
+"kind": "city",
+"latitude": 43.535051,
+"longitude": -89.995509
+},
+{
+"name": "Reedsville",
+"kind": "village",
+"latitude": 44.15253,
+"longitude": -87.951806
+},
+{
+"name": "Reeseville",
+"kind": "village",
+"latitude": 43.306173,
+"longitude": -88.84455
+},
+{
+"name": "Reserve",
+"kind": "CDP",
+"latitude": 45.823074,
+"longitude": -91.365221
+},
+{
+"name": "Rewey",
+"kind": "village",
+"latitude": 42.841865,
+"longitude": -90.396108
+},
+{
+"name": "Rhinelander",
+"kind": "city",
+"latitude": 45.634283,
+"longitude": -89.429947
+},
+{
+"name": "Rib Lake",
+"kind": "village",
+"latitude": 45.319514,
+"longitude": -90.20224
+},
+{
+"name": "Rib Mountain",
+"kind": "village",
+"latitude": 44.89722,
+"longitude": -89.683855
+},
+{
+"name": "Rice Lake",
+"kind": "city",
+"latitude": 45.481992,
+"longitude": -91.745762
+},
+{
+"name": "Richfield",
+"kind": "village",
+"latitude": 43.23939,
+"longitude": -88.234017
+},
+{
+"name": "Richland Center",
+"kind": "city",
+"latitude": 43.340476,
+"longitude": -90.38342
+},
+{
+"name": "Ridgeland",
+"kind": "village",
+"latitude": 45.198063,
+"longitude": -91.897959
+},
+{
+"name": "Ridgeway",
+"kind": "village",
+"latitude": 42.998424,
+"longitude": -89.992575
+},
+{
+"name": "Rio",
+"kind": "village",
+"latitude": 43.452161,
+"longitude": -89.241591
+},
+{
+"name": "Ripon",
+"kind": "city",
+"latitude": 43.84356,
+"longitude": -88.837936
+},
+{
+"name": "River Falls",
+"kind": "city",
+"latitude": 44.86085,
+"longitude": -92.625708
+},
+{
+"name": "River Hills",
+"kind": "village",
+"latitude": 43.17348,
+"longitude": -87.933849
+},
+{
+"name": "Roberts",
+"kind": "village",
+"latitude": 44.973298,
+"longitude": -92.550082
+},
+{
+"name": "Rochester",
+"kind": "village",
+"latitude": 42.732913,
+"longitude": -88.250323
+},
+{
+"name": "Rockdale",
+"kind": "village",
+"latitude": 42.969984,
+"longitude": -89.03055
+},
+{
+"name": "Rock Falls",
+"kind": "CDP",
+"latitude": 44.715651,
+"longitude": -91.699258
+},
+{
+"name": "Rockland",
+"kind": "village",
+"latitude": 43.907594,
+"longitude": -90.916581
+},
+{
+"name": "Rock Springs",
+"kind": "village",
+"latitude": 43.478726,
+"longitude": -89.926906
+},
+{
+"name": "Rome",
+"kind": "CDP",
+"latitude": 42.985323,
+"longitude": -88.649857
+},
+{
+"name": "Rosendale",
+"kind": "village",
+"latitude": 43.808905,
+"longitude": -88.671236
+},
+{
+"name": "Rosholt",
+"kind": "village",
+"latitude": 44.630177,
+"longitude": -89.305189
+},
+{
+"name": "Rothschild",
+"kind": "village",
+"latitude": 44.873714,
+"longitude": -89.61975
+},
+{
+"name": "Rubicon",
+"kind": "CDP",
+"latitude": 43.337226,
+"longitude": -88.452554
+},
+{
+"name": "Rudolph",
+"kind": "village",
+"latitude": 44.497198,
+"longitude": -89.801808
+},
+{
+"name": "St. Cloud",
+"kind": "village",
+"latitude": 43.822438,
+"longitude": -88.171707
+},
+{
+"name": "St. Croix Falls",
+"kind": "city",
+"latitude": 45.41137,
+"longitude": -92.624694
+},
+{
+"name": "St. Francis",
+"kind": "city",
+"latitude": 42.970968,
+"longitude": -87.871702
+},
+{
+"name": "St. Joseph",
+"kind": "CDP",
+"latitude": 43.785465,
+"longitude": -91.043627
+},
+{
+"name": "St. Nazianz",
+"kind": "village",
+"latitude": 44.007345,
+"longitude": -87.924787
+},
+{
+"name": "St. Peter",
+"kind": "CDP",
+"latitude": 43.838283,
+"longitude": -88.343335
+},
+{
+"name": "Salem Lakes",
+"kind": "village",
+"latitude": 42.536496,
+"longitude": -88.133169
+},
+{
+"name": "Sand Pillow",
+"kind": "CDP",
+"latitude": 44.331306,
+"longitude": -90.763742
+},
+{
+"name": "Sandy Hook",
+"kind": "CDP",
+"latitude": 42.546614,
+"longitude": -90.616775
+},
+{
+"name": "Sauk City",
+"kind": "village",
+"latitude": 43.273272,
+"longitude": -89.732456
+},
+{
+"name": "Saukville",
+"kind": "village",
+"latitude": 43.388946,
+"longitude": -87.943896
+},
+{
+"name": "Saxon",
+"kind": "CDP",
+"latitude": 46.494084,
+"longitude": -90.409955
+},
+{
+"name": "Sayner",
+"kind": "CDP",
+"latitude": 45.987754,
+"longitude": -89.541914
+},
+{
+"name": "Scandinavia",
+"kind": "village",
+"latitude": 44.460733,
+"longitude": -89.146542
+},
+{
+"name": "Schofield",
+"kind": "city",
+"latitude": 44.913348,
+"longitude": -89.621478
+},
+{
+"name": "Seneca",
+"kind": "CDP",
+"latitude": 43.265826,
+"longitude": -90.956582
+},
+{
+"name": "Sextonville",
+"kind": "CDP",
+"latitude": 43.279474,
+"longitude": -90.292373
+},
+{
+"name": "Seymour",
+"kind": "CDP",
+"latitude": 44.819561,
+"longitude": -91.436434
+},
+{
+"name": "Seymour",
+"kind": "city",
+"latitude": 44.514416,
+"longitude": -88.32734
+},
+{
+"name": "Sharon",
+"kind": "village",
+"latitude": 42.498713,
+"longitude": -88.730451
+},
+{
+"name": "Shawano",
+"kind": "city",
+"latitude": 44.777894,
+"longitude": -88.586019
+},
+{
+"name": "Sheboygan",
+"kind": "city",
+"latitude": 43.738713,
+"longitude": -87.731531
+},
+{
+"name": "Sheboygan Falls",
+"kind": "city",
+"latitude": 43.729279,
+"longitude": -87.826235
+},
+{
+"name": "Sheldon",
+"kind": "village",
+"latitude": 45.311904,
+"longitude": -90.956665
+},
+{
+"name": "Shell Lake",
+"kind": "city",
+"latitude": 45.72637,
+"longitude": -91.910025
+},
+{
+"name": "Sherwood",
+"kind": "village",
+"latitude": 44.176933,
+"longitude": -88.275019
+},
+{
+"name": "Shiocton",
+"kind": "village",
+"latitude": 44.445041,
+"longitude": -88.57645
+},
+{
+"name": "Shopiere",
+"kind": "CDP",
+"latitude": 42.572183,
+"longitude": -88.936206
+},
+{
+"name": "Shorewood",
+"kind": "village",
+"latitude": 43.091338,
+"longitude": -87.886654
+},
+{
+"name": "Shorewood Hills",
+"kind": "village",
+"latitude": 43.07885,
+"longitude": -89.446864
+},
+{
+"name": "Shullsburg",
+"kind": "city",
+"latitude": 42.573323,
+"longitude": -90.234765
+},
+{
+"name": "Siren",
+"kind": "village",
+"latitude": 45.777829,
+"longitude": -92.383151
+},
+{
+"name": "Sister Bay",
+"kind": "village",
+"latitude": 45.187097,
+"longitude": -87.129354
+},
+{
+"name": "Slinger",
+"kind": "village",
+"latitude": 43.335395,
+"longitude": -88.276454
+},
+{
+"name": "Sobieski",
+"kind": "CDP",
+"latitude": 44.722749,
+"longitude": -88.065881
+},
+{
+"name": "Soldiers Grove",
+"kind": "village",
+"latitude": 43.392305,
+"longitude": -90.773432
+},
+{
+"name": "Solon Springs",
+"kind": "village",
+"latitude": 46.347825,
+"longitude": -91.829388
+},
+{
+"name": "Somers",
+"kind": "village",
+"latitude": 42.643242,
+"longitude": -87.892166
+},
+{
+"name": "Somerset",
+"kind": "village",
+"latitude": 45.125706,
+"longitude": -92.672961
+},
+{
+"name": "South Milwaukee",
+"kind": "city",
+"latitude": 42.912643,
+"longitude": -87.862312
+},
+{
+"name": "South Wayne",
+"kind": "village",
+"latitude": 42.567588,
+"longitude": -89.876146
+},
+{
+"name": "Sparta",
+"kind": "city",
+"latitude": 43.938249,
+"longitude": -90.812705
+},
+{
+"name": "Spencer",
+"kind": "village",
+"latitude": 44.753615,
+"longitude": -90.298465
+},
+{
+"name": "Spooner",
+"kind": "city",
+"latitude": 45.825917,
+"longitude": -91.886125
+},
+{
+"name": "Springbrook",
+"kind": "CDP",
+"latitude": 45.946907,
+"longitude": -91.688996
+},
+{
+"name": "Springfield",
+"kind": "CDP",
+"latitude": 42.640657,
+"longitude": -88.413527
+},
+{
+"name": "Spring Green",
+"kind": "village",
+"latitude": 43.177577,
+"longitude": -90.068837
+},
+{
+"name": "Spring Valley",
+"kind": "village",
+"latitude": 44.852311,
+"longitude": -92.242932
+},
+{
+"name": "Stanley",
+"kind": "city",
+"latitude": 44.959383,
+"longitude": -90.943719
+},
+{
+"name": "Star Prairie",
+"kind": "village",
+"latitude": 45.197508,
+"longitude": -92.532121
+},
+{
+"name": "Stetsonville",
+"kind": "village",
+"latitude": 45.077056,
+"longitude": -90.314273
+},
+{
+"name": "Steuben",
+"kind": "village",
+"latitude": 43.183354,
+"longitude": -90.856936
+},
+{
+"name": "Stevens Point",
+"kind": "city",
+"latitude": 44.5253,
+"longitude": -89.550377
+},
+{
+"name": "Stockbridge",
+"kind": "village",
+"latitude": 44.068447,
+"longitude": -88.309707
+},
+{
+"name": "Stockholm",
+"kind": "village",
+"latitude": 44.490989,
+"longitude": -92.272135
+},
+{
+"name": "Stoddard",
+"kind": "village",
+"latitude": 43.662514,
+"longitude": -91.212852
+},
+{
+"name": "Stone Lake",
+"kind": "CDP",
+"latitude": 45.838934,
+"longitude": -91.552094
+},
+{
+"name": "Stoughton",
+"kind": "city",
+"latitude": 42.923769,
+"longitude": -89.222515
+},
+{
+"name": "Stratford",
+"kind": "village",
+"latitude": 44.797614,
+"longitude": -90.070576
+},
+{
+"name": "Strum",
+"kind": "village",
+"latitude": 44.553205,
+"longitude": -91.388642
+},
+{
+"name": "Sturgeon Bay",
+"kind": "city",
+"latitude": 44.822676,
+"longitude": -87.369806
+},
+{
+"name": "Sturtevant",
+"kind": "village",
+"latitude": 42.6989,
+"longitude": -87.901553
+},
+{
+"name": "Suamico",
+"kind": "village",
+"latitude": 44.626729,
+"longitude": -88.033045
+},
+{
+"name": "Sullivan",
+"kind": "village",
+"latitude": 43.012343,
+"longitude": -88.595331
+},
+{
+"name": "Summit",
+"kind": "village",
+"latitude": 43.046188,
+"longitude": -88.477445
+},
+{
+"name": "Summit Lake",
+"kind": "CDP",
+"latitude": 45.376968,
+"longitude": -89.198971
+},
+{
+"name": "Sun Prairie",
+"kind": "city",
+"latitude": 43.182622,
+"longitude": -89.237824
+},
+{
+"name": "Superior",
+"kind": "city",
+"latitude": 46.692119,
+"longitude": -92.080356
+},
+{
+"name": "Superior",
+"kind": "village",
+"latitude": 46.648749,
+"longitude": -92.108872
+},
+{
+"name": "Suring",
+"kind": "village",
+"latitude": 45.000727,
+"longitude": -88.369325
+},
+{
+"name": "Sussex",
+"kind": "village",
+"latitude": 43.134854,
+"longitude": -88.226041
+},
+{
+"name": "Tainter Lake",
+"kind": "CDP",
+"latitude": 44.989094,
+"longitude": -91.848207
+},
+{
+"name": "Taycheedah",
+"kind": "CDP",
+"latitude": 43.812533,
+"longitude": -88.388613
+},
+{
+"name": "Taylor",
+"kind": "village",
+"latitude": 44.321748,
+"longitude": -91.120505
+},
+{
+"name": "Tennyson",
+"kind": "village",
+"latitude": 42.690615,
+"longitude": -90.686704
+},
+{
+"name": "Theresa",
+"kind": "village",
+"latitude": 43.516767,
+"longitude": -88.453809
+},
+{
+"name": "Thiensville",
+"kind": "village",
+"latitude": 43.235436,
+"longitude": -87.976832
+},
+{
+"name": "Thornton",
+"kind": "CDP",
+"latitude": 44.798508,
+"longitude": -88.691213
+},
+{
+"name": "Thorp",
+"kind": "city",
+"latitude": 44.957957,
+"longitude": -90.802185
+},
+{
+"name": "Three Lakes",
+"kind": "CDP",
+"latitude": 45.804495,
+"longitude": -89.169056
+},
+{
+"name": "Tichigan",
+"kind": "CDP",
+"latitude": 42.81104,
+"longitude": -88.208782
+},
+{
+"name": "Tigerton",
+"kind": "village",
+"latitude": 44.741631,
+"longitude": -89.045934
+},
+{
+"name": "Tilleda",
+"kind": "CDP",
+"latitude": 44.815522,
+"longitude": -88.912575
+},
+{
+"name": "Tomah",
+"kind": "city",
+"latitude": 43.98801,
+"longitude": -90.50138
+},
+{
+"name": "Tomahawk",
+"kind": "city",
+"latitude": 45.478961,
+"longitude": -89.711773
+},
+{
+"name": "Tony",
+"kind": "village",
+"latitude": 45.480315,
+"longitude": -90.997158
+},
+{
+"name": "Townsend",
+"kind": "CDP",
+"latitude": 45.324031,
+"longitude": -88.590417
+},
+{
+"name": "Trego",
+"kind": "CDP",
+"latitude": 45.905802,
+"longitude": -91.83106
+},
+{
+"name": "Trempealeau",
+"kind": "village",
+"latitude": 44.002233,
+"longitude": -91.428001
+},
+{
+"name": "Tunnel City",
+"kind": "CDP",
+"latitude": 44.004959,
+"longitude": -90.567979
+},
+{
+"name": "Turtle Lake",
+"kind": "village",
+"latitude": 45.390622,
+"longitude": -92.149832
+},
+{
+"name": "Turtle Lake",
+"kind": "CDP",
+"latitude": 42.732285,
+"longitude": -88.67754
+},
+{
+"name": "Tustin",
+"kind": "CDP",
+"latitude": 44.169798,
+"longitude": -88.896056
+},
+{
+"name": "Twin Lakes",
+"kind": "village",
+"latitude": 42.515576,
+"longitude": -88.250369
+},
+{
+"name": "Two Rivers",
+"kind": "city",
+"latitude": 44.156137,
+"longitude": -87.577352
+},
+{
+"name": "Union Center",
+"kind": "village",
+"latitude": 43.682589,
+"longitude": -90.263336
+},
+{
+"name": "Union Grove",
+"kind": "village",
+"latitude": 42.686397,
+"longitude": -88.049539
+},
+{
+"name": "Unity",
+"kind": "village",
+"latitude": 44.851124,
+"longitude": -90.313074
+},
+{
+"name": "Valders",
+"kind": "village",
+"latitude": 44.068148,
+"longitude": -87.885813
+},
+{
+"name": "Van Dyne",
+"kind": "CDP",
+"latitude": 43.886211,
+"longitude": -88.49781
+},
+{
+"name": "Vernon",
+"kind": "village",
+"latitude": 42.879031,
+"longitude": -88.266618
+},
+{
+"name": "Verona",
+"kind": "city",
+"latitude": 42.991265,
+"longitude": -89.539247
+},
+{
+"name": "Vesper",
+"kind": "village",
+"latitude": 44.480485,
+"longitude": -89.967613
+},
+{
+"name": "Viola",
+"kind": "village",
+"latitude": 43.508187,
+"longitude": -90.674004
+},
+{
+"name": "Viroqua",
+"kind": "city",
+"latitude": 43.560622,
+"longitude": -90.886155
+},
+{
+"name": "Wabeno",
+"kind": "CDP",
+"latitude": 45.439411,
+"longitude": -88.658068
+},
+{
+"name": "Waldo",
+"kind": "village",
+"latitude": 43.677038,
+"longitude": -87.9479
+},
+{
+"name": "Wales",
+"kind": "village",
+"latitude": 43.005837,
+"longitude": -88.370357
+},
+{
+"name": "Walworth",
+"kind": "village",
+"latitude": 42.530502,
+"longitude": -88.593917
+},
+{
+"name": "Warrens",
+"kind": "village",
+"latitude": 44.127397,
+"longitude": -90.521063
+},
+{
+"name": "Washburn",
+"kind": "city",
+"latitude": 46.676651,
+"longitude": -90.901287
+},
+{
+"name": "Waterford",
+"kind": "village",
+"latitude": 42.766022,
+"longitude": -88.216765
+},
+{
+"name": "Waterloo",
+"kind": "city",
+"latitude": 43.183528,
+"longitude": -88.990044
+},
+{
+"name": "Watertown",
+"kind": "city",
+"latitude": 43.189405,
+"longitude": -88.72891
+},
+{
+"name": "Waubeka",
+"kind": "CDP",
+"latitude": 43.47021,
+"longitude": -87.993466
+},
+{
+"name": "Waukau",
+"kind": "CDP",
+"latitude": 43.984548,
+"longitude": -88.772057
+},
+{
+"name": "Waukesha",
+"kind": "city",
+"latitude": 43.009084,
+"longitude": -88.245062
+},
+{
+"name": "Waukesha",
+"kind": "village",
+"latitude": 42.960422,
+"longitude": -88.249314
+},
+{
+"name": "Waumandee",
+"kind": "CDP",
+"latitude": 44.302329,
+"longitude": -91.705204
+},
+{
+"name": "Waunakee",
+"kind": "village",
+"latitude": 43.182861,
+"longitude": -89.445293
+},
+{
+"name": "Waupaca",
+"kind": "city",
+"latitude": 44.350048,
+"longitude": -89.070003
+},
+{
+"name": "Waupun",
+"kind": "city",
+"latitude": 43.631547,
+"longitude": -88.737534
+},
+{
+"name": "Wausau",
+"kind": "city",
+"latitude": 44.961766,
+"longitude": -89.646538
+},
+{
+"name": "Wausaukee",
+"kind": "village",
+"latitude": 45.378247,
+"longitude": -87.954834
+},
+{
+"name": "Wautoma",
+"kind": "city",
+"latitude": 44.067377,
+"longitude": -89.291119
+},
+{
+"name": "Wauwatosa",
+"kind": "city",
+"latitude": 43.063165,
+"longitude": -88.035583
+},
+{
+"name": "Wauzeka",
+"kind": "village",
+"latitude": 43.085852,
+"longitude": -90.898947
+},
+{
+"name": "Webster",
+"kind": "village",
+"latitude": 45.87978,
+"longitude": -92.36283
+},
+{
+"name": "West Allis",
+"kind": "city",
+"latitude": 43.007186,
+"longitude": -88.028986
+},
+{
+"name": "West Baraboo",
+"kind": "village",
+"latitude": 43.478204,
+"longitude": -89.774078
+},
+{
+"name": "West Bend",
+"kind": "city",
+"latitude": 43.417492,
+"longitude": -88.181685
+},
+{
+"name": "Westboro",
+"kind": "CDP",
+"latitude": 45.360796,
+"longitude": -90.293396
+},
+{
+"name": "Westby",
+"kind": "city",
+"latitude": 43.652864,
+"longitude": -90.858193
+},
+{
+"name": "Westfield",
+"kind": "village",
+"latitude": 43.885163,
+"longitude": -89.492492
+},
+{
+"name": "West Milwaukee",
+"kind": "village",
+"latitude": 43.012437,
+"longitude": -87.970984
+},
+{
+"name": "Weston",
+"kind": "village",
+"latitude": 44.89122,
+"longitude": -89.549651
+},
+{
+"name": "West Salem",
+"kind": "village",
+"latitude": 43.898534,
+"longitude": -91.087453
+},
+{
+"name": "Weyauwega",
+"kind": "city",
+"latitude": 44.323593,
+"longitude": -88.933131
+},
+{
+"name": "Weyerhaeuser",
+"kind": "village",
+"latitude": 45.425644,
+"longitude": -91.41524
+},
+{
+"name": "Wheeler",
+"kind": "village",
+"latitude": 45.043822,
+"longitude": -91.89933
+},
+{
+"name": "Whitefish Bay",
+"kind": "village",
+"latitude": 43.113137,
+"longitude": -87.900475
+},
+{
+"name": "Whitehall",
+"kind": "city",
+"latitude": 44.360516,
+"longitude": -91.337802
+},
+{
+"name": "White Lake",
+"kind": "village",
+"latitude": 45.159693,
+"longitude": -88.763418
+},
+{
+"name": "Whitelaw",
+"kind": "village",
+"latitude": 44.147561,
+"longitude": -87.82669
+},
+{
+"name": "Whitewater",
+"kind": "city",
+"latitude": 42.837439,
+"longitude": -88.734282
+},
+{
+"name": "Whiting",
+"kind": "village",
+"latitude": 44.490088,
+"longitude": -89.560024
+},
+{
+"name": "Whittlesey",
+"kind": "CDP",
+"latitude": 45.220619,
+"longitude": -90.323224
+},
+{
+"name": "Wild Rose",
+"kind": "village",
+"latitude": 44.178282,
+"longitude": -89.244468
+},
+{
+"name": "Williams Bay",
+"kind": "village",
+"latitude": 42.578848,
+"longitude": -88.545719
+},
+{
+"name": "Wilson",
+"kind": "village",
+"latitude": 44.958611,
+"longitude": -92.170494
+},
+{
+"name": "Wilton",
+"kind": "village",
+"latitude": 43.813263,
+"longitude": -90.52686
+},
+{
+"name": "Winchester",
+"kind": "CDP",
+"latitude": 44.198236,
+"longitude": -88.659907
+},
+{
+"name": "Wind Lake",
+"kind": "CDP",
+"latitude": 42.827839,
+"longitude": -88.154651
+},
+{
+"name": "Wind Point",
+"kind": "village",
+"latitude": 42.780392,
+"longitude": -87.771599
+},
+{
+"name": "Windsor",
+"kind": "village",
+"latitude": 43.245704,
+"longitude": -89.281518
+},
+{
+"name": "Winneconne",
+"kind": "village",
+"latitude": 44.111314,
+"longitude": -88.711977
+},
+{
+"name": "Winter",
+"kind": "village",
+"latitude": 45.822142,
+"longitude": -91.013043
+},
+{
+"name": "Wiota",
+"kind": "CDP",
+"latitude": 42.636743,
+"longitude": -89.949317
+},
+{
+"name": "Wisconsin Dells",
+"kind": "city",
+"latitude": 43.638365,
+"longitude": -89.77576
+},
+{
+"name": "Wisconsin Rapids",
+"kind": "city",
+"latitude": 44.392923,
+"longitude": -89.826749
+},
+{
+"name": "Withee",
+"kind": "village",
+"latitude": 44.950982,
+"longitude": -90.598847
+},
+{
+"name": "Wittenberg",
+"kind": "village",
+"latitude": 44.826881,
+"longitude": -89.166583
+},
+{
+"name": "Wonewoc",
+"kind": "village",
+"latitude": 43.653477,
+"longitude": -90.224242
+},
+{
+"name": "Woodford",
+"kind": "CDP",
+"latitude": 42.647308,
+"longitude": -89.857206
+},
+{
+"name": "Woodman",
+"kind": "village",
+"latitude": 43.092512,
+"longitude": -90.797753
+},
+{
+"name": "Woodruff",
+"kind": "CDP",
+"latitude": 45.894436,
+"longitude": -89.691154
+},
+{
+"name": "Woodville",
+"kind": "village",
+"latitude": 44.948302,
+"longitude": -92.285064
+},
+{
+"name": "Wrightstown",
+"kind": "village",
+"latitude": 44.327137,
+"longitude": -88.175633
+},
+{
+"name": "Wyeville",
+"kind": "village",
+"latitude": 44.027851,
+"longitude": -90.386077
+},
+{
+"name": "Wyocena",
+"kind": "village",
+"latitude": 43.493239,
+"longitude": -89.301835
+},
+{
+"name": "Yorkville",
+"kind": "village",
+"latitude": 42.720098,
+"longitude": -88.001389
+},
+{
+"name": "Yuba",
+"kind": "village",
+"latitude": 43.536455,
+"longitude": -90.426772
+},
+{
+"name": "Zoar",
+"kind": "CDP",
+"latitude": 45.005484,
+"longitude": -88.874832
+}
+]
+}

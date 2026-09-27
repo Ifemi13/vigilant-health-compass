@@ -1,7 +1,7 @@
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { Link } from 'react-router'
+import { Link, useLocation, useNavigate } from 'react-router'
 import { z } from 'zod'
 import { Button, ErrorBanner, Field, FullPageSpinner, Input, Select, Textarea } from '../../components/ui'
 import { errorMessage } from '../../lib/api'
@@ -68,7 +68,8 @@ export default function HealthProfile() {
 function ProfileForm({ initial }: { initial: Profile | null }) {
   const save = useSaveHealthProfile()
   const [error, setError] = useState<string | null>(null)
-  const [savedAt, setSavedAt] = useState<string | null>(initial?.updatedAt ?? null)
+  const navigate = useNavigate()
+  const location = useLocation()
   const {
     register,
     handleSubmit,
@@ -78,14 +79,16 @@ function ProfileForm({ initial }: { initial: Profile | null }) {
   const onSubmit = async (values: FormValues) => {
     setError(null)
     try {
-      const saved = await save.mutateAsync({
+      await save.mutateAsync({
         age: Number(values.age),
         sex: values.sex,
         currentConditions: values.currentConditions,
         vaccinationHistory: values.vaccinationHistory || null,
         familyHistory: values.familyHistory || null,
       })
-      setSavedAt(saved.updatedAt)
+      // Back to wherever they came from (e.g. a hospital forum); General if they opened this page directly.
+      if (location.key === 'default') navigate('/general', { replace: true })
+      else navigate(-1)
     } catch (e) {
       setError(errorMessage(e))
     }
@@ -125,9 +128,9 @@ function ProfileForm({ initial }: { initial: Profile | null }) {
         <Textarea {...register('familyHistory')} />
       </Field>
       <div className="flex flex-wrap items-center justify-end gap-3 pt-2">
-        {savedAt && !isDirty && (
+        {initial && !isDirty && (
           <span className="mr-auto text-sm text-slate-500 dark:text-slate-400">
-            ✓ Saved {new Date(savedAt).toLocaleString()}
+            Last saved {new Date(initial.updatedAt).toLocaleString()}
           </span>
         )}
         <Button type="submit" disabled={isSubmitting}>

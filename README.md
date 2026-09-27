@@ -169,6 +169,7 @@ All endpoints need `Authorization: Bearer <Supabase access token>`.
 | `PUT` | `/api/topics/{topicId}/hospitals/{id}/comments/{commentId}` | Edit your own post; sets `editedAt`. `403` if it isn't yours, `404` if it doesn't exist |
 | `DELETE` | `/api/topics/{topicId}/hospitals/{id}/comments/{commentId}` | Delete your own post (`204`). `403` if it isn't yours, `404` if it doesn't exist |
 | `GET` | `/api/community/me` | Your forum nickname and role |
+| `GET` | `/api/care-near-me?location=&lat=&lng=&radiusMiles=25&type=` | Hospitals and community health centers within `radiusMiles` (1–200) of `lat`/`lng` (browser location) or a Wisconsin `location` (ZIP, city, or `City, WI`), nearest first. `type` = `HOSPITAL` or `CLINIC` to filter. `404` if the location isn't found |
 | `GET` | `/api/health-profile` | Your General → Health Profile (age, sex, current conditions, vaccination and family history), or `404` if you haven't saved one |
 | `PUT` | `/api/health-profile` | Create or replace it. `age`, `sex` (`FEMALE`, `MALE`, `INTERSEX`, `PREFER_NOT_TO_SAY`) and `currentConditions` are required. Age and sex are shown on your forum posts; the rest is private |
 
@@ -200,3 +201,21 @@ python3 scripts/cms_hospitals_to_sql.py data/wi_hospitals_cms.json backend/src/m
 
 CMS has no specialty information, so every topic lists the same hospitals (each with its own forum per topic). To
 refresh the data, write a new migration that upserts by `cms_facility_id`, so existing forum posts stay attached.
+
+## Healthcare Near Me data
+
+- **Clinics:** HRSA [Health Center Service Delivery Sites](https://data.hrsa.gov/data/download) in Wisconsin
+  (federally funded community health centers), excluding school-based sites and mobile vans:
+  [`data/wi_community_health_centers_hrsa.json`](data/wi_community_health_centers_hrsa.json). HRSA provides each
+  site's coordinates.
+- **Hospitals:** the CMS hospitals above. CMS has no coordinates, so each hospital is placed at its ZIP code's
+  center (or its city's center), and distances to hospitals are approximate.
+- **Turning a searched ZIP or city into coordinates:** U.S. Census 2024 Gazetteer ZIP (ZCTA) and place centers for
+  Wisconsin: [`data/wi_zip_centers_census.json`](data/wi_zip_centers_census.json),
+  [`data/wi_place_centers_census.json`](data/wi_place_centers_census.json).
+
+Migration `V14__load_healthcare_near_me_data.sql` is generated from these files:
+
+```sh
+python3 scripts/near_me_data_to_sql.py backend/src/main/resources/db/migration/V14__load_healthcare_near_me_data.sql
+```
