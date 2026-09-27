@@ -59,7 +59,8 @@ public class OnboardingService {
 			PetInput pet = guardian.pet();
 			pets.save(new Pet(userId, pet.name().trim(), pet.species().trim(), blankToNull(pet.breed()), pet.sex(),
 					pet.neutered(), pet.birthDate(), pet.weightKg(), blankToNull(pet.healthHistory()),
-					blankToNull(pet.vaccinationHistory()), blankToNull(pet.allergies())));
+					blankToNull(pet.vaccinationHistory()), blankToNull(pet.allergies()), pet.environment(),
+					pet.activityLevel(), blankToNull(pet.medications())));
 			return toResponse(profile);
 		}
 		if (request instanceof VetOnboarding vet) {

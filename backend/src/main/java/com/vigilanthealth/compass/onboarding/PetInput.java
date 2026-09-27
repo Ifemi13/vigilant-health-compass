@@ -3,6 +3,8 @@ package com.vigilanthealth.compass.onboarding;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+import com.vigilanthealth.compass.profile.ActivityLevel;
+import com.vigilanthealth.compass.profile.PetEnvironment;
 import com.vigilanthealth.compass.profile.Sex;
 
 import jakarta.validation.constraints.DecimalMax;
@@ -23,5 +25,8 @@ public record PetInput(
 		@Positive @DecimalMax("5000") @Digits(integer = 4, fraction = 2) BigDecimal weightKg,
 		@Size(max = 5000) String healthHistory,
 		@Size(max = 5000) String vaccinationHistory,
-		@Size(max = 2000) String allergies) {
+		@Size(max = 2000) String allergies,
+		PetEnvironment environment,
+		ActivityLevel activityLevel,
+		@Size(max = 2000) String medications) {
 }

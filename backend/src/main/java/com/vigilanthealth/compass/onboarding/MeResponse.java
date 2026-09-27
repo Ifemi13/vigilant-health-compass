@@ -5,8 +5,10 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 
+import com.vigilanthealth.compass.profile.ActivityLevel;
 import com.vigilanthealth.compass.profile.GuardianProfile;
 import com.vigilanthealth.compass.profile.Pet;
+import com.vigilanthealth.compass.profile.PetEnvironment;
 import com.vigilanthealth.compass.profile.Role;
 import com.vigilanthealth.compass.profile.Sex;
 import com.vigilanthealth.compass.profile.VetProfile;
@@ -34,12 +36,13 @@ public record MeResponse(UUID id, Role role, String email, Guardian guardian, Ve
 
 	public record PetView(UUID id, String name, String species, String breed, Sex sex, boolean neutered,
 			LocalDate birthDate, BigDecimal weightKg, String healthHistory, String vaccinationHistory,
-			String allergies) {
+			String allergies, PetEnvironment environment, ActivityLevel activityLevel, String medications) {
 
 		static PetView of(Pet pet) {
 			return new PetView(pet.getId(), pet.getName(), pet.getSpecies(), pet.getBreed(), pet.getSex(),
 					pet.isNeutered(), pet.getBirthDate(), pet.getWeightKg(), pet.getHealthHistory(),
-					pet.getVaccinationHistory(), pet.getAllergies());
+					pet.getVaccinationHistory(), pet.getAllergies(), pet.getEnvironment(), pet.getActivityLevel(),
+					pet.getMedications());
 		}
 
 	}

@@ -3,7 +3,7 @@ import { useQueryClient } from '@tanstack/react-query'
 import type { ReactNode } from 'react'
 import { useLocation, useNavigate } from 'react-router'
 import { Button } from '../components/ui'
-import { useMe, type Pet } from '../lib/profile'
+import { ACTIVITY_LABELS, ENVIRONMENT_LABELS, useMe, type Pet } from '../lib/profile'
 import { supabase } from '../lib/supabase'
 
 export default function Profile() {
@@ -72,8 +72,12 @@ function PetCard({ pet }: { pet: Pet }) {
       <Row label="Species" value={[pet.species, pet.breed].filter(Boolean).join(' · ')} />
       <Row label="Sex" value={`${sex}${pet.neutered ? ' (spayed/neutered)' : ''}`} />
       <Row label="Age" value={pet.birthDate ? formatAge(pet.birthDate) : null} />
+      <Row label="Life stage" value={lifeStage(pet)} />
       <Row label="Weight" value={pet.weightKg != null ? `${pet.weightKg} kg` : null} />
+      <Row label="Indoor / outdoor" value={pet.environment && ENVIRONMENT_LABELS[pet.environment]} />
+      <Row label="Activity level" value={pet.activityLevel && ACTIVITY_LABELS[pet.activityLevel]} />
       <Row label="Allergies" value={pet.allergies} />
+      <Row label="Medications & prevention" value={pet.medications} />
       <Row label="Health history" value={pet.healthHistory} />
       <Row label="Vaccinations" value={pet.vaccinationHistory} />
     </Card>
@@ -98,10 +102,27 @@ function Row({ label, value }: { label: string; value: string | null }) {
   )
 }
 
-function formatAge(birthDate: string): string {
+function ageInMonths(birthDate: string): number {
   const [y, m] = birthDate.split('-').map(Number)
   const now = new Date()
-  const months = (now.getFullYear() - y) * 12 + (now.getMonth() + 1 - m)
+  return (now.getFullYear() - y) * 12 + (now.getMonth() + 1 - m)
+}
+
+/**
+ * Derived from age, so there's nothing extra to enter. Uses common general cut-offs (dogs senior from 7,
+ * cats from 10); other species vary too much, so they get none.
+ */
+function lifeStage(pet: Pet): string | null {
+  if (!pet.birthDate) return null
+  const months = ageInMonths(pet.birthDate)
+  const species = pet.species.toLowerCase()
+  if (species === 'dog') return months < 12 ? 'Puppy' : months >= 7 * 12 ? 'Senior' : 'Adult'
+  if (species === 'cat') return months < 12 ? 'Kitten' : months >= 10 * 12 ? 'Senior' : 'Adult'
+  return null
+}
+
+function formatAge(birthDate: string): string {
+  const months = ageInMonths(birthDate)
   const years = Math.floor(months / 12)
   const rest = months % 12
   if (years === 0) return `about ${rest} month${rest === 1 ? '' : 's'}`

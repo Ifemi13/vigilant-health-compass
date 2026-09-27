@@ -4,6 +4,20 @@ import { ApiError, apiFetch } from './api'
 
 export type Role = 'GUARDIAN' | 'VET'
 export type Sex = 'MALE' | 'FEMALE' | 'UNKNOWN'
+export type PetEnvironment = 'INDOOR' | 'OUTDOOR' | 'BOTH'
+export type ActivityLevel = 'LOW' | 'MODERATE' | 'HIGH'
+
+export const ENVIRONMENT_LABELS: Record<PetEnvironment, string> = {
+  INDOOR: 'Indoor',
+  OUTDOOR: 'Outdoor',
+  BOTH: 'Indoor & outdoor',
+}
+
+export const ACTIVITY_LABELS: Record<ActivityLevel, string> = {
+  LOW: 'Low',
+  MODERATE: 'Moderate',
+  HIGH: 'High',
+}
 
 export interface Pet {
   id: string
@@ -17,6 +31,10 @@ export interface Pet {
   healthHistory: string | null
   vaccinationHistory: string | null
   allergies: string | null
+  environment: PetEnvironment | null
+  activityLevel: ActivityLevel | null
+  /** Current medications and parasite prevention. */
+  medications: string | null
 }
 
 export interface Me {

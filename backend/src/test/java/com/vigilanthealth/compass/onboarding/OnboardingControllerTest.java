@@ -41,7 +41,10 @@ class OnboardingControllerTest {
 			    "weightKg": 11.5,
 			    "healthHistory": "Hip dysplasia",
 			    "vaccinationHistory": "Rabies 2025-02",
-			    "allergies": "  "
+			    "allergies": "  ",
+			    "environment": "BOTH",
+			    "activityLevel": "HIGH",
+			    "medications": "Monthly heartworm chew"
 			  }
 			}
 			""";
@@ -86,7 +89,10 @@ class OnboardingControllerTest {
 			.andExpect(jsonPath("$.pets[0].name").value("Biscuit"))
 			.andExpect(jsonPath("$.pets[0].sex").value("FEMALE"))
 			.andExpect(jsonPath("$.pets[0].weightKg").value(11.5))
-			.andExpect(jsonPath("$.pets[0].allergies").doesNotExist());
+			.andExpect(jsonPath("$.pets[0].allergies").doesNotExist())
+			.andExpect(jsonPath("$.pets[0].environment").value("BOTH"))
+			.andExpect(jsonPath("$.pets[0].activityLevel").value("HIGH"))
+			.andExpect(jsonPath("$.pets[0].medications").value("Monthly heartworm chew"));
 	}
 
 	@Test

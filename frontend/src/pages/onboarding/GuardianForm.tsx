@@ -3,7 +3,7 @@ import { useForm, useWatch } from 'react-hook-form'
 import { z } from 'zod'
 import { useAuth } from '../../auth/useAuth'
 import { AuthCard, Button, ErrorBanner, Field, Input, Select, Textarea } from '../../components/ui'
-import type { PetInput } from '../../lib/profile'
+import { ACTIVITY_LABELS, ENVIRONMENT_LABELS, type PetInput } from '../../lib/profile'
 import { useSubmitOnboarding } from './useSubmitOnboarding'
 
 const SPECIES = ['Dog', 'Cat', 'Bird', 'Rabbit', 'Reptile', 'Other'] as const
@@ -39,6 +39,9 @@ const schema = z
     healthHistory: z.string().trim().max(5000),
     vaccinationHistory: z.string().trim().max(5000),
     allergies: z.string().trim().max(2000),
+    environment: z.enum(['', 'INDOOR', 'OUTDOOR', 'BOTH']),
+    activityLevel: z.enum(['', 'LOW', 'MODERATE', 'HIGH']),
+    medications: z.string().trim().max(2000),
   })
   .refine((v) => v.species !== 'Other' || v.otherSpecies !== '', {
     path: ['otherSpecies'],
@@ -88,6 +91,9 @@ export default function GuardianForm({ onBack }: { onBack: () => void }) {
       healthHistory: '',
       vaccinationHistory: '',
       allergies: '',
+      environment: '',
+      activityLevel: '',
+      medications: '',
     },
   })
   const species = useWatch({ control, name: 'species' })
@@ -104,6 +110,9 @@ export default function GuardianForm({ onBack }: { onBack: () => void }) {
       healthHistory: orNull(v.healthHistory),
       vaccinationHistory: orNull(v.vaccinationHistory),
       allergies: orNull(v.allergies),
+      environment: v.environment || null,
+      activityLevel: v.activityLevel || null,
+      medications: orNull(v.medications),
     }
     return submit({ role: 'GUARDIAN', phone: v.phone, pet })
   }
@@ -174,8 +183,31 @@ export default function GuardianForm({ onBack }: { onBack: () => void }) {
           </Field>
         </Section>
 
+        <Section title="Lifestyle">
+          <Field label="Indoor / outdoor" error={errors.environment?.message}>
+            <Select {...register('environment')}>
+              <option value="">Not specified</option>
+              {Object.entries(ENVIRONMENT_LABELS).map(([value, label]) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
+            </Select>
+          </Field>
+          <Field label="Activity level" error={errors.activityLevel?.message}>
+            <Select {...register('activityLevel')}>
+              <option value="">Not specified</option>
+              {Object.entries(ACTIVITY_LABELS).map(([value, label]) => (
+                <option key={value} value={value}>
+                  {label}
+                </option>
+              ))}
+            </Select>
+          </Field>
+        </Section>
+
         <Section title="Health" oneColumn>
-          <Field label="Health history" error={errors.healthHistory?.message} hint="Past conditions, surgeries, ongoing medications">
+          <Field label="Health history" error={errors.healthHistory?.message} hint="Past conditions and surgeries">
             <Textarea {...register('healthHistory')} />
           </Field>
           <Field label="Vaccination history" error={errors.vaccinationHistory?.message} hint="Vaccines and roughly when they were given">
@@ -183,6 +215,13 @@ export default function GuardianForm({ onBack }: { onBack: () => void }) {
           </Field>
           <Field label="Allergies" error={errors.allergies?.message}>
             <Textarea rows={2} {...register('allergies')} placeholder="Leave blank if none known" />
+          </Field>
+          <Field
+            label="Medications & prevention"
+            error={errors.medications?.message}
+            hint="Current medications, plus flea, tick and heartworm prevention"
+          >
+            <Textarea rows={2} {...register('medications')} placeholder="e.g. Monthly heartworm chew" />
           </Field>
         </Section>
 

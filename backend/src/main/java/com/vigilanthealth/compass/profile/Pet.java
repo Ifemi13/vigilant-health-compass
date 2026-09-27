@@ -43,12 +43,20 @@ public class Pet {
 
 	private String allergies;
 
+	@Enumerated(EnumType.STRING)
+	private PetEnvironment environment;
+
+	@Enumerated(EnumType.STRING)
+	private ActivityLevel activityLevel;
+
+	private String medications;
+
 	protected Pet() {
 	}
 
 	public Pet(UUID guardianId, String name, String species, String breed, Sex sex, boolean neutered,
 			LocalDate birthDate, BigDecimal weightKg, String healthHistory, String vaccinationHistory,
-			String allergies) {
+			String allergies, PetEnvironment environment, ActivityLevel activityLevel, String medications) {
 		this.guardianId = guardianId;
 		this.name = name;
 		this.species = species;
@@ -60,6 +68,9 @@ public class Pet {
 		this.healthHistory = healthHistory;
 		this.vaccinationHistory = vaccinationHistory;
 		this.allergies = allergies;
+		this.environment = environment;
+		this.activityLevel = activityLevel;
+		this.medications = medications;
 	}
 
 	public UUID getId() {
@@ -108,6 +119,18 @@ public class Pet {
 
 	public String getAllergies() {
 		return allergies;
+	}
+
+	public PetEnvironment getEnvironment() {
+		return environment;
+	}
+
+	public ActivityLevel getActivityLevel() {
+		return activityLevel;
+	}
+
+	public String getMedications() {
+		return medications;
 	}
 
 }
